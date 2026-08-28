@@ -9,7 +9,7 @@ This lesson is a UC OSPO Network lesson.
 - Reid Otsuji 
 
 
-
+[License](LICENSE.md)
 
 1. **Adjust the 
    `CITATION.cff`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, and `LICENSE.md` files**
