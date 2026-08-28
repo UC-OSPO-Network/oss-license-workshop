@@ -68,7 +68,7 @@ contact: 'ospo@ucsd.edu'
 # Order of episodes in your lesson
 episodes: 
 - why-license.md
-- when-licenses-clash.md
+- when-license-clash.md
 - choosing-licenses.md
 
 # Information for Learners
