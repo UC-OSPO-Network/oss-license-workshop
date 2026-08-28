@@ -14,4 +14,7 @@ After completing this lesson, learners will be able to:
 - Describe an example of what can happen when a project's dependencies' licenses clash
 - Choose a license for an example project and explain why that's the right choice
 
-
+:::::::::::::::::::: prereq
+- No licensing knowledge required, this is the starting point of the lesson.
+- Some basic understanding of what open source software is, helps but isn't strictly required, since the lesson can open with the basics.
+::::::
