@@ -6,7 +6,7 @@ This lesson is a UC OSPO Network lesson.
 - Karla Padilla
 - Jose Niño Muriel
 - Laura Langdon
-- Reid Otsuji 
+- [Reid Otsuji](https://github.com/UP2NG)   
 
 
 [License](LICENSE.md)
