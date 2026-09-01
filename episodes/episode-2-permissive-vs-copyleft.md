@@ -80,8 +80,14 @@ paste("This", "new", "lesson", "looks", "good")
 
 You can add a line with at least three colons and a `solution` tag.
 
-::::::::::::::::::::::::::::::::: keypoints
+:::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
+
 - keypoint1
 - keypoint2
-::::::::
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[r-markdown]: https://rmarkdown.rstudio.com/
