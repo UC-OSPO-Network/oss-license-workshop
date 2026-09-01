@@ -68,6 +68,7 @@ contact: 'ospo@ucsd.edu'
 # Order of episodes in your lesson
 episodes: 
 - why-license.md
+- episode-2-permissive-vs-copyleft.md
 - when-license-clash.md
 - choosing-licenses.md
 
