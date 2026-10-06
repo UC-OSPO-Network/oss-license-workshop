@@ -13,7 +13,7 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Understand what an open source software license is
+- Explain what an open source software license is
 - Explain how a license is related to copyright and IP laws
 - Articulate the implications of not applying a license to a software project
 
