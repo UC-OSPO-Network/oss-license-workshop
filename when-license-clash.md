@@ -1,7 +1,7 @@
 ---
 title: "When Licenses Clash"
-teaching: 20 
-exercise: 10
+teaching: 20
+exercises: 10
 ---
 
 ::::: questions
