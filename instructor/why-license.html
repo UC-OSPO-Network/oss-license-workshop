@@ -208,12 +208,23 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         1. Why License?
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#starting-point-what-is-open-source-software-oss">Starting point: what is open source software (OSS)?</a></li>
+<li><a href="#what-is-an-open-source-license">What is an open source license?</a></li>
+<li><a href="#how-does-a-license-relate-to-copyright">How does a license relate to copyright?</a></li>
+<li><a href="#what-happens-if-you-dont-add-a-license">What happens if you don’t add a license?</a></li>
+<li><a href="#looking-ahead">Looking ahead</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -317,13 +328,13 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Why License?</h1>
-        <p>Last updated on 2026-10-06 |
+        <p>Last updated on 2026-10-29 |
 
         <a href="https://github.com/UC-OSPO-Network/oss-license-workshop/edit/main/episodes/why-license.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
-        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
+        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
 
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -356,22 +367,62 @@ project</li>
 </div>
 </div>
 </div>
-<div id="myth-or-fact-about-open-source-software-oss" class="callout challenge">
+<p>To start our conversation about Open Source Software (OSS) licensing,
+let’s find out what we already know and what we only <em>think</em> we
+know. Decide whether each statement is a myth or a fact. Don’t worry
+about getting them right; we’ll revisit each one as the episode
+unfolds.</p>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Notes for the Myth or Fact opener </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div class="accordion-body">
+<p>This challenge is a pre-assessment. Its purpose is to surface what
+learners already believe, not to teach the answers.</p>
+<ul><li>Allow about 2 minutes for learners to answer individually, then
+about 4 minutes of discussion. A show of hands or a poll works well for
+each statement. Note the spread of answers; it tells you which parts of
+the episode to emphasize.</li>
+<li>Keep the tone low-stakes. Remind learners that these statements are
+meant to be tricky and that being unsure is a perfectly good starting
+point.</li>
+<li>Reveal the answers briefly, then resist the urge to explain
+everything now. Each statement is unpacked in the sections that follow,
+so you can say “we’ll see why in a few minutes.”</li>
+<li>Statement 1 is the most commonly believed myth. If someone chose
+“Fact”, ask what they think happens to code posted publicly with no
+license, and then park the question until the “What happens if you don’t
+add a license?” section.</li>
+<li>Statement 3 often surfaces confusion between <em>ownership</em> and
+<em>permissions</em>. Note it and return to it in the ownership
+discussion below.</li>
+<li>Learners may ask “who holds the copyright if I wrote the code for my
+job or studies?” Acknowledge that it’s a great question, say it depends
+on employer and institutional policy, and save it for the copyright
+section and its “Not legal advice” callout.</li>
+</ul></div>
+</div>
+</div>
+</div>
+<div id="myths-and-facts-about-open-source-software-oss" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="myth-or-fact-about-open-source-software-oss" class="callout-inner">
-<h3 class="callout-title">Myth or Fact about Open Source Software
+<div id="myths-and-facts-about-open-source-software-oss" class="callout-inner">
+<h3 class="callout-title">Myths and Facts about Open Source Software
 (OSS)</h3>
 <div class="callout-content">
-<p>Instructions: Mark each statement as a Myth or a Fact.</p>
-<ol style="list-style-type: decimal"><li>[Myth or Fact] If you post your code publicly on the internet, it
-automatically becomes Open Source.</li>
-<li>[Myth or Fact] An open source license is essentially a legal
-“permission slip” from the creator.</li>
-<li>[Myth or Fact] An open source license means I am giving away my
-ownership of the code.</li>
+<p>Based on your previous knowledge, mark each statement as a Myth or a
+Fact.</p>
+<ol style="list-style-type: decimal"><li>If you post your code publicly on the internet, it automatically
+becomes Open Source.</li>
+<li>An open source license is essentially a legal “permission slip” from
+the creator.</li>
+<li>An open source license means I am giving away my ownership of the
+code.</li>
 </ol></div>
 </div>
 </div>
@@ -380,10 +431,10 @@ ownership of the code.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Myth. Default copyright/IP law applies; public does not mean
-permission</li>
+permission.</li>
 <li>Fact. An OS license tells users exactly what they are allowed to do
 with the intellectual property.</li>
 <li>Myth. A license does not give away ownership. It is simply a legal
@@ -393,6 +444,246 @@ people to use your code.</li>
 </div>
 </div>
 </div>
+<p>Let’s look at why each of these statements is a myth or a fact,
+starting with the basics.</p>
+<section><h2 class="section-heading" id="starting-point-what-is-open-source-software-oss">Starting point: what is open source software (OSS)?<a class="anchor" aria-label="anchor" href="#starting-point-what-is-open-source-software-oss"></a></h2>
+<hr class="half-width"><p>OSS is software whose source code is made available so that other
+people can read it, use it, modify it, and share it. Many tools you
+probably already rely on (Linux, Python, R, Git) are open source.</p>
+<p>But “the code is visible” and “the code is open source” are not the
+same thing. What makes software open source is the permission attached
+to the code, and that permission is granted through a
+<strong>license</strong>.</p>
+</section><section><h2 class="section-heading" id="what-is-an-open-source-license">What is an open source license?<a class="anchor" aria-label="anchor" href="#what-is-an-open-source-license"></a></h2>
+<hr class="half-width"><p>An open source license is a legal document that comes with your
+software and tells other people what they are allowed to do with it.
+Think of it as a permission slip from the creator to everyone else.</p>
+<p>A license typically answers questions like:</p>
+<ul><li>Can I use this software (including for commercial purposes)?</li>
+<li>Can I modify it?</li>
+<li>Can I share it, with or without my changes?</li>
+<li>Do I need to credit the original author?</li>
+<li>Do I have to share my changes under the same terms?</li>
+</ul><p>Two things to keep in mind:</p>
+<ul><li>A license does not transfer ownership. You remain the owner of your
+code. You are granting others specific, non-exclusive permissions, which
+means you can still use your code yourself and even offer it under
+different terms to other people.</li>
+<li>A license is attached to the work itself, usually as a
+<code>LICENSE</code> file in the root of your project, so the
+permissions travel with the code wherever it goes.</li>
+</ul><div id="not-legal-advice" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="not-legal-advice" class="callout-inner">
+<h3 class="callout-title">Not legal advice</h3>
+<div class="callout-content">
+<p>This lesson explains general concepts to help you make informed
+decisions. It is not legal advice. For specific situations, such as
+employer or university IP policies, funder requirements, or commercial
+products, consult your institution’s legal or technology transfer
+office.</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="how-does-a-license-relate-to-copyright">How does a license relate to copyright?<a class="anchor" aria-label="anchor" href="#how-does-a-license-relate-to-copyright"></a></h2>
+<hr class="half-width"><p>Copyright law (and intellectual property law more broadly) is the
+reason licenses exist.</p>
+<p>When you create something original, including software, <em>copyright
+applies automatically</em>. You don’t need to register it or add a
+notice. By default, the law says:</p>
+<ul><li>You, the creator (or your employer or institution, depending on your
+situation), hold the exclusive rights to copy, modify, and distribute
+the work.</li>
+<li>Everyone else is <em>not</em> allowed to do those things without
+your permission.</li>
+</ul><p>This default is often called <strong>“All Rights Reserved”</strong>.
+It applies to your code even when the repository is public on GitHub,
+GitLab, or Bitbucket. Adding a license changes what happens next:</p>
+<pre class="mermaid"><code>flowchart TD
+    accTitle: {Does your code have a license?}
+    accDescr {
+        A flowchart starting with your code, which is protected by copyright automatically. A decision asks whether the code has a license. If no, the code is All Rights Reserved: it is visible if public, but others have no permission to copy, modify, or share it. If yes, the license terms apply: others may use, modify, and share the code under the conditions you chose, and you still own the code.
+    }
+    A["&lt;b&gt;Your code&lt;/b&gt;&lt;br/&gt;(copyright applies automatically)"] --&gt; B{"Does it have&lt;br/&gt;a license?"}
+    B -- NO --&gt; C["&lt;b&gt;'All Rights Reserved'&lt;/b&gt;&lt;br/&gt;• Visible if public&lt;br/&gt;• Others have no permission&lt;br/&gt;to copy, modify, or share it"]
+    B -- YES --&gt; D["&lt;b&gt;License terms apply&lt;/b&gt;&lt;br/&gt;• Others may use, modify, and share it,&lt;br/&gt;under the conditions you chose&lt;br/&gt;• You still own the code"]
+
+    classDef noLicense fill:#fde8e8,stroke:#c0392b,color:#000
+    classDef hasLicense fill:#e8f5e9,stroke:#2e7d32,color:#000
+    class C noLicense
+    class D hasLicense</code></pre>
+<p><strong>A license is the mechanism for changing the defaults
+permissions</strong>. It is you, the rights holder, saying: “Here is
+what you may do with my work, and under what conditions.”</p>
+</section><section><h2 class="section-heading" id="what-happens-if-you-dont-add-a-license">What happens if you don’t add a license?<a class="anchor" aria-label="anchor" href="#what-happens-if-you-dont-add-a-license"></a></h2>
+<hr class="half-width"><p>It’s tempting to think: <em>“I put my code on GitHub, so anyone can
+use it.”</em> Legally, that’s not true. (Sound familiar? It’s the first
+myth from the challenge.)</p>
+<p>If a project has no license, default copyright applies: all rights
+are reserved by the author. Other people generally have no legal
+permission to use, modify, or redistribute your code, even though they
+can see it.</p>
+<p>(Platforms such as GitHub let people view and fork public
+repositories under their terms of service, but that is not the same as
+permission to reuse your code in their own work.)</p>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Example scenario: the accidental trap </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div class="accordion-body">
+<p>A researcher writes an efficient data-parsing script and uploads it
+to GitHub with a README but no license file.</p>
+<p>A teammate at another institution finds it, copies it into a
+multi-institutional research pipeline, and publishes a paper. A year
+later, a company wants to integrate that pipeline into a medical
+diagnostic tool.</p>
+<p>During legal review, the lawyers notice the original script has no
+license. Because no permissions were ever granted:</p>
+<ul><li>The company cannot safely use the pipeline.</li>
+<li>The institutions may have to audit their repository and remove or
+rewrite the script.</li>
+<li>The work stalls until the original author is found and agrees to add
+a license, or the script is replaced.</li>
+</ul><p>Notice that nobody acted in bad faith. The author wanted to share and
+the teammate wanted to collaborate. The missing license created the
+problem, and it only surfaced a year later, when it was harder and more
+expensive to fix.</p>
+</div>
+</div>
+</div>
+</div>
+<p>In general, <em>without</em> a license:</p>
+<table class="table"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th>Who</th>
+<th>What happens</th>
+</tr></thead><tbody><tr><td>Users</td>
+<td>Unsure if they can use the code, so many (especially companies and
+institutions) simply won’t</td>
+</tr><tr><td>Contributors</td>
+<td>Can’t be sure their contributions can be legally included and
+shared</td>
+</tr><tr><td>You, the author</td>
+<td>Your work is less likely to be reused, cited, or improved</td>
+</tr></tbody></table><div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Notes for the think-pair-share challenge </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div class="accordion-body">
+<ul><li>Collect the “Think” answers with a quick show of hands or poll
+before pairing, so you can see the spread of misconceptions.</li>
+<li>Expect some learners to pick <strong>D</strong>. Use it to show that
+attribution and permission are different things.</li>
+<li>Connect back to the accidental trap example: the think-pair-share
+looks at the problem from the user’s side, while the case study looked
+at it from the author’s side. Ask: “At what point could the trap have
+been prevented, and by whom?”</li>
+<li>During “Share”, ask pairs to name a concrete message they would send
+to the author. This makes the implications of having no license
+practical.</li>
+<li>If the group finishes early, ask: “What if the author never
+replies?” This leads naturally into why you should license your own
+work, and into the choice-of-license episodes that follow.</li>
+</ul></div>
+</div>
+</div>
+</div>
+<div id="you-found-code-with-no-license-think-pair-share" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="you-found-code-with-no-license-think-pair-share" class="callout-inner">
+<h3 class="callout-title">You found code with no license: think, pair,
+share</h3>
+<div class="callout-content">
+<p><strong>Scenario:</strong> You are a researcher and you find a GitHub
+repository with a script that does exactly what you need. The README
+says “Feel free to use this!”, but there is no <code>LICENSE</code> file
+anywhere in the project. You want to adapt the script for your own
+analysis and include it in a public repository that accompanies your
+paper.</p>
+<p><strong>Think (2 min):</strong> On your own, choose the answer you
+think is best. Don’t discuss yet.</p>
+<p>What is the legal situation?</p>
+<ul><li>A. The code is public, so I can use, modify, and share it however I
+like.</li>
+<li>B. I can use and modify it, but I’m not allowed to redistribute
+it.</li>
+<li>C. It’s unclear whether I have permission, so I should ask the
+author before reusing it.</li>
+<li>D. I can reuse it freely as long as I give the author credit.</li>
+</ul><p><strong>Pair (3 min):</strong> Compare answers with a partner. If you
+chose differently, try to convince each other. Then, together,
+answer:</p>
+<ol style="list-style-type: decimal"><li>What are the possible risks to you and your project if you reuse the
+code anyway?</li>
+<li>What are two things you could do to resolve the situation? (For
+example, who could you contact, and what exactly would you ask
+for?)</li>
+</ol><p><strong>Share (5 min):</strong> Be ready to report your pair’s
+conclusions to the group.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<p><strong>Best answer: C.</strong></p>
+<ul><li>
+<strong>A</strong> is the myth from the opening challenge (Statement
+1). Public does not mean permission, because default copyright still
+applies.</li>
+<li>
+<strong>B</strong> invents a partial permission. Without a license,
+no permissions are granted at all, so “use but don’t share” has no more
+legal basis than “share freely”.</li>
+<li>
+<strong>D</strong> confuses crediting an author with having
+permission. Attribution is only a condition if a license grants
+permission in the first place.</li>
+<li>A friendly line in the README is not a substitute for a license. It
+is informal and ambiguous (Who may use it? For what? Can it be modified
+or redistributed?).</li>
+</ul><p><strong>Possible risks:</strong> a legal or reputational problem for
+you or your institution, a paper or repository that has to be retracted
+or rewritten later, and an unclear status for anyone who reuses your
+work.</p>
+<p><strong>Possible actions:</strong></p>
+<ul><li>Open an issue (or email the author) asking them to add a license,
+ideally suggesting a specific one.</li>
+<li>Ask the author for explicit written permission for your intended
+use.</li>
+<li>Look for an alternative tool that does have a license.</li>
+<li>Write your own implementation from scratch, without copying the
+original code.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="looking-ahead">Looking ahead<a class="anchor" aria-label="anchor" href="#looking-ahead"></a></h2>
+<hr class="half-width"><p>Now that you know why a license matters, the next questions are:</p>
+<ul><li>What are the most common open source licenses, and what do they
+allow?</li>
+<li>Which license should I choose? Licenses differ in how much freedom
+they give and what they require in return. Some are
+<strong>permissive</strong> (few conditions) and others are
+<strong>copyleft</strong> (conditions that keep derivative work
+open).</li>
+<li>How do I choose and apply a license to my own project, and justify
+the choice?</li>
+<li>What happens when the licenses of the libraries your project depends
+on don’t fit together?</li>
+</ul><p>We’ll tackle these in the next episodes.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -400,8 +691,18 @@ people to use your code.</li>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>keypoint1</li>
-<li>keypoint2</li>
+<ul><li>An open source license is a legal document that tells others what
+they can and cannot do with your software; think of it as a permission
+slip from the creator.</li>
+<li>Copyright applies automatically to original work, including code,
+and by default reserves all rights to the author (“All Rights
+Reserved”).</li>
+<li>Making code public does not make it open source. Without a license,
+others have no clear legal permission to use, modify, or share it.</li>
+<li>A license does not give away ownership; the author keeps ownership
+and grants specific, non-exclusive permissions.</li>
+<li>Adding a license makes your work easier to reuse, contribute to, and
+trust.</li>
 </ul></div>
 </div>
 </div>
@@ -409,10 +710,7 @@ people to use your code.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter Bottom"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/index.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/episode-2-permissive-vs-copyleft.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -472,8 +770,8 @@ any links that you are not going to use.
   "url": "https://UC-OSPO-Network.github.io/oss-license-workshop/instructor/why-license.html",
   "identifier": "https://UC-OSPO-Network.github.io/oss-license-workshop/instructor/why-license.html",
   "dateCreated": "2026-08-28",
-  "dateModified": "2026-10-06",
-  "datePublished": "2026-10-27"
+  "dateModified": "2026-10-29",
+  "datePublished": "2026-10-29"
 }
 
   </script><script>
