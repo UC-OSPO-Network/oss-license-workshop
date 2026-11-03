@@ -1,7 +1,7 @@
 ---
 site: sandpaper::sandpaper_site
 ---
-This a new lesson meant to help learners understand Open Source Licensing. 
+This lesson helps learners understand open source software (OSS) licensing. It is for people who write or share code and are unsure which license to choose, and for anyone who is curious about how open source licenses work.
 
 ## Learning Objectives
 
@@ -15,6 +15,8 @@ After completing this lesson, learners will be able to:
 - Choose a license for an example project and explain why that's the right choice
 
 :::::::::::::::::::: prereq
-- No licensing knowledge required, this is the starting point of the lesson.
-- Some basic understanding of what open source software is, helps but isn't strictly required, since the lesson can open with the basics.
-::::::
+
+- No licensing knowledge is needed. This lesson is the starting point.
+- A basic understanding of what open source software is.
+
+::::::::::::::::::::
