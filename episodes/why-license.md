@@ -13,6 +13,8 @@ exercises: 15
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
+<!-- wbcheck AI202: No exercise after instruction asks learners to explain the link between copyright and licensing. The only related items are in the opening myth/fact pre-assessment, which the instructor notes say i... -->
+
 - Explain what an open source software license is
 - Explain how a license is related to copyright and IP laws
 - Articulate the implications of not applying a license to a software project
