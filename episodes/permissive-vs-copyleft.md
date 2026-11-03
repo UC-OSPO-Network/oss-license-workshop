@@ -85,8 +85,12 @@ You can add a line with at least three colons and a `solution` tag.
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- keypoint1
-- keypoint2
+- An open source license must let anyone use, study, change, and share the software, for any purpose, including commercial use
+- Permissive licenses (MIT, BSD, Apache) let others reuse the code almost any way they like, including in closed-source products, as long as they keep the copyright and license notice
+- Copyleft licenses (GPL) also allow any use, but anyone who distributes a modified version must share its source under the same license
+- Weak copyleft licenses (LGPL, MPL) apply that rule only to the licensed code itself, so it can be combined with code under other licenses
+- Licenses in the same family still differ on specific points, like patents and the use of contributors' names, so check the actual clauses before choosing
+- Your institution's technology transfer office makes the final call
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
