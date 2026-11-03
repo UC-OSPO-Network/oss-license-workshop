@@ -6,6 +6,8 @@ exercises: 15
 
 :::::::::::::::::::::::::::::::::::::: questions
 
+<!-- wbcheck AI201: This question, and the matching keypoint about patents and contributors' names, is not addressed in the body or in any objective. -->
+
 - What must every open source license allow, no matter which one you pick?
 - What does a permissive license ask of people who use your code, and what does a copyleft license ask instead?
 - If two licenses are in the same family, does it matter which one you choose?
@@ -40,6 +42,8 @@ If excluding commercial use really is a requirement, a license like [PolyForm No
 
 What is the output of this command?
 
+<!-- wbcheck WB111: body still contains scaffold example text: "paste("this", "new", "lesson", "looks", "good")" -->
+
 ```r
 paste("This", "new", "lesson", "looks", "good")
 ```
@@ -55,6 +59,8 @@ paste("This", "new", "lesson", "looks", "good")
 :::::::::::::::::::::::::::::::::
 
 
+<!-- wbcheck AI202: Both challenges are template placeholders about R and Workbench syntax. No exercise asks learners to state what OSS, permissive, copyleft, or weak copyleft licenses allow or require, so none of the... -->
+
 ## Challenge 2: how do you nest solutions within challenge blocks?
 
 :::::::::::::::::::::::: solution 
@@ -66,13 +72,19 @@ You can add a line with at least three colons and a `solution` tag.
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 ## If you're teaching in a university context
 
+<!-- wbcheck AI208: There is no Exercise 1 about licenses in the episode, so instructors cannot follow this note. The claim about UC policy also has no source. -->
+
 Different universities default to different licenses, and learners may arrive having been told "use this one" without being told why. The UC often prefers BSD-3-Clause, and Exercise 1 is the reason.
+
+<!-- wbcheck AI206: The acronym OSPO is not expanded. Learners outside institutions that have one may not know the term. -->
 
 Whatever the local default, the answer always ends the same way: **check with your technology transfer office.** Say that explicitly. An OSPO can explain the tradeoffs; the institution makes the call.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: keypoints
+
+<!-- wbcheck AI204: The keypoints summarize permissive, copyleft, and weak copyleft licenses, but the episode body never explains any of them. Learners reach the summary without any explanatory content or worked examp... -->
 
 - An open source license must let anyone use, study, change, and share the software, for any purpose, including commercial use
 - Permissive licenses (MIT, BSD, Apache) let others reuse the code almost any way they like, including in closed-source products, as long as they keep the copyright and license notice
