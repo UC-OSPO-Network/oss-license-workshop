@@ -1,11 +1,8 @@
-# This template CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to replace its contents
-# with information about your lesson.
-# Remember to update this file periodically, 
-# ensuring that the author list and other fields remain accurate.
+# This CITATION.cff file was started with cffinit.
+# Update it periodically so the author list and other fields stay accurate.
 
 cff-version: 1.2.0
-title: FIXME
+title: "Understanding Open Source Software Licensing"
 message: >-
   Please cite this lesson using the information in this file
   when you refer to it in publications, and/or if you
@@ -13,10 +10,21 @@ message: >-
   training material.
 type: dataset
 authors:
-  - given-names: FIXME
-    family-names: FIXME
+  - given-names: Karla
+    family-names: Padilla
+  - given-names: Jose
+    family-names: Niño Muriel
+  - given-names: Laura
+    family-names: Langdon
+  - given-names: Reid
+    family-names: Otsuji
+repository-code: "https://github.com/UC-OSPO-Network/oss-license-workshop"
 abstract: >-
-  FIXME Replace this with a short abstract describing the
-  lesson, e.g. its target audience and main intended
-  learning objectives.
+  A UC OSPO Network lesson on open source software licensing.
+  It is for people who write or share code and are unsure which
+  license to choose, and for anyone curious about how open source
+  licenses work. Learners describe what a license is, compare
+  permissive and copyleft licenses, recognize when the licenses of
+  a project's dependencies clash, and choose a license for an
+  example project.
 license: CC-BY-4.0
