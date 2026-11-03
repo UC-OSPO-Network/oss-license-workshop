@@ -69,6 +69,8 @@ Different universities default to different licenses, and learners may arrive ha
 
 Whatever the local default, the answer always ends the same way: **check with your technology transfer office.** Say that explicitly. An OSPO can explain the tradeoffs; the institution makes the call.
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ::::::::::::::::::::::::::::::::::::: keypoints
 
 - An open source license must let anyone use, study, change, and share the software, for any purpose, including commercial use
