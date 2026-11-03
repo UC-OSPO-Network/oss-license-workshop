@@ -6,7 +6,9 @@ exercises: 15
 
 :::::::::::::::::::::::::::::::::::::: questions
 
-- Put questions here
+- What must every open source license allow, no matter which one you pick?
+- What does a permissive license ask of people who use your code, and what does a copyleft license ask instead?
+- If two licenses are in the same family, does it matter which one you choose?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
