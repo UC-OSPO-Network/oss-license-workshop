@@ -1,7 +1,7 @@
 ---
 title: "Permissive vs Copyleft Licenses"
-teaching: 10 # teaching time in minutes
-exercises: 2 # exercise time in minutes
+teaching: 15
+exercises: 15
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions
