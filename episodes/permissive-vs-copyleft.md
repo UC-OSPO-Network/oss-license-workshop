@@ -63,6 +63,11 @@ You can add a line with at least three colons and a `solution` tag.
 
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
+## If you're teaching in a university context
+
+Different universities default to different licenses, and learners may arrive having been told "use this one" without being told why. The UC often prefers BSD-3-Clause, and Exercise 1 is the reason.
+
+Whatever the local default, the answer always ends the same way: **check with your technology transfer office.** Say that explicitly. An OSPO can explain the tradeoffs; the institution makes the call.
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
