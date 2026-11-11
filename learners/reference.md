@@ -4,7 +4,7 @@ title: 'Reference'
 
 ## Glossary
 
-Definitions marked TBD are still to be written. See [issue #26](https://github.com/UC-OSPO-Network/oss-license-workshop/issues/26).
+Definitions marked TBD are still to be written. Tracked in [issue #26](https://github.com/UC-OSPO-Network/oss-license-workshop/issues/26).
 
 Permissive license
 : A license, such as BSD or MIT, that allows you to use, modify, and redistribute the code with little restriction. It leaves no proprietary control to the original owner.
@@ -13,7 +13,7 @@ Copyleft license
 : A license that requires any modified or unmodified code you redistribute to be licensed under the same form of license. The University of California (UC) calls these licenses "hereditary". They are sometimes called "viral".
 
 Hereditary
-: UC's term for a copyleft license. See copyleft license.
+: UC's term for a copyleft license. Refer to copyleft license.
 
 Patent-granting license
 : A license that grants users a license to the copyrights in the code and also gives all later users rights to any patent of the licensor that the code needs, including patents the licensor gets in the future. GPL 3.0 and Apache 2.0 are examples.
@@ -49,7 +49,7 @@ Weak copyleft
 : A copyleft license that typically limits either the scope of what counts as a derivative work, or the trigger for the copyleft provision. For example, the LGPL may allow you to dynamically link to an LGPL library without triggering the copyleft provision.
 
 Tech Transfer office (TTO)
-: The campus office you check with before you release code under an open source license. It is sometimes called the Office of Intellectual Property or Technology Commercialization. It verifies ownership and funding requirements, makes sure no third-party restrictions apply, and helps you select a license from the UC-recommended list. In UC guidance this office is usually the delegated authority. See delegated authority.
+: The campus office you check with before you release code under an open source license. It is sometimes called the Office of Intellectual Property or Technology Commercialization. It verifies ownership and funding requirements, makes sure no third-party restrictions apply, and helps you select a license from the UC-recommended list. In UC guidance this office is usually the delegated authority. Refer to delegated authority.
 
 The Regents of the University of California
 : At UC, the typical owner of software created using university resources, or in connection with a research project or a staff position.
@@ -118,4 +118,4 @@ The definitions of permissive license, copyleft license, hereditary, patent-gran
 
 The definitions of copyright, patent, license, open source license, royalty-free, licensee, strong copyleft, weak copyleft, Tech Transfer office, and The Regents of the University of California are adapted from the 2026 OSPO licensing presentation used in this lesson.
 
-The definitions of OSI-approved, derivative work, All Rights Reserved, intellectual property, trademark, work for hire, and proprietary license are adapted from Software Licensing by David E. Bernholdt, Lauren E. Milechin, Dave Rumph, Michael A. Heroux, and James Willenbring (INTERSECT, <https://intersect-training.org/software-licensing/>), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Changes: shortened and lightly reworded.
+The definitions of OSI-approved, derivative work, All Rights Reserved, intellectual property, trademark, work for hire, and proprietary license are adapted from [Software Licensing](https://intersect-training.org/software-licensing/) by David E. Bernholdt, Lauren E. Milechin, Dave Rumph, Michael A. Heroux, and James Willenbring (INTERSECT), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Changes: shortened and lightly reworded.

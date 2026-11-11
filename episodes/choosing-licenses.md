@@ -34,8 +34,8 @@ exercises: 2 # exercise time in minutes
 
 <!-- wbcheck AI206: 'COSS' is an uncommon acronym and is never expanded. Check whether the lesson's external glossary defines it. -->
 
-- Compare key licensing factors for the type of OSS application (science/scholarship/non-commercialization) and list the options
-- Choose an appropriate OSS license and explain the decision thinking when contributing to different projects
+- Compare key licensing factors for the type of OSS application (science/scholarship/non-commercialization) and list the options.
+- Choose an appropriate OSS license and explain the decision thinking when contributing to different projects.
 - Identify when a COSS is appropriate for OSS project.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -46,7 +46,7 @@ exercises: 2 # exercise time in minutes
 
 - Santiago wrote a tool for a campus group as part of his job. A collaborator at another institution wants to use it.
 - His question: who owns the code, and who approves a release?
-- He checks with the Tech Transfer office.
+- He checks with the technology transfer office.
 - He picks a license from the UC-recommended list, then adds it to his repository and README.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -61,28 +61,28 @@ At the University of California:
 - Code created in connection with your research project or your staff position is typically owned by The Regents of the University of California.
 - Grants may stipulate that the funder owns the results of the research, including code, or require a specific license.
 
-You can learn more in the University of California's [copyright policy resources](https://copyright.universityofcalifornia.edu/). It is important to understand how the policy applies to your case. There is more nuance than the slides can provide.
+You can learn more in the University of California's [copyright policy resources](https://copyright.universityofcalifornia.edu/). It is important to understand how the policy applies to your case. The resources explain details beyond the scope of this lesson.
 
-## Work with your Tech Transfer office (TTO)
+## Work with your technology transfer office (TTO)
 
-At UC, before releasing code under an open source license, you must check with your campus Tech Transfer office. It is sometimes called the Office of Intellectual Property or Technology Commercialization.
+At UC, before releasing code under an open source license, you must check with your campus TTO. It is sometimes called the Office of Intellectual Property or Technology Commercialization.
 
 The TTO will:
 
-- verify ownership and funding requirements
-- make sure no third-party restrictions apply, for example from proprietary libraries
-- help you select the most appropriate license from the UC-recommended list
+- verify ownership and funding requirements.
+- make sure no third-party restrictions apply, for example from proprietary libraries.
+- help you select the most appropriate license from the UC-recommended list.
 
 ## How to choose a license
 
 The license you select will depend on your goals and on the policies of the University of California. The Open Source Software chart and its companion guide can help you navigate UC policies and guide your discussion with your TTO.
 
-Always consult your campus Tech Transfer office before releasing UC-owned software.
+Always consult your campus TTO before releasing UC-owned software.
 
 ## UC resources
 
 - [UC OSS Resources](https://security.ucop.edu/resources/open-source-software-licensing.html): resources and guides for open source activities at UC.
-- [UC OSS Chart](https://security.ucop.edu/files/documents/resources/oss-chart.pdf) and [Companion Guide](https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf): the definitive list of UC-recommended "low-risk" licenses.
+- [UC OSS Chart](https://security.ucop.edu/files/documents/resources/oss-chart.pdf) and [Companion Guide](https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf): UC guidance on license risks.
 - [UC OSPO License Guide](https://ucospo.net/oss-resources/template-guides/license-guide/): guidance on institutional requirements and templates.
 - [ChooseALicense.com](https://choosealicense.com): a tool for comparing license features. It does not supersede UC policies.
 
@@ -103,7 +103,7 @@ After TTO approval, add the BSD 3-Clause license to your demo repository:
 
 ::::::::::::::::::::::::::::::: solution
 
-GitHub automatically detects the `LICENSE` file and displays it in the sidebar. Your file should look like this:
+GitHub automatically detects the `LICENSE` file and displays it in the sidebar. The beginning of your complete license file should look like this. Keep all terms from the template:
 
 ```output
 BSD 3-Clause License
@@ -125,19 +125,13 @@ After you add a `LICENSE` file, reference it in your README so users understand 
 ```markdown
 ## License
 
-This project is licensed under the BSD 3-Clause License - see the [LICENSE](LICENSE) file for details.
+This project uses the BSD 3-Clause License. The [LICENSE](LICENSE) file contains the terms.
 ```
 
-This matters because users who read your README on platforms other than GitHub (Zenodo, email, exported PDFs) will see your license terms even without GitHub's automatic detection.
+This names the license for people who encounter your README outside GitHub, for example on Zenodo, in email, or in exported PDFs. Include the `LICENSE` file when you share the project.
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-<!-- wbcheck AI201: The keypoints come from a lesson-design / CLDT template. They say nothing about OSS licensing, so they cannot summarise or reinforce this episode's objectives. -->
-
-<!-- wbcheck AI208: This keypoint is about choosing a lesson and data licensing, not software licensing. Learners reading the summary would be misled about the episode's topic. -->
-
-- Using a narrative throughout a lesson helps reduce learner cognitive load
-- Choosing a lesson includes considering data license and ethical considerations.
-- Openly-licensed datasets can be found in subject area repositories or general data repositories.
+- Draft: the key points for this episode are still to be written by the lesson authors.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

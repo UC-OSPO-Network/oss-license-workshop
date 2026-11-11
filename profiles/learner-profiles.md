@@ -50,4 +50,4 @@ This lesson walks him through the ownership question first and the license choic
 
 - They need no knowledge of licensing before the lesson.
 - They know, at a basic level, what open source software is.
-- They want to make informed decisions, not just follow a rule.
+- They want to understand the reasons for their decisions.
