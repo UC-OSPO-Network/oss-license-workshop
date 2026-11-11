@@ -107,6 +107,10 @@ Two things to keep in mind:
 
 This lesson explains general concepts to help you make informed decisions. It is not legal advice. For specific situations, such as employer or university IP policies, funder requirements, or commercial products, consult your institution's legal or technology transfer office.
 
+At the University of California, software created using university resources is typically owned by The Regents of the University of California.
+Code created in connection with your research project or your staff position is typically owned by The Regents of the University of California.
+Grants may stipulate that the funder owns the results of the research, including code, or require a specific license.
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## How does a license relate to copyright?
@@ -142,6 +146,17 @@ flowchart TD
 ```
 
 **A license is the mechanism for changing the defaults permissions**. It is you, the rights holder, saying: "Here is what you may do with my work, and under what conditions."
+::::::::::::::::::::::::::::::::::::: callout
+
+### Where does copyright come from? (optional)
+
+Software is intellectual property. Intellectual property laws govern its creation and use. Article 1, Section 8, Clause 8 of the U.S. Constitution enshrines them.
+
+The purpose of these laws is to "promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries".
+
+The founding members of the United States understood that innovation rests on promoting the creators of intellectual property.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Copyright and patents
 
