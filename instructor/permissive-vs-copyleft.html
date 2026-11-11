@@ -228,6 +228,11 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#introduction">Introduction</a></li>
+<li><a href="#open-source-licenses">Open source licenses</a></li>
+<li><a href="#license-categories">License categories</a></li>
+<li><a href="#permissive-licenses">Permissive licenses</a></li>
+<li><a href="#copyleft-licenses">Copyleft licenses</a></li>
+<li><a href="#gpl-2.0-and-3.0">GPL 2.0 and 3.0</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -246,7 +251,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="choosing-licenses.html">4. Using Markdown</a>
+        <a href="choosing-licenses.html">4. Choosing a License</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -324,7 +329,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Permissive vs Copyleft Licenses</h1>
-        <p>Last updated on 2026-11-04 |
+        <p>Last updated on 2026-11-11 |
 
         <a href="https://github.com/UC-OSPO-Network/oss-license-workshop/edit/main/episodes/permissive-vs-copyleft.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -394,6 +399,53 @@ industry labs couldn’t use it at all.</p>
 </div>
 </div>
 </div>
+<!-- narrative anchor: Camila (researcher, full release). Her situation for this episode goes here: what she wants to do with the code, and which license question this episode answers for her. TODO (group), pending the persona decision in issue #12. -->
+</section><section><h2 class="section-heading" id="open-source-licenses">Open source licenses<a class="anchor" aria-label="anchor" href="#open-source-licenses"></a></h2>
+<hr class="half-width"><p>An open source license:</p>
+<ul><li>is royalty-free, meaning end users do not pay any money</li>
+<li>permits the licensee (the end user) to use, copy, modify, and
+distribute the software</li>
+<li>comes with source code made available to end users, so they can
+exercise those rights</li>
+</ul></section><section><h2 class="section-heading" id="license-categories">License categories<a class="anchor" aria-label="anchor" href="#license-categories"></a></h2>
+<hr class="half-width"><p>Open source licenses fall into a spectrum. Permissive licenses sit on
+one side and strong copyleft licenses on the other.</p>
+</section><section><h2 class="section-heading" id="permissive-licenses">Permissive licenses<a class="anchor" aria-label="anchor" href="#permissive-licenses"></a></h2>
+<hr class="half-width"><p>Examples: BSD, MIT, Apache 2.0.</p>
+<p>Permissive licenses have few requirements and are relatively easy to
+comply with. Typically, you are required to provide attribution. These
+licenses are common in research because they are simple and maximize
+flexibility.
+<!-- [KP1] comment marker from the source slide: a reviewer note, author unknown. --></p>
+<p>These licenses allow users to distribute your software commercially
+if they choose to.</p>
+<p>At the University of California, BSD and MIT are favored over the
+Apache license. The Apache license requires licensors to grant a patent
+license to all licensees. This could have the unintended effect of
+reaching into UC’s patent portfolio and the work of other researchers.
+With patents, different people or groups can come up with the same idea
+independently.</p>
+</section><section><h2 class="section-heading" id="copyleft-licenses">Copyleft licenses<a class="anchor" aria-label="anchor" href="#copyleft-licenses"></a></h2>
+<hr class="half-width"><p>At the other end of the spectrum are copyleft licenses. They are
+sometimes called viral licenses, because they require that derivative
+works and modifications be licensed under the same terms as the copyleft
+license. This protects the openness of a project across its
+lifecycle.</p>
+<p>Copyleft licenses may define what counts as a derivative work and
+what triggers the copyleft provision. So there are weak and strong
+copyleft licenses.</p>
+<p>A weak copyleft license typically limits either the scope of what
+counts as a derivative work, or the trigger. For example, the LGPL may
+allow you to dynamically link to an LGPL library without triggering the
+copyleft provision. Your code that links to the library can then stay
+under the license of your choice.</p>
+</section><section><h2 class="section-heading" id="gpl-2-0-and-3-0">GPL 2.0 and 3.0<a class="anchor" aria-label="anchor" href="#gpl-2-0-and-3-0"></a></h2>
+<hr class="half-width"><p>GPL 2.0 is a strong copyleft license. It would require your code to
+be placed under the terms of the GPL.</p>
+<p>The UC system does not recommend GPL 3.0 for university-owned
+software, because its patent provisions may conflict with UC policies.
+If you need copyleft protection, consult your campus Tech Transfer
+office about GPL 2.0 or alternatives.</p>
 <div id="challenge-1-can-you-do-it" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -418,7 +470,7 @@ industry labs couldn’t use it at all.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Output </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -451,7 +503,7 @@ industry labs couldn’t use it at all.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -464,7 +516,7 @@ industry labs couldn’t use it at all.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> If you’re teaching in a university context </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <!-- wbcheck AI208: There is no Exercise 1 about licenses in the episode, so instructors cannot follow this note. The claim about UC policy also has no source. -->
 <p>Different universities default to different licenses, and learners
@@ -570,8 +622,8 @@ any links that you are not going to use.
   "url": "https://UC-OSPO-Network.github.io/oss-license-workshop/instructor/permissive-vs-copyleft.html",
   "identifier": "https://UC-OSPO-Network.github.io/oss-license-workshop/instructor/permissive-vs-copyleft.html",
   "dateCreated": "2026-08-28",
-  "dateModified": "2026-11-04",
-  "datePublished": "2026-11-10"
+  "dateModified": "2026-11-11",
+  "datePublished": "2026-11-11"
 }
 
   </script><script>

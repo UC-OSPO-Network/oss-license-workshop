@@ -221,6 +221,7 @@
         <ul><li><a href="#starting-point-what-is-open-source-software-oss">Starting point: what is open source software (OSS)?</a></li>
 <li><a href="#what-is-an-open-source-license">What is an open source license?</a></li>
 <li><a href="#how-does-a-license-relate-to-copyright">How does a license relate to copyright?</a></li>
+<li><a href="#copyright-and-patents">Copyright and patents</a></li>
 <li><a href="#what-happens-if-you-dont-add-a-license">What happens if you don’t add a license?</a></li>
 <li><a href="#looking-ahead">Looking ahead</a></li>
         </ul></div><!--/div.accordion-body-->
@@ -250,7 +251,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="choosing-licenses.html">4. Using Markdown</a>
+        <a href="choosing-licenses.html">4. Choosing a License</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -328,7 +329,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Why License?</h1>
-        <p>Last updated on 2026-11-04 |
+        <p>Last updated on 2026-11-11 |
 
         <a href="https://github.com/UC-OSPO-Network/oss-license-workshop/edit/main/episodes/why-license.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -366,6 +367,7 @@ project</li>
 </div>
 </div>
 </div>
+<!-- narrative anchor: Camila (researcher, full release). The short narrative introduction goes here, before the Myth or Fact opener: her background, what she wants to do with her code, and why a researcher who writes code ends up needing a license (Reid's idea from the design notes). TODO (group), pending the persona decision in issue #12. -->
 <p>To start our conversation about Open Source Software (OSS) licensing,
 let’s find out what we already know and what we only <em>think</em> we
 know. Decide whether each statement is a myth or a fact. Don’t worry
@@ -430,7 +432,11 @@ Think of it as a permission slip from the creator to everyone else.</p>
 <li>Can I share it, with or without my changes?</li>
 <li>Do I need to credit the original author?</li>
 <li>Do I have to share my changes under the same terms?</li>
-</ul><p>Two things to keep in mind:</p>
+</ul><p>An owner can also limit the field of use, for example by allowing
+only non-commercial use. An owner can place conditions on distribution,
+such as attribution requirements or copyleft licensing. An owner can
+also permit use only in a specific territory.</p>
+<p>Two things to keep in mind:</p>
 <ul><li>A license does not transfer ownership. You remain the owner of your
 code. You are granting others specific, non-exclusive permissions, which
 means you can still use your code yourself and even offer it under
@@ -451,6 +457,12 @@ decisions. It is not legal advice. For specific situations, such as
 employer or university IP policies, funder requirements, or commercial
 products, consult your institution’s legal or technology transfer
 office.</p>
+<p>At the University of California, software created using university
+resources is typically owned by The Regents of the University of
+California. Code created in connection with your research project or
+your staff position is typically owned by The Regents of the University
+of California. Grants may stipulate that the funder owns the results of
+the research, including code, or require a specific license.</p>
 </div>
 </div>
 </div>
@@ -465,7 +477,11 @@ situation), hold the exclusive rights to copy, modify, and distribute
 the work.</li>
 <li>Everyone else is <em>not</em> allowed to do those things without
 your permission.</li>
-</ul><p>This default is often called <strong>“All Rights Reserved”</strong>.
+</ul><p>Copyright protects the <em>expression</em> of an idea, not the idea
+itself. <em>Romeo and Juliet</em> and <em>West Side Story</em> are both
+protected by copyright. The basic plot is the same, but each story is
+its own expression of that idea.</p>
+<p>This default is often called <strong>“All Rights Reserved”</strong>.
 It applies to your code even when the repository is public on GitHub,
 GitLab, or Bitbucket. Adding a license changes what happens next:</p>
 <pre class="mermaid"><code>flowchart TD
@@ -483,7 +499,36 @@ GitLab, or Bitbucket. Adding a license changes what happens next:</p>
     class D hasLicense</code></pre>
 <p><strong>A license is the mechanism for changing the defaults
 permissions</strong>. It is you, the rights holder, saying: “Here is
-what you may do with my work, and under what conditions.”</p>
+what you may do with my work, and under what conditions.”
+::::::::::::::::::::::::::::::::::::: callout</p>
+<div class="section level3">
+<h3 id="where-does-copyright-come-from-optional">Where does copyright come from? (optional)<a class="anchor" aria-label="anchor" href="#where-does-copyright-come-from-optional"></a></h3>
+<p>Software is intellectual property. Intellectual property laws govern
+its creation and use. Article 1, Section 8, Clause 8 of the U.S.
+Constitution enshrines them.</p>
+<p>The purpose of these laws is to “promote the Progress of Science and
+useful Arts, by securing for limited Times to Authors and Inventors the
+exclusive Right to their respective Writings and Discoveries”.</p>
+<p>The founding members of the United States understood that innovation
+rests on promoting the creators of intellectual property.</p>
+<p>::::::::::::::::::::::::::::::::::::::::::::::::</p>
+</div>
+</section><section><h2 class="section-heading" id="copyright-and-patents">Copyright and patents<a class="anchor" aria-label="anchor" href="#copyright-and-patents"></a></h2>
+<hr class="half-width"><p>When people talk about software, they are typically concerned with
+copyright and patents. Other intellectual property rights, such as
+trademarks and moral rights, may apply. They are not as prominent in the
+protection of the code itself.</p>
+<p>A patent applies to inventions. An invention must meet these
+criteria:</p>
+<ol style="list-style-type: decimal"><li>Patentable subject matter (a process, machine, manufacture, or
+composition of matter)</li>
+<li>Utility</li>
+<li>Novelty</li>
+<li>Non-obviousness</li>
+<li>Enablement</li>
+</ol><p>Unlike copyright, a patent is not automatic. The inventor must apply
+for one, and it is expensive. The rights a patent grants are to use,
+make, sell, offer for sale, and import.</p>
 </section><section><h2 class="section-heading" id="what-happens-if-you-dont-add-a-license">What happens if you don’t add a license?<a class="anchor" aria-label="anchor" href="#what-happens-if-you-dont-add-a-license"></a></h2>
 <hr class="half-width"><p>It’s tempting to think: <em>“I put my code on GitHub, so anyone can
 use it.”</em> Legally, that’s not true. (Sound familiar? It’s the first
@@ -495,6 +540,11 @@ can see it.</p>
 <p>(Platforms such as GitHub let people view and fork public
 repositories under their terms of service, but that is not the same as
 permission to reuse your code in their own work.)</p>
+<p>If you do not comply with a license, or there is no license, you
+could be liable for monetary damages. You could find your use enjoined
+(stopped by a court), or be required to comply with the license terms.
+You could also suffer reputational damage.</p>
+<!-- narrative anchor: this case study could become Camila's project, so the lesson keeps one running example. TODO (group). -->
 <div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
@@ -711,8 +761,8 @@ any links that you are not going to use.
   "url": "https://UC-OSPO-Network.github.io/oss-license-workshop/why-license.html",
   "identifier": "https://UC-OSPO-Network.github.io/oss-license-workshop/why-license.html",
   "dateCreated": "2026-08-28",
-  "dateModified": "2026-11-04",
-  "datePublished": "2026-11-10"
+  "dateModified": "2026-11-11",
+  "datePublished": "2026-11-11"
 }
 
   </script><script>

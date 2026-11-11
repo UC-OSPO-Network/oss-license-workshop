@@ -226,12 +226,19 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         3. When Licenses Clash
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#a-word-of-caution-dependencies">A word of caution: dependencies</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -239,7 +246,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="choosing-licenses.html">4. Using Markdown</a>
+        <a href="choosing-licenses.html">4. Choosing a License</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -311,13 +318,13 @@
           Previous: Permissive vs Copyleft Licenses...
         </a>
         <a class="chapter-link float-end" href="../instructor/choosing-licenses.html" rel="next">
-          Next: Using Markdown...
+          Next: Choosing a License...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>When Licenses Clash</h1>
-        <p>Last updated on 2026-11-04 |
+        <p>Last updated on 2026-11-11 |
 
         <a href="https://github.com/UC-OSPO-Network/oss-license-workshop/edit/main/episodes/when-license-clash.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -357,6 +364,12 @@ project license</li>
 </div>
 </div>
 <!-- wbcheck AI204: The episode has no explanatory text. It does not define a dependency, does not explain permissive versus copyleft licenses, and does not show a worked example before learners are asked to judge com... -->
+<!-- narrative anchor: Valentina (researcher, partial release). Her situation for this episode goes here: the project she wants to share in part, and the package whose license might clash. TODO (group), pending the persona decision in issue #12. -->
+<section><h2 class="section-heading" id="a-word-of-caution-dependencies">A word of caution: dependencies<a class="anchor" aria-label="anchor" href="#a-word-of-caution-dependencies"></a></h2>
+<hr class="half-width"><p>Your toolchain, IDE, or Python package manager may add packages and
+libraries to your application or code.</p>
+<p>Make sure the licenses of those packages are compatible with each
+other, and that they let you accomplish what you want to accomplish.</p>
 <!-- EPISODE CONTENT HERE -->
 <div id="challenge1" class="callout challenge">
 <div class="callout-square">
@@ -367,13 +380,39 @@ project license</li>
 <h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
 <!-- wbcheck AI202: The instructions contain typos ('Place and X is there is'). The grid also gives no guidance for nuanced cases such as LGPL linking, Apache-2.0 into GPLv2, or proprietary terms, where the answer is... -->
-<p>Check the box if there is no conflict. Place and X is there is a
-conflict.</p>
+<p>Mark an X in each cell where there is a conflict. Leave the cell
+empty if there is no conflict.</p>
 <!-- wbcheck AI208: The table is tab-separated plain text, not a Markdown pipe table, so it will render as a jumbled paragraph. The header also splits 'Dependency License' across lines, and the 'Commercial' row is tru... -->
-<p>Dependency License My Project License BSD MIT Apache LGPL GPL
-Commercial BSD<br>
-GPL<br>
-Commercial</p>
+<table class="table"><thead><tr><th>Dependency license</th>
+<th>BSD</th>
+<th>MIT</th>
+<th>Apache</th>
+<th>LGPL</th>
+<th>GPL</th>
+<th>Commercial</th>
+</tr></thead><tbody><tr><td><strong>BSD</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><strong>GPL</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><strong>Commercial</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr></tbody></table><p>Read each row as the license of the dependency and each column as the
+license of <strong>My project</strong>.</p>
 </div>
 </div>
 </div>
@@ -394,10 +433,7 @@ Commercial</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter Bottom"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/permissive-vs-copyleft.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/choosing-licenses.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -409,7 +445,7 @@ any links that you are not going to use.
           Previous: Permissive vs Copyleft Licenses...
         </a>
         <a class="chapter-link float-end" href="../instructor/choosing-licenses.html" rel="next">
-          Next: Using Markdown...
+          Next: Choosing a License...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -457,8 +493,8 @@ any links that you are not going to use.
   "url": "https://UC-OSPO-Network.github.io/oss-license-workshop/instructor/when-license-clash.html",
   "identifier": "https://UC-OSPO-Network.github.io/oss-license-workshop/instructor/when-license-clash.html",
   "dateCreated": "2026-08-28",
-  "dateModified": "2026-11-04",
-  "datePublished": "2026-11-10"
+  "dateModified": "2026-11-11",
+  "datePublished": "2026-11-11"
 }
 
   </script><script>
