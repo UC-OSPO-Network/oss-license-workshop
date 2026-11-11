@@ -21,6 +21,8 @@ exercises: 15
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+<!-- narrative anchor: Camila (researcher, full release). The short narrative introduction goes here, before the Myth or Fact opener: her background, what she wants to do with her code, and why a researcher who writes code ends up needing a license (Reid's idea from the design notes). TODO (group), pending the persona decision in issue #12. -->
+
 To start our conversation about Open Source Software (OSS) licensing, let's find out what we already know and what we only *think* we know.
 Decide whether each statement is a myth or a fact.
 Don't worry about getting them right; we'll revisit each one as the episode unfolds.
@@ -172,6 +174,8 @@ If you do not comply with a license, or there is no license, you could be liable
 You could find your use enjoined (stopped by a court), or be required to comply with the license terms.
 You could also suffer reputational damage.
 
+
+<!-- narrative anchor: this case study could become Camila's project, so the lesson keeps one running example. TODO (group). -->
 
 ::::::::::::::::::: spoiler
 
