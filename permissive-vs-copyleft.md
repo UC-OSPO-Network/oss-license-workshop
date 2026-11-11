@@ -74,6 +74,47 @@ GPL 2.0 is a strong copyleft license. It would require your code to be placed un
 The UC system does not recommend GPL 3.0 for university-owned software, because its patent provisions may conflict with UC policies. If you need copyleft protection, consult your campus Tech Transfer office about GPL 2.0 or alternatives.
 
 
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Is this an open source license?
+
+The following is a real-world software license, lightly obfuscated to protect the identity of the software.
+Read it and decide whether it qualifies as open source.
+
+> In order to acquire access to the code sources, the recipient agrees:
+>
+> 1. to compile/use the XYZZY source code AS IS without modification; users however are welcome to request changes, or to contribute modifications subject to approval of the authors;
+>
+> 2. if the copy of the XYZZY downloaded by the authorized user is made available to third parties, to ensure that the user agreement is followed by the third parties;
+>
+> 3. to send a one-time email to xyzzy@example.com describing planned research using that module;
+>
+> 4. prior to publication, to email a draft of the article/letter/note to xyzzy@example.com; and
+>
+> 5. to include in published results or presentations the proper code name(s) and appropriate references.
+
+Hint: focus on the first two clauses.
+
+:::::::::::::::::::::: solution
+
+No.
+Clause 1 (especially) violates the permission to modify the software and to distribute copies of your modified version to others.
+Clause 2 requires that if you distribute copies of the *unmodified* original, it is under the same license terms.
+
+Why might someone have felt clauses like these were necessary to include in their software license?
+Perhaps they have had problems in the past with users distributing modified code with errors that they felt reflected poorly on the original code.
+Or perhaps they want to impose some measure of quality control over modifications.
+
+A possible alternative would be to include a requirement that derivatives must be clearly distinguished from the original (for example, with a different name).
+Some open source licenses include such clauses.
+
+:::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+This exercise is adapted from the "What is Open Source?" episode of [Software Licensing](https://intersect-training.org/software-licensing/) (INTERSECT) by David E. Bernholdt, Lauren E. Milechin, Dave Rumph, Michael A. Heroux, and James Willenbring, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Changes: the solution refers to the permissions listed earlier in this episode instead of the four freedoms, and the discussion questions are left out.
+
 ::::::::::::::::::::::::::::::::::::: challenge 
 
 ## Challenge 1: Can you do it?

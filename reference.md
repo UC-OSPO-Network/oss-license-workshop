@@ -54,6 +54,18 @@ Tech Transfer office (TTO)
 The Regents of the University of California
 : At UC, the typical owner of software created using university resources, or in connection with a research project or a staff position.
 
+Intellectual property (IP)
+: A general term referring to intangible creations of human intellect. The types most often associated with software are copyright, patents, and trademarks.
+
+Trademark
+: A sign, design, or expression that identifies products or services from a particular source, for example your software, as distinguished from other sources.
+
+Work for hire
+: Work you create as part of your job. Often the employer owns the copyright in such work. If your employer owns the copyright, you probably have to get formal permission to license and distribute your software.
+
+Proprietary license
+: Also called a closed-source license. It typically conveys rights to use the software but reserves the rights to access or distribute the source code.
+
 Dependency
 : TBD
 
@@ -61,7 +73,7 @@ License compatibility
 : TBD
 
 OSI-approved
-: TBD
+: A license that the Open Source Initiative (OSI) has assessed and judged to qualify as "open source". The primary mission of the OSI is to assess licenses and maintain a list of those that qualify.
 
 COSS
 : TBD
@@ -79,13 +91,13 @@ Copyleft trigger
 : TBD
 
 Derivative work
-: TBD
+: For software, a derivative work amounts to modifications to someone else's software.
 
 Enjoined
 : TBD
 
 All Rights Reserved
-: TBD
+: The default when you do not specify a license for your software: all rights in the software are reserved to the copyright owner. It is also common to see "All rights reserved" stated explicitly as a form of license.
 
 Attribution
 : TBD
@@ -105,3 +117,5 @@ The definitions of permissive license, copyleft license, hereditary, patent-gran
 * [OSS Chart](https://security.ucop.edu/files/documents/resources/oss-chart.pdf) (2018)
 
 The definitions of copyright, patent, license, open source license, royalty-free, licensee, strong copyleft, weak copyleft, Tech Transfer office, and The Regents of the University of California are adapted from the 2026 OSPO licensing presentation used in this lesson.
+
+The definitions of OSI-approved, derivative work, All Rights Reserved, intellectual property, trademark, work for hire, and proprietary license are adapted from Software Licensing by David E. Bernholdt, Lauren E. Milechin, Dave Rumph, Michael A. Heroux, and James Willenbring (INTERSECT, <https://intersect-training.org/software-licensing/>), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Changes: shortened and lightly reworded.
