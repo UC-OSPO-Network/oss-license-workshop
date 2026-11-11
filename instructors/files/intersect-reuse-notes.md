@@ -10,6 +10,8 @@ CC BY 4.0 needs credit (title, authors, source, license) and a note of changes. 
 
 * "Is this an open source license?" exercise (episode "What is Open Source?"), in `episodes/permissive-vs-copyleft.md`. Credit and changes are stated under the exercise.
 
+* Glossary entries in `learners/reference.md`: OSI-approved, derivative work (their own sentence only), All Rights Reserved, intellectual property, trademark, work for hire, proprietary license. Credit and changes are in the glossary Sources section.
+
 ## Not used, and why
 
 * The "Popular OSI-approved licenses" table (episode "Choosing an Open Source License").
@@ -23,4 +25,5 @@ CC BY 4.0 needs credit (title, authors, source, license) and a note of changes. 
 
 * Choosing and documenting a license (file headers, badges): extends slides 19 and 20.
 * Contributor agreements, code copied from forums, and LLM-generated code: candidate future episodes.
-* The OSI-approved definition: fills a TBD glossary entry (#26). Check the exact wording at the source before copying.
+* Terms in their text with no definition to copy: license compatibility, dynamic linking, dependency. They only say compatibility concerns "may arise when you are combining software under different licenses".
+* Terms they define that our lesson does not use yet: the four freedoms (FSF), free software vs open source, public domain, US government works.
