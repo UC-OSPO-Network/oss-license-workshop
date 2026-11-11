@@ -33,44 +33,17 @@ The color for each license is intended to give "merely a high level assessment o
 The chart does not compare licenses with each other.
 All open source licensing of Regents-owned copyrights requires approval of the appropriate delegated authority, regardless of the risk category.
 
-Table: Risk ratings for internal use at UC, by license (UC OSS Chart, 4/17/18 version)
+The chart sorts licenses into low, moderate, and high risk for two situations: using code inside UC, and distributing it outside UC. In short:
 
-| License | Flags | Unmodified | Modified |
-|:------------------------------------------------------------------|:-------|:-----------------------------|:-----------------------------|
-| BSD (must retain the copyright notice) | none | Low | Low |
-| MIT (must include the original copyright notice) | none | Low | Low |
-| Apache 1.x, not 2.0 or later (must reproduce the original copyright notice) | none | Low | Low |
-| GPL 1.x or 2.x, or LGPL 2.x, but not 3.0 or "any later version" | H | Low | Low |
-| Educational Community License 2.0 | PG, H ** | Low | Low |
-| Apache 2.0 | PG, H ** | Low, with Internal Use Notice | Low, with Internal Use Notice |
-| Eclipse Public License 1.0 and 2.0 | PG, H | Low, with Internal Use Notice | Low, with Internal Use Notice |
-| MPL 2.0 | PG, H | Low, with Internal Use Notice | Low, with bug fixes only |
-| Affero GPL (AGPL) 3.0 | PG, H | Low, with Internal Use Notice | Low, with Internal Use Notice |
-| GPL 3.0 or LGPL 3.0 | PG, H | Low, with Internal Use Notice | Low, with Internal Use Notice |
-
-Table: Risk ratings for external distribution outside UC, by license (UC OSS Chart, 4/17/18 version)
-
-| License | Unmodified | Bug fixes | Otherwise modified | Function calls only |
-|:------------------------------------------------------------------|:---------|:---------|:-----------|:-----------|
-| BSD | Low | Low | Low | Low |
-| MIT | Low | Low | Low | Low |
-| Apache 1.x, not 2.0 or later | Low | Low | Low | Low |
-| GPL 1.x or 2.x, or LGPL 2.x, but not 3.0 or "any later version" | Low | Low | Low | Low |
-| Educational Community License 2.0 | Low | Low | Low | Low |
-| Apache 2.0 | Low | Low | Moderate | Low |
-| Eclipse Public License 1.0 and 2.0 | Low | Low | Moderate | Low |
-| MPL 2.0 | Low | Low | Moderate | Moderate |
-| Affero GPL (AGPL) 3.0 | High | High | High | Moderate |
-| GPL 3.0 or LGPL 3.0 | High | High | High | High |
+- Low risk in every situation: BSD, MIT, Apache 1.x (not 2.0 or later), GPL 1.x and 2.x, LGPL 2.x (not 3.0 or "any later version"), and the Educational Community License 2.0.
+- Moderate risk in some cases of distributing outside UC: Apache 2.0 and the Eclipse Public License when you distribute modified code, and MPL 2.0 when you distribute modified code or code that only calls its functions.
+- High risk for distributing outside UC: GPL 3.0 and LGPL 3.0 in every case, and AGPL 3.0 in every case except code that only calls its functions, which is moderate.
+- Inside UC, the patent-granting licenses (Apache 2.0, Eclipse, MPL 2.0, AGPL 3.0, GPL 3.0, LGPL 3.0) are low risk if you add the required Internal Use Notice.
 
 For any other open source license, contact the licensing office.
 
-If you use software internally within UC under a patent-granting license such as GPL 3.0, with no intention of external distribution, you must add the required Internal Use Notice.
+The full chart has every combination. See the University of California Office of the President [OSS Chart](https://security.ucop.edu/files/documents/resources/oss-chart.pdf) (4/17/18 version) and [OSS Chart Companion](https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf) (3/26/2018).
 
-PG means a "patent-granting" license. H means a "hereditary" license, sometimes called viral.
-** The heredity requirement may be overridden for derivative works under section 4 of Apache 2.0 and ECL 2.0. You can add your own copyright statement to your modifications.
-
-Source: University of California Office of the President, [OSS Chart](https://security.ucop.edu/files/documents/resources/oss-chart.pdf) (4/17/18 version) and [OSS Chart Companion](https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf) (3/26/2018).
 <!-- EPISODE CONTENT HERE -->
 
 ::::::: challenge
