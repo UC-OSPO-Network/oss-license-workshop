@@ -21,6 +21,8 @@ exercises: 15
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+<!-- narrative anchor: Camila (researcher, full release). The short narrative introduction goes here, before the Myth or Fact opener: her background, what she wants to do with her code, and why a researcher who writes code ends up needing a license (Reid's idea from the design notes). TODO (group), pending the persona decision in issue #12. -->
+
 To start our conversation about Open Source Software (OSS) licensing, let's find out what we already know and what we only *think* we know.
 Decide whether each statement is a myth or a fact.
 Don't worry about getting them right; we'll revisit each one as the episode unfolds.
@@ -88,6 +90,10 @@ A license typically answers questions like:
 - Do I need to credit the original author?
 - Do I have to share my changes under the same terms?
 
+An owner can also limit the field of use, for example by allowing only non-commercial use.
+An owner can place conditions on distribution, such as attribution requirements or copyleft licensing.
+An owner can also permit use only in a specific territory.
+
 Two things to keep in mind:
 
 - A license does not transfer ownership.
@@ -113,6 +119,10 @@ You don't need to register it or add a notice. By default, the law says:
 - You, the creator (or your employer or institution, depending on your situation), hold the exclusive rights to copy, modify, and distribute the work.
 - Everyone else is *not* allowed to do those things without your permission.
 
+Copyright protects the *expression* of an idea, not the idea itself.
+*Romeo and Juliet* and *West Side Story* are both protected by copyright.
+The basic plot is the same, but each story is its own expression of that idea.
+
 This default is often called **"All Rights Reserved"**. It applies to your code even when the repository is public on GitHub, GitLab, or Bitbucket. Adding a license changes what happens next:
 
 ```mermaid
@@ -133,6 +143,23 @@ flowchart TD
 
 **A license is the mechanism for changing the defaults permissions**. It is you, the rights holder, saying: "Here is what you may do with my work, and under what conditions."
 
+## Copyright and patents
+
+When people talk about software, they are typically concerned with copyright and patents.
+Other intellectual property rights, such as trademarks and moral rights, may apply.
+They are not as prominent in the protection of the code itself.
+
+A patent applies to inventions. An invention must meet these criteria:
+
+1. Patentable subject matter (a process, machine, manufacture, or composition of matter)
+2. Utility
+3. Novelty
+4. Non-obviousness
+5. Enablement
+
+Unlike copyright, a patent is not automatic. The inventor must apply for one, and it is expensive.
+The rights a patent grants are to use, make, sell, offer for sale, and import.
+
 ## What happens if you don't add a license?
 
 It's tempting to think: *"I put my code on GitHub, so anyone can use it."*
@@ -143,6 +170,12 @@ Other people generally have no legal permission to use, modify, or redistribute 
 
 (Platforms such as GitHub let people view and fork public repositories under their terms of service, but that is not the same as permission to reuse your code in their own work.)
 
+If you do not comply with a license, or there is no license, you could be liable for monetary damages.
+You could find your use enjoined (stopped by a court), or be required to comply with the license terms.
+You could also suffer reputational damage.
+
+
+<!-- narrative anchor: this case study could become Camila's project, so the lesson keeps one running example. TODO (group). -->
 
 ::::::::::::::::::: spoiler
 

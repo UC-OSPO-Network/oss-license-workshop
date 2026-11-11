@@ -23,16 +23,17 @@ exercises: 10
 ::::::: challenge
 <!-- wbcheck AI202: The instructions contain typos ('Place and X is there is'). The grid also gives no guidance for nuanced cases such as LGPL linking, Apache-2.0 into GPLv2, or proprietary terms, where the answer is... -->
 
-Check the box if there is no conflict.  Place and X is there is a conflict.
+Mark an X in each cell where there is a conflict. Leave the cell empty if there is no conflict.
 
 <!-- wbcheck AI208: The table is tab-separated plain text, not a Markdown pipe table, so it will render as a jumbled paragraph. The header also splits 'Dependency License' across lines, and the 'Commercial' row is tru... -->
 
-Dependency 
-License	My Project License
-	BSD	MIT	Apache 	LGPL	GPL	Commercial
-BSD						
-GPL						
-Commercial			
+| Dependency license | BSD | MIT | Apache | LGPL | GPL | Commercial |
+|---|---|---|---|---|---|---|
+| **BSD** | | | | | | |
+| **GPL** | | | | | | |
+| **Commercial** | | | | | | |
+
+Read each row as the license of the dependency and each column as the license of **My project**.
 
 ::::::
 
