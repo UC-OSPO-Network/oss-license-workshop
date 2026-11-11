@@ -40,7 +40,16 @@ exercises: 2 # exercise time in minutes
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-<!-- narrative anchor: Santiago (staff member, UC-owned code). His situation for this episode goes here: the tool he wrote for a campus group, who approves its release, and the license he then chooses. TODO (group), pending the persona decision in issue #12. -->
+::::::::::::::::::::::::::::::::::::: instructor
+
+### Narrative outline: Santiago (draft for the group to edit)
+
+- Santiago wrote a tool for a campus group as part of his job. A collaborator at another institution wants to use it.
+- His question: who owns the code, and who approves a release?
+- He checks with the Tech Transfer office.
+- He picks a license from the UC-recommended list, then adds it to his repository and README.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Who owns the code?
 
