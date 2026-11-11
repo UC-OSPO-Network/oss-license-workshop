@@ -146,6 +146,7 @@ flowchart TD
 ```
 
 **A license is the mechanism for changing the defaults permissions**. It is you, the rights holder, saying: "Here is what you may do with my work, and under what conditions."
+
 ::::::::::::::::::::::::::::::::::::: callout
 
 ### Where does copyright come from? (optional)
