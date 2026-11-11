@@ -18,6 +18,14 @@ exercises: 10
 
 <!-- wbcheck AI204: The episode has no explanatory text. It does not define a dependency, does not explain permissive versus copyleft licenses, and does not show a worked example before learners are asked to judge com... -->
 
+<!-- narrative anchor: Valentina (researcher, partial release). Her situation for this episode goes here: the project she wants to share in part, and the package whose license might clash. TODO (group), pending the persona decision in issue #12. -->
+
+## A word of caution: dependencies
+
+Your toolchain, IDE, or Python package manager may add packages and libraries to your application or code.
+
+Make sure the licenses of those packages are compatible with each other, and that they let you accomplish what you want to accomplish.
+
 <!-- EPISODE CONTENT HERE -->
 
 ::::::: challenge
