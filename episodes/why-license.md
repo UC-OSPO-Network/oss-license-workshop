@@ -135,17 +135,20 @@ The basic plot is the same, but each story is its own expression of that idea.
 This default is often called **"All Rights Reserved"**. It applies to your code even when the repository is public on GitHub, GitLab, or Bitbucket. Adding a license changes what happens next:
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {"fontSize": "16px", "lineColor": "#6b7280"}}}%%
 flowchart TD
     accTitle: Does your code have a license?
     accDescr {
         A flowchart starting with your code, which is protected by copyright automatically. A decision asks whether the code has a license. If no, the code is All Rights Reserved: it is visible if public, but others have no permission to copy, modify, or share it. If yes, the license terms apply: others may use, modify, and share the code under the conditions you chose, and you still own the code.
     }
     A["<b>Your code</b><br/>(copyright applies automatically)"] --> B{"Does it have<br/>a license?"}
-    B -- NO --> C["<b>'All Rights Reserved'</b><br/>• Visible if public<br/>• Others have no permission<br/>to copy, modify, or share it"]
-    B -- YES --> D["<b>License terms apply</b><br/>• Others may use, modify, and share it,<br/>under the conditions you chose<br/>• You still own the code"]
+    B --> C["<b>No license:<br/>'All Rights Reserved'</b><br/>Visible if public<br/>Others have no permission<br/>to copy, modify, or share it"]
+    B --> D["<b>Has a license:<br/>license terms apply</b><br/>Others may use, modify,<br/>and share it under the<br/>conditions you chose<br/>You still own the code"]
 
-    classDef noLicense fill:#fff3cd,stroke:#7a5c00,color:#000
-    classDef hasLicense fill:#e3f2fd,stroke:#0d47a1,color:#000
+    classDef start fill:none,stroke:#7c6fd6,stroke-width:3px
+    classDef noLicense fill:none,stroke:#c27c0e,stroke-width:3px
+    classDef hasLicense fill:none,stroke:#3b82f6,stroke-width:3px
+    class A,B start
     class C noLicense
     class D hasLicense
 ```
