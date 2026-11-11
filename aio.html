@@ -544,17 +544,20 @@ its own expression of that idea.</p>
 <p>This default is often called <strong>“All Rights Reserved”</strong>.
 It applies to your code even when the repository is public on GitHub,
 GitLab, or Bitbucket. Adding a license changes what happens next:</p>
-<pre class="mermaid"><code>flowchart TD
+<pre class="mermaid"><code>%%{init: {"theme": "base", "themeVariables": {"fontSize": "16px", "lineColor": "#6b7280"}}}%%
+flowchart TD
     accTitle: Does your code have a license?
     accDescr {
         A flowchart starting with your code, which is protected by copyright automatically. A decision asks whether the code has a license. If no, the code is All Rights Reserved: it is visible if public, but others have no permission to copy, modify, or share it. If yes, the license terms apply: others may use, modify, and share the code under the conditions you chose, and you still own the code.
     }
     A["&lt;b&gt;Your code&lt;/b&gt;&lt;br/&gt;(copyright applies automatically)"] --&gt; B{"Does it have&lt;br/&gt;a license?"}
-    B -- NO --&gt; C["&lt;b&gt;'All Rights Reserved'&lt;/b&gt;&lt;br/&gt;• Visible if public&lt;br/&gt;• Others have no permission&lt;br/&gt;to copy, modify, or share it"]
-    B -- YES --&gt; D["&lt;b&gt;License terms apply&lt;/b&gt;&lt;br/&gt;• Others may use, modify, and share it,&lt;br/&gt;under the conditions you chose&lt;br/&gt;• You still own the code"]
+    B --&gt; C["&lt;b&gt;No license:&lt;br/&gt;'All Rights Reserved'&lt;/b&gt;&lt;br/&gt;Visible if public&lt;br/&gt;Others have no permission&lt;br/&gt;to copy, modify, or share it"]
+    B --&gt; D["&lt;b&gt;Has a license:&lt;br/&gt;license terms apply&lt;/b&gt;&lt;br/&gt;Others may use, modify,&lt;br/&gt;and share it under the&lt;br/&gt;conditions you chose&lt;br/&gt;You still own the code"]
 
-    classDef noLicense fill:#fff3cd,stroke:#7a5c00,color:#000
-    classDef hasLicense fill:#e3f2fd,stroke:#0d47a1,color:#000
+    classDef start fill:none,stroke:#7c6fd6,stroke-width:3px
+    classDef noLicense fill:none,stroke:#c27c0e,stroke-width:3px
+    classDef hasLicense fill:none,stroke:#3b82f6,stroke-width:3px
+    class A,B start
     class C noLicense
     class D hasLicense</code></pre>
 <p><strong>A license is the mechanism for changing the default
@@ -1360,26 +1363,22 @@ OSS Chart</a> and <a href="https://security.ucop.edu/files/documents/resources/o
 Guide</a>: the definitive list of UC-recommended “low-risk”
 licenses.</li>
 <li>
-<a href="https://ucospo.net/oss-resources/template-guides/license-guide" class="external-link">UC
+<a href="https://ucospo.net/oss-resources/template-guides/license-guide/" class="external-link">UC
 OSPO License Guide</a>: guidance on institutional requirements and
 templates.</li>
 <li>
 <a href="https://choosealicense.com" class="external-link">ChooseALicense.com</a>: a tool
 for comparing license features. It does not supersede UC policies.</li>
 </ul>
-<div id="optional-challenge-add-a-bsd-license-to-a-practice-repository" class="callout challenge">
+<div id="challenge-add-a-bsd-license-to-your-repository" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="optional-challenge-add-a-bsd-license-to-a-practice-repository" class="callout-inner">
-<h3 class="callout-title">Optional challenge: add a BSD license to a
-practice repository</h3>
+<div id="challenge-add-a-bsd-license-to-your-repository" class="callout-inner">
+<h3 class="callout-title">Challenge: add a BSD license to your
+repository</h3>
 <div class="callout-content">
-<p>This challenge needs a GitHub account and a practice repository that
-you can edit. Do not use a real project. With real UC-owned code, you
-add the license only after the Tech Transfer office approves it. Here,
-we assume that approval is done.</p>
 <p>After TTO approval, add the BSD 3-Clause license to your demo
 repository:</p>
 <ol style="list-style-type: decimal">
