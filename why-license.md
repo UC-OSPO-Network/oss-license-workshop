@@ -66,7 +66,7 @@ Based on your previous knowledge, mark each statement as a Myth or a Fact.
 
 1. Myth. Default copyright/IP law applies; public does not mean permission.
 2. Fact. An OS license tells users exactly what they are allowed to do with the intellectual property.
-3. Myth. A license does not give away ownership. It is simply a legal document where you (the owner) grant specific permissions to other people to use your code.
+3. Myth. A license does not give away ownership. It is a legal document where you (the owner) grant specific permissions to other people to use your code.
 
 :::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::
@@ -94,9 +94,10 @@ A license typically answers questions like:
 - Do I need to credit the original author?
 - Do I have to share my changes under the same terms?
 
-An owner can also limit the field of use, for example by allowing only non-commercial use.
-An owner can place conditions on distribution, such as attribution requirements or copyleft licensing.
-An owner can also permit use only in a specific territory.
+Licenses in general can also set limits.
+An owner can limit the field of use, for example by allowing only non-commercial use.
+An owner can place conditions on distribution, such as attribution requirements or copyleft licensing, or permit use only in a specific territory.
+Open source licenses are different. Episode 2 explains why they cannot limit the field of use.
 
 Two things to keep in mind:
 
@@ -135,7 +136,7 @@ This default is often called **"All Rights Reserved"**. It applies to your code 
 
 ```mermaid
 flowchart TD
-    accTitle: {Does your code have a license?}
+    accTitle: Does your code have a license?
     accDescr {
         A flowchart starting with your code, which is protected by copyright automatically. A decision asks whether the code has a license. If no, the code is All Rights Reserved: it is visible if public, but others have no permission to copy, modify, or share it. If yes, the license terms apply: others may use, modify, and share the code under the conditions you chose, and you still own the code.
     }
@@ -143,13 +144,13 @@ flowchart TD
     B -- NO --> C["<b>'All Rights Reserved'</b><br/>• Visible if public<br/>• Others have no permission<br/>to copy, modify, or share it"]
     B -- YES --> D["<b>License terms apply</b><br/>• Others may use, modify, and share it,<br/>under the conditions you chose<br/>• You still own the code"]
 
-    classDef noLicense fill:#fde8e8,stroke:#c0392b,color:#000
-    classDef hasLicense fill:#e8f5e9,stroke:#2e7d32,color:#000
+    classDef noLicense fill:#fff3cd,stroke:#7a5c00,color:#000
+    classDef hasLicense fill:#e3f2fd,stroke:#0d47a1,color:#000
     class C noLicense
     class D hasLicense
 ```
 
-**A license is the mechanism for changing the defaults permissions**. It is you, the rights holder, saying: "Here is what you may do with my work, and under what conditions."
+**A license is the mechanism for changing the default permissions**. It is you, the rights holder, saying: "Here is what you may do with my work, and under what conditions."
 
 ::::::::::::::::::::::::::::::::::::: callout
 
@@ -169,7 +170,15 @@ When people talk about software, they are typically concerned with copyright and
 Other intellectual property rights, such as trademarks and moral rights, may apply.
 They are not as prominent in the protection of the code itself.
 
-A patent applies to inventions. An invention must meet these criteria:
+A patent applies to inventions.
+Unlike copyright, a patent is not automatic. The inventor must apply for one, and it is expensive.
+The rights a patent grants are to use, make, sell, offer for sale, and import.
+
+::::::::::::::::::: spoiler
+
+### What makes an invention patentable?
+
+An invention must meet these criteria:
 
 1. Patentable subject matter (a process, machine, manufacture, or composition of matter)
 2. Utility
@@ -177,8 +186,7 @@ A patent applies to inventions. An invention must meet these criteria:
 4. Non-obviousness
 5. Enablement
 
-Unlike copyright, a patent is not automatic. The inventor must apply for one, and it is expensive.
-The rights a patent grants are to use, make, sell, offer for sale, and import.
+:::::::::::::::::::::::::::::
 
 ## What happens if you don't add a license?
 
@@ -223,7 +231,7 @@ In general, *without* a license:
 
 | Who | What happens |
 |---|---|
-| Users | Unsure if they can use the code, so many (especially companies and institutions) simply won't |
+| Users | Unsure if they can use the code, so many (especially companies and institutions) won't |
 | Contributors | Can't be sure their contributions can be legally included and shared |
 | You, the author | Your work is less likely to be reused, cited, or improved |
 

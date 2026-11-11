@@ -19,7 +19,7 @@ exercises: 15
 - State what an OSS license must allow users to do
 - State what a permissive license allows and requires, and give an example of a permissive license
 - State what a copyleft license allows and requires, and give an example of a copyleft license
-- State what a weak copyleft license allows and requires, and give an example of a soft copyleft license
+- State what a weak copyleft license allows and requires, and give an example of a weak copyleft license
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -87,7 +87,7 @@ The UC system does not recommend GPL 3.0 for university-owned software, because 
 
 ## Is this an open source license?
 
-The following is a real-world software license, lightly obfuscated to protect the identity of the software.
+This is a real software license. Some details, including the software's name, have been changed to protect its identity.
 Read it and decide whether it qualifies as open source.
 
 > In order to acquire access to the code sources, the recipient agrees:
@@ -122,7 +122,7 @@ Some open source licenses include such clauses.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 This exercise is adapted from the "What is Open Source?" episode of [Software Licensing](https://intersect-training.org/software-licensing/) (INTERSECT) by David E. Bernholdt, Lauren E. Milechin, Dave Rumph, Michael A. Heroux, and James Willenbring, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-Changes: the solution refers to the permissions listed earlier in this episode instead of the four freedoms, and the discussion questions are left out.
+Changes: the introduction and the solution are reworded, the solution refers to the permissions listed earlier in this episode instead of the four freedoms, and the discussion questions are left out.
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 

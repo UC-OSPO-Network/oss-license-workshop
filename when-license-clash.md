@@ -5,8 +5,8 @@ exercises: 10
 ---
 
 ::::: questions
- - What are dependencies
- - What happens if my dependency has a license different from my project license
+ - What are dependencies?
+ - What happens if my dependency has a license different from my project license?
 ::::::
 
 :::::: objectives
@@ -51,7 +51,7 @@ The chart sorts licenses into low, moderate, and high risk for two situations: u
 
 For any other open source license, contact the licensing office.
 
-The full chart has every combination. See the University of California Office of the President [OSS Chart](https://security.ucop.edu/files/documents/resources/oss-chart.pdf) (4/17/18 version) and [OSS Chart Companion](https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf) (3/26/2018).
+The full chart has every combination. See the University of California Office of the President [OSS Chart](https://security.ucop.edu/files/documents/resources/oss-chart.pdf) (17 April, 2018 version) and [OSS Chart Companion](https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf) (26 March, 2018).
 
 <!-- EPISODE CONTENT HERE -->
 
