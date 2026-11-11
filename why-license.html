@@ -409,15 +409,15 @@ code.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Myth. Default copyright/IP law applies; public does not mean
 permission.</li>
 <li>Fact. An OS license tells users exactly what they are allowed to do
 with the intellectual property.</li>
-<li>Myth. A license does not give away ownership. It is simply a legal
-document where you (the owner) grant specific permissions to other
-people to use your code.</li>
+<li>Myth. A license does not give away ownership. It is a legal document
+where you (the owner) grant specific permissions to other people to use
+your code.</li>
 </ol></div>
 </div>
 </div>
@@ -442,10 +442,12 @@ Think of it as a permission slip from the creator to everyone else.</p>
 <li>Can I share it, with or without my changes?</li>
 <li>Do I need to credit the original author?</li>
 <li>Do I have to share my changes under the same terms?</li>
-</ul><p>An owner can also limit the field of use, for example by allowing
-only non-commercial use. An owner can place conditions on distribution,
-such as attribution requirements or copyleft licensing. An owner can
-also permit use only in a specific territory.</p>
+</ul><p>Licenses in general can also set limits. An owner can limit the field
+of use, for example by allowing only non-commercial use. An owner can
+place conditions on distribution, such as attribution requirements or
+copyleft licensing, or permit use only in a specific territory. Open
+source licenses are different. Episode 2 explains why they cannot limit
+the field of use.</p>
 <p>Two things to keep in mind:</p>
 <ul><li>A license does not transfer ownership. You remain the owner of your
 code. You are granting others specific, non-exclusive permissions, which
@@ -495,7 +497,7 @@ its own expression of that idea.</p>
 It applies to your code even when the repository is public on GitHub,
 GitLab, or Bitbucket. Adding a license changes what happens next:</p>
 <pre class="mermaid"><code>flowchart TD
-    accTitle: {Does your code have a license?}
+    accTitle: Does your code have a license?
     accDescr {
         A flowchart starting with your code, which is protected by copyright automatically. A decision asks whether the code has a license. If no, the code is All Rights Reserved: it is visible if public, but others have no permission to copy, modify, or share it. If yes, the license terms apply: others may use, modify, and share the code under the conditions you chose, and you still own the code.
     }
@@ -503,11 +505,11 @@ GitLab, or Bitbucket. Adding a license changes what happens next:</p>
     B -- NO --&gt; C["&lt;b&gt;'All Rights Reserved'&lt;/b&gt;&lt;br/&gt;• Visible if public&lt;br/&gt;• Others have no permission&lt;br/&gt;to copy, modify, or share it"]
     B -- YES --&gt; D["&lt;b&gt;License terms apply&lt;/b&gt;&lt;br/&gt;• Others may use, modify, and share it,&lt;br/&gt;under the conditions you chose&lt;br/&gt;• You still own the code"]
 
-    classDef noLicense fill:#fde8e8,stroke:#c0392b,color:#000
-    classDef hasLicense fill:#e8f5e9,stroke:#2e7d32,color:#000
+    classDef noLicense fill:#fff3cd,stroke:#7a5c00,color:#000
+    classDef hasLicense fill:#e3f2fd,stroke:#0d47a1,color:#000
     class C noLicense
     class D hasLicense</code></pre>
-<p><strong>A license is the mechanism for changing the defaults
+<p><strong>A license is the mechanism for changing the default
 permissions</strong>. It is you, the rights holder, saying: “Here is
 what you may do with my work, and under what conditions.”</p>
 <div id="where-does-copyright-come-from-optional" class="callout">
@@ -535,17 +537,28 @@ rests on promoting the creators of intellectual property.</p>
 copyright and patents. Other intellectual property rights, such as
 trademarks and moral rights, may apply. They are not as prominent in the
 protection of the code itself.</p>
-<p>A patent applies to inventions. An invention must meet these
-criteria:</p>
+<p>A patent applies to inventions. Unlike copyright, a patent is not
+automatic. The inventor must apply for one, and it is expensive. The
+rights a patent grants are to use, make, sell, offer for sale, and
+import.</p>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> What makes an invention patentable? </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div class="accordion-body">
+<p>An invention must meet these criteria:</p>
 <ol style="list-style-type: decimal"><li>Patentable subject matter (a process, machine, manufacture, or
 composition of matter)</li>
 <li>Utility</li>
 <li>Novelty</li>
 <li>Non-obviousness</li>
 <li>Enablement</li>
-</ol><p>Unlike copyright, a patent is not automatic. The inventor must apply
-for one, and it is expensive. The rights a patent grants are to use,
-make, sell, offer for sale, and import.</p>
+</ol></div>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="what-happens-if-you-dont-add-a-license">What happens if you don’t add a license?<a class="anchor" aria-label="anchor" href="#what-happens-if-you-dont-add-a-license"></a></h2>
 <hr class="half-width"><p>It’s tempting to think: <em>“I put my code on GitHub, so anyone can
 use it.”</em> Legally, that’s not true. (Sound familiar? It’s the first
@@ -562,12 +575,12 @@ could be liable for monetary damages. You could find your use enjoined
 (stopped by a court), or be required to comply with the license terms.
 You could also suffer reputational damage.</p>
 <!-- narrative anchor: this case study could become Camila's project, so the lesson keeps one running example. TODO (group). -->
-<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
-  <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Example scenario: the accidental trap </h3>
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
+  <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Example scenario: the accidental trap </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
 <p>A researcher writes an efficient data-parsing script and uploads it
 to GitHub with a README but no license file.</p>
@@ -595,7 +608,7 @@ expensive to fix.</p>
 <th>What happens</th>
 </tr></thead><tbody><tr><td>Users</td>
 <td>Unsure if they can use the code, so many (especially companies and
-institutions) simply won’t</td>
+institutions) won’t</td>
 </tr><tr><td>Contributors</td>
 <td>Can’t be sure their contributions can be legally included and
 shared</td>
@@ -644,7 +657,7 @@ conclusions to the group.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p><strong>Best answer: C.</strong></p>
 <ul><li>

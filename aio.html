@@ -443,16 +443,16 @@ code.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Myth. Default copyright/IP law applies; public does not mean
 permission.</li>
 <li>Fact. An OS license tells users exactly what they are allowed to do
 with the intellectual property.</li>
-<li>Myth. A license does not give away ownership. It is simply a legal
-document where you (the owner) grant specific permissions to other
-people to use your code.</li>
+<li>Myth. A license does not give away ownership. It is a legal document
+where you (the owner) grant specific permissions to other people to use
+your code.</li>
 </ol>
 </div>
 </div>
@@ -484,10 +484,12 @@ Think of it as a permission slip from the creator to everyone else.</p>
 <li>Do I need to credit the original author?</li>
 <li>Do I have to share my changes under the same terms?</li>
 </ul>
-<p>An owner can also limit the field of use, for example by allowing
-only non-commercial use. An owner can place conditions on distribution,
-such as attribution requirements or copyleft licensing. An owner can
-also permit use only in a specific territory.</p>
+<p>Licenses in general can also set limits. An owner can limit the field
+of use, for example by allowing only non-commercial use. An owner can
+place conditions on distribution, such as attribution requirements or
+copyleft licensing, or permit use only in a specific territory. Open
+source licenses are different. Episode 2 explains why they cannot limit
+the field of use.</p>
 <p>Two things to keep in mind:</p>
 <ul>
 <li>A license does not transfer ownership. You remain the owner of your
@@ -543,7 +545,7 @@ its own expression of that idea.</p>
 It applies to your code even when the repository is public on GitHub,
 GitLab, or Bitbucket. Adding a license changes what happens next:</p>
 <pre class="mermaid"><code>flowchart TD
-    accTitle: {Does your code have a license?}
+    accTitle: Does your code have a license?
     accDescr {
         A flowchart starting with your code, which is protected by copyright automatically. A decision asks whether the code has a license. If no, the code is All Rights Reserved: it is visible if public, but others have no permission to copy, modify, or share it. If yes, the license terms apply: others may use, modify, and share the code under the conditions you chose, and you still own the code.
     }
@@ -551,11 +553,11 @@ GitLab, or Bitbucket. Adding a license changes what happens next:</p>
     B -- NO --&gt; C["&lt;b&gt;'All Rights Reserved'&lt;/b&gt;&lt;br/&gt;• Visible if public&lt;br/&gt;• Others have no permission&lt;br/&gt;to copy, modify, or share it"]
     B -- YES --&gt; D["&lt;b&gt;License terms apply&lt;/b&gt;&lt;br/&gt;• Others may use, modify, and share it,&lt;br/&gt;under the conditions you chose&lt;br/&gt;• You still own the code"]
 
-    classDef noLicense fill:#fde8e8,stroke:#c0392b,color:#000
-    classDef hasLicense fill:#e8f5e9,stroke:#2e7d32,color:#000
+    classDef noLicense fill:#fff3cd,stroke:#7a5c00,color:#000
+    classDef hasLicense fill:#e3f2fd,stroke:#0d47a1,color:#000
     class C noLicense
     class D hasLicense</code></pre>
-<p><strong>A license is the mechanism for changing the defaults
+<p><strong>A license is the mechanism for changing the default
 permissions</strong>. It is you, the rights holder, saying: “Here is
 what you may do with my work, and under what conditions.”</p>
 <div id="where-does-copyright-come-from-optional" class="callout">
@@ -585,8 +587,18 @@ rests on promoting the creators of intellectual property.</p>
 copyright and patents. Other intellectual property rights, such as
 trademarks and moral rights, may apply. They are not as prominent in the
 protection of the code itself.</p>
-<p>A patent applies to inventions. An invention must meet these
-criteria:</p>
+<p>A patent applies to inventions. Unlike copyright, a patent is not
+automatic. The inventor must apply for one, and it is expensive. The
+rights a patent grants are to use, make, sell, offer for sale, and
+import.</p>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> What makes an invention patentable? </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div class="accordion-body">
+<p>An invention must meet these criteria:</p>
 <ol style="list-style-type: decimal">
 <li>Patentable subject matter (a process, machine, manufacture, or
 composition of matter)</li>
@@ -595,9 +607,10 @@ composition of matter)</li>
 <li>Non-obviousness</li>
 <li>Enablement</li>
 </ol>
-<p>Unlike copyright, a patent is not automatic. The inventor must apply
-for one, and it is expensive. The rights a patent grants are to use,
-make, sell, offer for sale, and import.</p>
+</div>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="what-happens-if-you-dont-add-a-license">What happens if you don’t add a license?<a class="anchor" aria-label="anchor" href="#what-happens-if-you-dont-add-a-license"></a>
 </h2>
 <hr class="half-width">
@@ -616,12 +629,12 @@ could be liable for monetary damages. You could find your use enjoined
 (stopped by a court), or be required to comply with the license terms.
 You could also suffer reputational damage.</p>
 <!-- narrative anchor: this case study could become Camila's project, so the lesson keeps one running example. TODO (group). -->
-<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
-  <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Example scenario: the accidental trap </h3>
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
+  <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Example scenario: the accidental trap </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
 <p>A researcher writes an efficient data-parsing script and uploads it
 to GitHub with a README but no license file.</p>
@@ -660,7 +673,7 @@ expensive to fix.</p>
 <tr>
 <td>Users</td>
 <td>Unsure if they can use the code, so many (especially companies and
-institutions) simply won’t</td>
+institutions) won’t</td>
 </tr>
 <tr>
 <td>Contributors</td>
@@ -720,7 +733,7 @@ conclusions to the group.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p><strong>Best answer: C.</strong></p>
 <ul>
@@ -842,7 +855,7 @@ example of a permissive license</li>
 <li>State what a copyleft license allows and requires, and give an
 example of a copyleft license</li>
 <li>State what a weak copyleft license allows and requires, and give an
-example of a soft copyleft license</li>
+example of a weak copyleft license</li>
 </ul>
 </div>
 </div>
@@ -940,9 +953,9 @@ office about GPL 2.0 or alternatives.</p>
 <div id="is-this-an-open-source-license" class="callout-inner">
 <h3 class="callout-title">Is this an open source license?</h3>
 <div class="callout-content">
-<p>The following is a real-world software license, lightly obfuscated to
-protect the identity of the software. Read it and decide whether it
-qualifies as open source.</p>
+<p>This is a real software license. Some details, including the
+software’s name, have been changed to protect its identity. Read it and
+decide whether it qualifies as open source.</p>
 <blockquote>
 <p>In order to acquire access to the code sources, the recipient
 agrees:</p>
@@ -970,7 +983,7 @@ name(s) and appropriate references.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>No. Clause 1 (especially) violates the permission to modify the
 software and to distribute copies of your modified version to others.
@@ -993,9 +1006,9 @@ clauses.</p>
 <a href="https://intersect-training.org/software-licensing/" class="external-link">Software
 Licensing</a> (INTERSECT) by David E. Bernholdt, Lauren E. Milechin,
 Dave Rumph, Michael A. Heroux, and James Willenbring, licensed under <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">CC BY 4.0</a>.
-Changes: the solution refers to the permissions listed earlier in this
-episode instead of the four freedoms, and the discussion questions are
-left out.</p>
+Changes: the introduction and the solution are reworded, the solution
+refers to the permissions listed earlier in this episode instead of the
+four freedoms, and the discussion questions are left out.</p>
 <div id="challenge-1-can-you-do-it" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1020,7 +1033,7 @@ left out.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Output </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1054,7 +1067,7 @@ left out.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -1112,9 +1125,9 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What are dependencies</li>
+<li>What are dependencies?</li>
 <li>What happens if my dependency has a license different from my
-project license</li>
+project license?</li>
 </ul>
 </div>
 </div>
@@ -1171,8 +1184,8 @@ Internal Use Notice.</li>
 <p>For any other open source license, contact the licensing office.</p>
 <p>The full chart has every combination. See the University of
 California Office of the President <a href="https://security.ucop.edu/files/documents/resources/oss-chart.pdf" class="external-link">OSS
-Chart</a> (4/17/18 version) and <a href="https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf" class="external-link">OSS
-Chart Companion</a> (3/26/2018).</p>
+Chart</a> (17 April, 2018 version) and <a href="https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf" class="external-link">OSS
+Chart Companion</a> (26 March, 2018).</p>
 <!-- EPISODE CONTENT HERE -->
 <div id="challenge1" class="callout challenge">
 <div class="callout-square">
@@ -1308,17 +1321,16 @@ California.</li>
 <li>Grants may stipulate that the funder owns the results of the
 research, including code, or require a specific license.</li>
 </ul>
-<p>You can learn more about the University of California’s copyright
-policy at <a href="https://copyright.universityofcalifornia.edu/" class="external-link uri">https://copyright.universityofcalifornia.edu/</a>. It is
-important to understand how the policy applies to your case. There is
-more nuance than the slides can provide.</p>
-</section><section><h2 class="section-heading" id="work-with-your-tto">Work with your TTO<a class="anchor" aria-label="anchor" href="#work-with-your-tto"></a>
+<p>You can learn more in the University of California’s <a href="https://copyright.universityofcalifornia.edu/" class="external-link">copyright policy
+resources</a>. It is important to understand how the policy applies to
+your case. There is more nuance than the slides can provide.</p>
+</section><section><h2 class="section-heading" id="work-with-your-tech-transfer-office-tto">Work with your Tech Transfer office (TTO)<a class="anchor" aria-label="anchor" href="#work-with-your-tech-transfer-office-tto"></a>
 </h2>
 <hr class="half-width">
-<p>Before releasing code under an open source license, you must check
-with your campus Tech Transfer office. It is sometimes called the Office
-of Intellectual Property or Technology Commercialization.</p>
-<p>The Tech Transfer office (TTO) will:</p>
+<p>At UC, before releasing code under an open source license, you must
+check with your campus Tech Transfer office. It is sometimes called the
+Office of Intellectual Property or Technology Commercialization.</p>
+<p>The TTO will:</p>
 <ul>
 <li>verify ownership and funding requirements</li>
 <li>make sure no third-party restrictions apply, for example from
@@ -1338,24 +1350,36 @@ UC-owned software.</p>
 </h2>
 <hr class="half-width">
 <ul>
-<li>UC OSS Resources: resources and guides for open source activities at
+<li>
+<a href="https://security.ucop.edu/resources/open-source-software-licensing.html" class="external-link">UC
+OSS Resources</a>: resources and guides for open source activities at
 UC.</li>
-<li>UC OSS Chart and Companion Guide: the definitive list of
-UC-recommended “low-risk” licenses.</li>
-<li>UC OSPO License Guide: guidance on institutional requirements and
+<li>
+<a href="https://security.ucop.edu/files/documents/resources/oss-chart.pdf" class="external-link">UC
+OSS Chart</a> and <a href="https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf" class="external-link">Companion
+Guide</a>: the definitive list of UC-recommended “low-risk”
+licenses.</li>
+<li>
+<a href="https://ucospo.net/oss-resources/template-guides/license-guide" class="external-link">UC
+OSPO License Guide</a>: guidance on institutional requirements and
 templates.</li>
-<li>ChooseALicense.com: a tool for comparing license features. It does
-not supersede UC policies.</li>
+<li>
+<a href="https://choosealicense.com" class="external-link">ChooseALicense.com</a>: a tool
+for comparing license features. It does not supersede UC policies.</li>
 </ul>
-<div id="challenge-add-a-bsd-license-to-your-repository" class="callout challenge">
+<div id="optional-challenge-add-a-bsd-license-to-a-practice-repository" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="challenge-add-a-bsd-license-to-your-repository" class="callout-inner">
-<h3 class="callout-title">Challenge: add a BSD license to your
-repository</h3>
+<div id="optional-challenge-add-a-bsd-license-to-a-practice-repository" class="callout-inner">
+<h3 class="callout-title">Optional challenge: add a BSD license to a
+practice repository</h3>
 <div class="callout-content">
+<p>This challenge needs a GitHub account and a practice repository that
+you can edit. Do not use a real project. With real UC-owned code, you
+add the license only after the Tech Transfer office approves it. Here,
+we assume that approval is done.</p>
 <p>After TTO approval, add the BSD 3-Clause license to your demo
 repository:</p>
 <ol style="list-style-type: decimal">
