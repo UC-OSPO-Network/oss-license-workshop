@@ -237,6 +237,7 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#a-word-of-caution-dependencies">A word of caution: dependencies</a></li>
+<li><a href="#how-uc-rates-the-licenses-of-open-source-code-you-use">How UC rates the licenses of open source code you use</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -370,7 +371,131 @@ project license</li>
 libraries to your application or code.</p>
 <p>Make sure the licenses of those packages are compatible with each
 other, and that they let you accomplish what you want to accomplish.</p>
-<!-- EPISODE CONTENT HERE -->
+</section><section><h2 class="section-heading" id="how-uc-rates-the-licenses-of-open-source-code-you-use">How UC rates the licenses of open source code you use<a class="anchor" aria-label="anchor" href="#how-uc-rates-the-licenses-of-open-source-code-you-use"></a></h2>
+<hr class="half-width"><p>The University of California publishes a chart that rates open source
+licenses for using and redistributing open source code at UC. The color
+for each license is intended to give “merely a high level assessment of
+the relative risk that use of a particular OSS license will violate UC
+Policies”. The chart does not compare licenses with each other. All open
+source licensing of Regents-owned copyrights requires approval of the
+appropriate delegated authority, regardless of the risk category.</p>
+<table class="table"><caption>Risk ratings for internal use at UC, by license (UC OSS Chart,
+4/17/18 version)</caption>
+<colgroup><col width="49%"><col width="5%"><col width="22%"><col width="22%"></colgroup><thead><tr><th align="left">License</th>
+<th align="left">Flags</th>
+<th align="left">Unmodified</th>
+<th align="left">Modified</th>
+</tr></thead><tbody><tr><td align="left">BSD (must retain the copyright notice)</td>
+<td align="left">none</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+</tr><tr><td align="left">MIT (must include the original copyright notice)</td>
+<td align="left">none</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+</tr><tr><td align="left">Apache 1.x, not 2.0 or later (must reproduce the
+original copyright notice)</td>
+<td align="left">none</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+</tr><tr><td align="left">GPL 1.x or 2.x, or LGPL 2.x, but not 3.0 or “any later
+version”</td>
+<td align="left">H</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+</tr><tr><td align="left">Educational Community License 2.0</td>
+<td align="left">PG, H **</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+</tr><tr><td align="left">Apache 2.0</td>
+<td align="left">PG, H **</td>
+<td align="left">Low, with Internal Use Notice</td>
+<td align="left">Low, with Internal Use Notice</td>
+</tr><tr><td align="left">Eclipse Public License 1.0 and 2.0</td>
+<td align="left">PG, H</td>
+<td align="left">Low, with Internal Use Notice</td>
+<td align="left">Low, with Internal Use Notice</td>
+</tr><tr><td align="left">MPL 2.0</td>
+<td align="left">PG, H</td>
+<td align="left">Low, with Internal Use Notice</td>
+<td align="left">Low, with bug fixes only</td>
+</tr><tr><td align="left">Affero GPL (AGPL) 3.0</td>
+<td align="left">PG, H</td>
+<td align="left">Low, with Internal Use Notice</td>
+<td align="left">Low, with Internal Use Notice</td>
+</tr><tr><td align="left">GPL 3.0 or LGPL 3.0</td>
+<td align="left">PG, H</td>
+<td align="left">Low, with Internal Use Notice</td>
+<td align="left">Low, with Internal Use Notice</td>
+</tr></tbody></table><table class="table"><caption>Risk ratings for external distribution outside UC, by license
+(UC OSS Chart, 4/17/18 version)</caption>
+<colgroup><col width="60%"><col width="9%"><col width="9%"><col width="10%"><col width="10%"></colgroup><thead><tr><th align="left">License</th>
+<th align="left">Unmodified</th>
+<th align="left">Bug fixes</th>
+<th align="left">Otherwise modified</th>
+<th align="left">Function calls only</th>
+</tr></thead><tbody><tr><td align="left">BSD</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+</tr><tr><td align="left">MIT</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+</tr><tr><td align="left">Apache 1.x, not 2.0 or later</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+</tr><tr><td align="left">GPL 1.x or 2.x, or LGPL 2.x, but not 3.0 or “any later
+version”</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+</tr><tr><td align="left">Educational Community License 2.0</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+</tr><tr><td align="left">Apache 2.0</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">Moderate</td>
+<td align="left">Low</td>
+</tr><tr><td align="left">Eclipse Public License 1.0 and 2.0</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">Moderate</td>
+<td align="left">Low</td>
+</tr><tr><td align="left">MPL 2.0</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">Moderate</td>
+<td align="left">Moderate</td>
+</tr><tr><td align="left">Affero GPL (AGPL) 3.0</td>
+<td align="left">High</td>
+<td align="left">High</td>
+<td align="left">High</td>
+<td align="left">Moderate</td>
+</tr><tr><td align="left">GPL 3.0 or LGPL 3.0</td>
+<td align="left">High</td>
+<td align="left">High</td>
+<td align="left">High</td>
+<td align="left">High</td>
+</tr></tbody></table><p>For any other open source license, contact the licensing office.</p>
+<p>If you use software internally within UC under a patent-granting
+license such as GPL 3.0, with no intention of external distribution, you
+must add the required Internal Use Notice.</p>
+<p>PG means a “patent-granting” license. H means a “hereditary” license,
+sometimes called viral. ** The heredity requirement may be overridden
+for derivative works under section 4 of Apache 2.0 and ECL 2.0. You can
+add your own copyright statement to your modifications.</p>
+<p>Source: University of California Office of the President, <a href="https://security.ucop.edu/files/documents/resources/oss-chart.pdf" class="external-link">OSS
+Chart</a> (4/17/18 version) and <a href="https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf" class="external-link">OSS
+Chart Companion</a> (3/26/2018). <!-- EPISODE CONTENT HERE --></p>
 <div id="challenge1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
