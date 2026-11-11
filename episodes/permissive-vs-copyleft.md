@@ -35,7 +35,16 @@ If excluding commercial use really is a requirement, a license like [PolyForm No
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-<!-- narrative anchor: Camila (researcher, full release). Her situation for this episode goes here: what she wants to do with the code, and which license question this episode answers for her. TODO (group), pending the persona decision in issue #12. -->
+::::::::::::::::::::::::::::::::::::: instructor
+
+### Narrative outline: Camila (draft for the group to edit)
+
+- Camila has decided to share all of her code.
+- Her question: permissive or copyleft?
+- She learns what each type asks of people who reuse her code.
+- She learns which licenses UC favors, and why.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Open source licenses
 

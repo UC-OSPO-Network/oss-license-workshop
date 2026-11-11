@@ -21,7 +21,11 @@ exercises: 15
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-<!-- narrative anchor: Camila (researcher, full release). The short narrative introduction goes here, before the Myth or Fact opener: her background, what she wants to do with her code, and why a researcher who writes code ends up needing a license (Reid's idea from the design notes). TODO (group), pending the persona decision in issue #12. -->
+Writing code is part of many research projects. Camila is a postdoctoral researcher who wrote scripts and a small tool to analyze her lab's data. Other labs have asked to use them.
+
+She has heard that she needs a license. She does not know the difference between the options, and the number of choices feels confusing. She wants to share her software under a license that fits her goals, and she wants to know when to ask her university first. You can read more about her and four other learners on the [learner profiles](profiles.html) page.
+
+Camila's questions follow us through this lesson. In this episode, she asks what a license is and what could go wrong if she shares her code without one.
 
 To start our conversation about Open Source Software (OSS) licensing, let's find out what we already know and what we only *think* we know.
 Decide whether each statement is a myth or a fact.

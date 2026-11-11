@@ -18,7 +18,16 @@ exercises: 10
 
 <!-- wbcheck AI204: The episode has no explanatory text. It does not define a dependency, does not explain permissive versus copyleft licenses, and does not show a worked example before learners are asked to judge com... -->
 
-<!-- narrative anchor: Valentina (researcher, partial release). Her situation for this episode goes here: the project she wants to share in part, and the package whose license might clash. TODO (group), pending the persona decision in issue #12. -->
+::::::::::::::::::::::::::::::::::::: instructor
+
+### Narrative outline: Valentina (draft for the group to edit)
+
+- Valentina wants to share part of her project and keep part closed.
+- She installed packages through a package manager and has never checked their licenses.
+- Her question: do the licenses of her dependencies allow what she wants?
+- Needs from the group: a worked clash example and the compatibility rules.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## A word of caution: dependencies
 
