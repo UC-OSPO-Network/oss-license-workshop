@@ -246,7 +246,7 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#who-owns-the-code">Who owns the code?</a></li>
-<li><a href="#work-with-your-tech-transfer-office-tto">Work with your Tech Transfer office (TTO)</a></li>
+<li><a href="#work-with-your-technology-transfer-office-tto">Work with your technology transfer office (TTO)</a></li>
 <li><a href="#how-to-choose-a-license">How to choose a license</a></li>
 <li><a href="#uc-resources">UC resources</a></li>
 <li><a href="#communicate-your-license">Communicate your license</a></li>
@@ -363,9 +363,9 @@ the best answer. Discuss answers.</li>
 <!-- wbcheck AI202: None of the three planned exercises asks learners to decide whether a commercial open source model fits a project, so this objective is unassessed. -->
 <!-- wbcheck AI206: 'COSS' is an uncommon acronym and is never expanded. Check whether the lesson's external glossary defines it. -->
 <ul><li>Compare key licensing factors for the type of OSS application
-(science/scholarship/non-commercialization) and list the options</li>
+(science/scholarship/non-commercialization) and list the options.</li>
 <li>Choose an appropriate OSS license and explain the decision thinking
-when contributing to different projects</li>
+when contributing to different projects.</li>
 <li>Identify when a COSS is appropriate for OSS project.</li>
 </ul></div>
 </div>
@@ -382,7 +382,7 @@ when contributing to different projects</li>
 <ul><li>Santiago wrote a tool for a campus group as part of his job. A
 collaborator at another institution wants to use it.</li>
 <li>His question: who owns the code, and who approves a release?</li>
-<li>He checks with the Tech Transfer office.</li>
+<li>He checks with the technology transfer office.</li>
 <li>He picks a license from the UC-recommended list, then adds it to his
 repository and README.</li>
 </ul></div>
@@ -403,24 +403,25 @@ California.</li>
 research, including code, or require a specific license.</li>
 </ul><p>You can learn more in the University of California’s <a href="https://copyright.universityofcalifornia.edu/" class="external-link">copyright policy
 resources</a>. It is important to understand how the policy applies to
-your case. There is more nuance than the slides can provide.</p>
-</section><section><h2 class="section-heading" id="work-with-your-tech-transfer-office-tto">Work with your Tech Transfer office (TTO)<a class="anchor" aria-label="anchor" href="#work-with-your-tech-transfer-office-tto"></a></h2>
+your case. The resources explain details beyond the scope of this
+lesson.</p>
+</section><section><h2 class="section-heading" id="work-with-your-technology-transfer-office-tto">Work with your technology transfer office (TTO)<a class="anchor" aria-label="anchor" href="#work-with-your-technology-transfer-office-tto"></a></h2>
 <hr class="half-width"><p>At UC, before releasing code under an open source license, you must
-check with your campus Tech Transfer office. It is sometimes called the
-Office of Intellectual Property or Technology Commercialization.</p>
+check with your campus TTO. It is sometimes called the Office of
+Intellectual Property or Technology Commercialization.</p>
 <p>The TTO will:</p>
-<ul><li>verify ownership and funding requirements</li>
+<ul><li>verify ownership and funding requirements.</li>
 <li>make sure no third-party restrictions apply, for example from
-proprietary libraries</li>
+proprietary libraries.</li>
 <li>help you select the most appropriate license from the UC-recommended
-list</li>
+list.</li>
 </ul></section><section><h2 class="section-heading" id="how-to-choose-a-license">How to choose a license<a class="anchor" aria-label="anchor" href="#how-to-choose-a-license"></a></h2>
 <hr class="half-width"><p>The license you select will depend on your goals and on the policies
 of the University of California. The Open Source Software chart and its
 companion guide can help you navigate UC policies and guide your
 discussion with your TTO.</p>
-<p>Always consult your campus Tech Transfer office before releasing
-UC-owned software.</p>
+<p>Always consult your campus TTO before releasing UC-owned
+software.</p>
 </section><section><h2 class="section-heading" id="uc-resources">UC resources<a class="anchor" aria-label="anchor" href="#uc-resources"></a></h2>
 <hr class="half-width"><ul><li>
 <a href="https://security.ucop.edu/resources/open-source-software-licensing.html" class="external-link">UC
@@ -429,8 +430,7 @@ UC.</li>
 <li>
 <a href="https://security.ucop.edu/files/documents/resources/oss-chart.pdf" class="external-link">UC
 OSS Chart</a> and <a href="https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf" class="external-link">Companion
-Guide</a>: the definitive list of UC-recommended “low-risk”
-licenses.</li>
+Guide</a>: UC guidance on license risks.</li>
 <li>
 <a href="https://ucospo.net/oss-resources/template-guides/license-guide/" class="external-link">UC
 OSPO License Guide</a>: guidance on institutional requirements and
@@ -472,7 +472,8 @@ badge in the sidebar?</li>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>GitHub automatically detects the <code>LICENSE</code> file and
-displays it in the sidebar. Your file should look like this:</p>
+displays it in the sidebar. The beginning of your complete license file
+should look like this. Keep all terms from the template:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -497,11 +498,11 @@ near the top of your README:</p>
 </h3>
 <pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="fu">## License</span></span>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a></span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a>This project is licensed under the BSD 3-Clause License - see the <span class="co">[</span><span class="ot">LICENSE</span><span class="co">](LICENSE)</span> file for details.</span></code></pre>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a>This project uses the BSD 3-Clause License. The <span class="co">[</span><span class="ot">LICENSE</span><span class="co">](LICENSE)</span> file contains the terms.</span></code></pre>
 </div>
-<p>This matters because users who read your README on platforms other
-than GitHub (Zenodo, email, exported PDFs) will see your license terms
-even without GitHub’s automatic detection.</p>
+<p>This names the license for people who encounter your README outside
+GitHub, for example on Zenodo, in email, or in exported PDFs. Include
+the <code>LICENSE</code> file when you share the project.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -509,14 +510,8 @@ even without GitHub’s automatic detection.</p>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<!-- wbcheck AI201: The keypoints come from a lesson-design / CLDT template. They say nothing about OSS licensing, so they cannot summarise or reinforce this episode's objectives. -->
-<!-- wbcheck AI208: This keypoint is about choosing a lesson and data licensing, not software licensing. Learners reading the summary would be misled about the episode's topic. -->
-<ul><li>Using a narrative throughout a lesson helps reduce learner cognitive
-load</li>
-<li>Choosing a lesson includes considering data license and ethical
-considerations.</li>
-<li>Openly-licensed datasets can be found in subject area repositories
-or general data repositories.</li>
+<ul><li>Draft: the key points for this episode are still to be written by
+the lesson authors.</li>
 </ul></div>
 </div>
 </div>

@@ -357,8 +357,8 @@ project license?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <!-- wbcheck AI202: No exercise asks learners to identify dependencies. The only challenge gives them the dependency licenses directly, so this objective is never assessed. -->
-<ul><li>Identify dependencies</li>
-<li>Determine if the licenses in my project are compatible</li>
+<ul><li>Identify dependencies.</li>
+<li>Determine if the licenses in my project are compatible.</li>
 </ul></div>
 </div>
 </div>
@@ -373,7 +373,7 @@ project license?</li>
   Narrative outline: Valentina (draft for the group to edit)
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <ul><li>Valentina wants to share part of her project and keep part
 closed.</li>
@@ -388,8 +388,9 @@ rules.</li>
 </div>
 </div>
 <section><h2 class="section-heading" id="a-word-of-caution-dependencies">A word of caution: dependencies<a class="anchor" aria-label="anchor" href="#a-word-of-caution-dependencies"></a></h2>
-<hr class="half-width"><p>Your toolchain, IDE, or Python package manager may add packages and
-libraries to your application or code.</p>
+<hr class="half-width"><p>Your toolchain, integrated development environment (IDE), or Python
+package manager may add packages and libraries to your application or
+code.</p>
 <p>Make sure the licenses of those packages are compatible with each
 other, and that they let you accomplish what you want to accomplish.</p>
 </section><section><h2 class="section-heading" id="how-uc-rates-the-licenses-of-open-source-code-you-use">How UC rates the licenses of open source code you use<a class="anchor" aria-label="anchor" href="#how-uc-rates-the-licenses-of-open-source-code-you-use"></a></h2>
@@ -399,7 +400,8 @@ for each license is intended to give “merely a high level assessment of
 the relative risk that use of a particular OSS license will violate UC
 Policies”. The chart does not compare licenses with each other. All open
 source licensing of Regents-owned copyrights requires approval of the
-appropriate delegated authority, regardless of the risk category.</p>
+appropriate delegated authority (usually your campus technology transfer
+office), regardless of the risk category.</p>
 <p>The chart sorts licenses into low, moderate, and high risk for two
 situations: using code inside UC, and distributing it outside UC. In
 short:</p>
@@ -411,13 +413,13 @@ and the Eclipse Public License when you distribute modified code, and
 MPL 2.0 when you distribute modified code or code that only calls its
 functions.</li>
 <li>High risk for distributing outside UC: GPL 3.0 and LGPL 3.0 in every
-case, and AGPL 3.0 in every case except code that only calls its
-functions, which is moderate.</li>
+case, and GNU Affero General Public License (AGPL) 3.0 in every case
+except code that only calls its functions, which is moderate.</li>
 <li>Inside UC, the patent-granting licenses (Apache 2.0, Eclipse, MPL
 2.0, AGPL 3.0, GPL 3.0, LGPL 3.0) are low risk if you add the required
-Internal Use Notice.</li>
+Internal Use Notice (the Companion Guide describes it).</li>
 </ul><p>For any other open source license, contact the licensing office.</p>
-<p>The full chart has every combination. See the University of
+<p>The full chart has every combination. Consult the University of
 California Office of the President <a href="https://security.ucop.edu/files/documents/resources/oss-chart.pdf" class="external-link">OSS
 Chart</a> (17 April, 2018 version) and <a href="https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf" class="external-link">OSS
 Chart Companion</a> (26 March, 2018).</p>
@@ -431,10 +433,14 @@ Chart Companion</a> (26 March, 2018).</p>
 <h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
 <!-- wbcheck AI202: The instructions contain typos ('Place and X is there is'). The grid also gives no guidance for nuanced cases such as LGPL linking, Apache-2.0 into GPLv2, or proprietary terms, where the answer is... -->
+<p>Each row gives the license of the dependency. Each column gives the
+license of <strong>My project</strong>.</p>
 <p>Mark an X in each cell where there is a conflict. Leave the cell
 empty if there is no conflict.</p>
 <!-- wbcheck AI208: The table is tab-separated plain text, not a Markdown pipe table, so it will render as a jumbled paragraph. The header also splits 'Dependency License' across lines, and the 'Commercial' row is tru... -->
-<table class="table"><thead><tr><th>Dependency license</th>
+<table class="table"><caption>Compatibility grid. Rows are dependency licenses. Columns are
+project licenses.</caption>
+<thead><tr><th>Dependency license</th>
 <th>BSD</th>
 <th>MIT</th>
 <th>Apache</th>
@@ -462,9 +468,7 @@ empty if there is no conflict.</p>
 <td></td>
 <td></td>
 <td></td>
-</tr></tbody></table><p>Read each row as the license of the dependency and each column as the
-license of <strong>My project</strong>.</p>
-</div>
+</tr></tbody></table></div>
 </div>
 </div>
 <div id="keypoints1" class="callout keypoints">
