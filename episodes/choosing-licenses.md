@@ -61,13 +61,13 @@ At the University of California:
 - Code created in connection with your research project or your staff position is typically owned by The Regents of the University of California.
 - Grants may stipulate that the funder owns the results of the research, including code, or require a specific license.
 
-You can learn more about the University of California's copyright policy at <https://copyright.universityofcalifornia.edu/>. It is important to understand how the policy applies to your case. There is more nuance than the slides can provide.
+You can learn more in the University of California's [copyright policy resources](https://copyright.universityofcalifornia.edu/). It is important to understand how the policy applies to your case. There is more nuance than the slides can provide.
 
-## Work with your TTO
+## Work with your Tech Transfer office (TTO)
 
-Before releasing code under an open source license, you must check with your campus Tech Transfer office. It is sometimes called the Office of Intellectual Property or Technology Commercialization.
+At UC, before releasing code under an open source license, you must check with your campus Tech Transfer office. It is sometimes called the Office of Intellectual Property or Technology Commercialization.
 
-The Tech Transfer office (TTO) will:
+The TTO will:
 
 - verify ownership and funding requirements
 - make sure no third-party restrictions apply, for example from proprietary libraries
@@ -81,14 +81,17 @@ Always consult your campus Tech Transfer office before releasing UC-owned softwa
 
 ## UC resources
 
-- UC OSS Resources: resources and guides for open source activities at UC.
-- UC OSS Chart and Companion Guide: the definitive list of UC-recommended "low-risk" licenses.
-- UC OSPO License Guide: guidance on institutional requirements and templates.
-- ChooseALicense.com: a tool for comparing license features. It does not supersede UC policies.
+- [UC OSS Resources](https://security.ucop.edu/resources/open-source-software-licensing.html): resources and guides for open source activities at UC.
+- [UC OSS Chart](https://security.ucop.edu/files/documents/resources/oss-chart.pdf) and [Companion Guide](https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf): the definitive list of UC-recommended "low-risk" licenses.
+- [UC OSPO License Guide](https://ucospo.net/oss-resources/template-guides/license-guide): guidance on institutional requirements and templates.
+- [ChooseALicense.com](https://choosealicense.com): a tool for comparing license features. It does not supersede UC policies.
 
 :::::::::::::::::::::::::::::::::::::: challenge
 
-## Challenge: add a BSD license to your repository
+## Optional challenge: add a BSD license to a practice repository
+
+This challenge needs a GitHub account and a practice repository that you can edit. Do not use a real project.
+With real UC-owned code, you add the license only after the Tech Transfer office approves it. Here, we assume that approval is done.
 
 After TTO approval, add the BSD 3-Clause license to your demo repository:
 
