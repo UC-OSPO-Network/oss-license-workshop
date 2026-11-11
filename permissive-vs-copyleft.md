@@ -16,10 +16,10 @@ exercises: 15
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- State what an OSS license must allow users to do
-- State what a permissive license allows and requires, and give an example of a permissive license
-- State what a copyleft license allows and requires, and give an example of a copyleft license
-- State what a weak copyleft license allows and requires, and give an example of a weak copyleft license
+- State what an OSS license must allow users to do.
+- State what a permissive license allows and requires, and give an example of a permissive license.
+- State what a copyleft license allows and requires, and give an example of a copyleft license.
+- State what a weak copyleft license allows and requires, and give an example of a weak copyleft license.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -50,9 +50,9 @@ If excluding commercial use really is a requirement, a license like [PolyForm No
 
 An open source license:
 
-- is royalty-free, meaning end users do not pay any money
-- permits the licensee (the end user) to use, copy, modify, and distribute the software
-- comes with source code made available to end users, so they can exercise those rights
+- is royalty-free, meaning end users do not pay any money.
+- permits the licensee (the end user) to use, copy, modify, and distribute the software.
+- comes with source code made available to end users, so they can exercise those rights.
 
 ## License categories
 
@@ -60,27 +60,27 @@ Open source licenses fall into a spectrum. Permissive licenses sit on one side a
 
 ## Permissive licenses
 
-Examples: BSD, MIT, Apache 2.0.
+Examples: Berkeley Software Distribution (BSD), Massachusetts Institute of Technology (MIT), and Apache 2.0.
 
 Permissive licenses have few requirements and are relatively easy to comply with. Typically, you are required to provide attribution. These licenses are common in research because they are simple and maximize flexibility. <!-- [KP1] comment marker from the source slide: a reviewer note, author unknown. -->
 
 These licenses allow users to distribute your software commercially if they choose to.
 
-At the University of California, BSD and MIT are favored over the Apache license. The Apache license requires licensors to grant a patent license to all licensees. This could have the unintended effect of reaching into UC's patent portfolio and the work of other researchers. With patents, different people or groups can come up with the same idea independently.
+At the University of California, BSD and MIT are favored over the Apache license. The Apache license requires licensors (the people or organizations that grant the license) to grant a patent license to all licensees. This could have the unintended effect of reaching into UC's patent portfolio and the work of other researchers. With patents, different people or groups can come up with the same idea independently.
 
 ## Copyleft licenses
 
-At the other end of the spectrum are copyleft licenses. They are sometimes called viral licenses, because they require that derivative works and modifications be licensed under the same terms as the copyleft license. This protects the openness of a project across its lifecycle.
+At the other end of the spectrum are copyleft licenses. They are sometimes called viral licenses, because they require that derivative works (new works built on the original code) and modifications be licensed under the same terms as the copyleft license. This protects the openness of a project across its lifecycle.
 
 Copyleft licenses may define what counts as a derivative work and what triggers the copyleft provision. So there are weak and strong copyleft licenses.
 
-A weak copyleft license typically limits either the scope of what counts as a derivative work, or the trigger. For example, the LGPL may allow you to dynamically link to an LGPL library without triggering the copyleft provision. Your code that links to the library can then stay under the license of your choice.
+A weak copyleft license typically limits either the scope of what counts as a derivative work, or the trigger. For example, the GNU Lesser General Public License (LGPL) may allow you to dynamically link (use the library as a separate piece at runtime) to an LGPL library without triggering the copyleft provision. Your code that links to the library can then stay under the license of your choice.
 
-## GPL 2.0 and 3.0
+## GNU General Public License (GPL) Versions 2 and 3
 
 GPL 2.0 is a strong copyleft license. It would require your code to be placed under the terms of the GPL.
 
-The UC system does not recommend GPL 3.0 for university-owned software, because its patent provisions may conflict with UC policies. If you need copyleft protection, consult your campus Tech Transfer office about GPL 2.0 or alternatives.
+The UC system does not recommend GPL 3.0 for university-owned software, because its patent provisions may conflict with UC policies. If you need copyleft protection, consult your campus technology transfer office (Episode 4 explains its role) about GPL 2.0 or alternatives.
 
 
 ::::::::::::::::::::::::::::::::::::: challenge
@@ -88,7 +88,7 @@ The UC system does not recommend GPL 3.0 for university-owned software, because 
 ## Is this an open source license?
 
 This is a real software license. Some details, including the software's name, have been changed to protect its identity.
-Read it and decide whether it qualifies as open source.
+Decide whether it qualifies as open source.
 
 > In order to acquire access to the code sources, the recipient agrees:
 >
@@ -162,11 +162,11 @@ You can add a line with at least three colons and a `solution` tag.
 
 <!-- wbcheck AI208: There is no Exercise 1 about licenses in the episode, so instructors cannot follow this note. The claim about UC policy also has no source. -->
 
-Different universities default to different licenses, and learners may arrive having been told "use this one" without being told why. The UC often prefers BSD-3-Clause, and Exercise 1 is the reason.
+Different universities default to different licenses, and learners may arrive having been told "use this one" without being told why. The UC often prefers BSD-3-Clause, and the license comparison earlier in this episode explains why.
 
 <!-- wbcheck AI206: The acronym OSPO is not expanded. Learners outside institutions that have one may not know the term. -->
 
-Whatever the local default, the answer always ends the same way: **check with your technology transfer office.** Say that explicitly. An OSPO can explain the tradeoffs; the institution makes the call.
+Whatever the local default, the answer always ends the same way: **check with your technology transfer office.** Say that explicitly. An open source program office (OSPO) can explain the tradeoffs; the institution makes the call.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -174,12 +174,12 @@ Whatever the local default, the answer always ends the same way: **check with yo
 
 <!-- wbcheck AI204: The keypoints summarize permissive, copyleft, and weak copyleft licenses, but the episode body never explains any of them. Learners reach the summary without any explanatory content or worked examp... -->
 
-- An open source license must let anyone use, study, change, and share the software, for any purpose, including commercial use
-- Permissive licenses (MIT, BSD, Apache) let others reuse the code almost any way they like, including in closed-source products, as long as they keep the copyright and license notice
-- Copyleft licenses (GPL) also allow any use, but anyone who distributes a modified version must share its source under the same license
-- Weak copyleft licenses (LGPL, MPL) apply that rule only to the licensed code itself, so it can be combined with code under other licenses
-- Licenses in the same family still differ on specific points, like patents and the use of contributors' names, so check the actual clauses before choosing
-- Your institution's technology transfer office makes the final call
+- An open source license must let anyone use, study, change, and share the software, for any purpose, including commercial use.
+- Permissive licenses (MIT, BSD, Apache) let others reuse the code almost any way they like, including in closed-source products, as long as they keep the copyright and license notice.
+- Copyleft licenses (GPL) also allow any use, but anyone who distributes a modified version must share its source under the same license.
+- Weak copyleft licenses (LGPL and Mozilla Public License, MPL) apply that rule only to the licensed code itself, so it can be combined with code under other licenses.
+- Licenses in the same family still differ on specific points, like patents and the use of contributors' names, so check the actual clauses before choosing.
+- Your institution's technology transfer office makes the final call.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

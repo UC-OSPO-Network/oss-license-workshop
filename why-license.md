@@ -15,15 +15,15 @@ exercises: 15
 
 <!-- wbcheck AI202: No exercise after instruction asks learners to explain the link between copyright and licensing. The only related items are in the opening myth/fact pre-assessment, which the instructor notes say i... -->
 
-- Explain what an open source software license is
-- Explain how a license is related to copyright and IP laws
-- Articulate the implications of not applying a license to a software project
+- Explain what an open source software license is.
+- Explain how a license is related to copyright and intellectual property (IP) laws.
+- Articulate the implications of not applying a license to a software project.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 Writing code is part of many research projects. Camila is a postdoctoral researcher who wrote scripts and a small tool to analyze her lab's data. Other labs have asked to use them.
 
-She has heard that she needs a license. She does not know the difference between the options, and the number of choices feels confusing. She wants to share her software under a license that fits her goals, and she wants to know when to ask her university first. You can read more about her and four other learners on the [learner profiles](profiles.html) page.
+She has heard that she needs a license. She does not know the difference between the options, and the number of choices feels confusing. She wants to share her software under a license that fits her goals, and she wants to know when to ask her university first. The [learner profiles](profiles.html) page introduces her and four other learners.
 
 Camila's questions follow us through this lesson. In this episode, she asks what a license is and what could go wrong if she shares her code without one.
 
@@ -45,7 +45,7 @@ Its purpose is to surface what learners already believe, not to teach the answer
 - Keep the tone low-stakes.
     Remind learners that these statements are meant to be tricky and that being unsure is a perfectly good starting point.
 - Reveal the answers briefly, then resist the urge to explain everything now.
-    Each statement is unpacked in the sections that follow, so you can say "we'll see why in a few minutes."
+    Each statement is unpacked in the sections that follow, so you can say "we will explain why in a few minutes."
 - Statement 1 is the most commonly believed myth. If someone chose "Fact", ask what they think happens to code posted publicly with no license, and then park the question until the "What happens if you don't add a license?" section.
 - Statement 3 often surfaces confusion between *ownership* and *permissions*. Note it and return to it in the ownership discussion below.
 - Learners may ask "who holds the copyright if I wrote the code for my job or studies?" Acknowledge that it's a great question, say it depends on employer and institutional policy, and save it for the copyright section and its "Not legal advice" callout.
@@ -65,13 +65,13 @@ Based on your previous knowledge, mark each statement as a Myth or a Fact.
 :::::::::::::::: solution
 
 1. Myth. Default copyright/IP law applies; public does not mean permission.
-2. Fact. An OS license tells users exactly what they are allowed to do with the intellectual property.
+2. Fact. An open source license tells users exactly what they are allowed to do with the intellectual property.
 3. Myth. A license does not give away ownership. It is a legal document where you (the owner) grant specific permissions to other people to use your code.
 
 :::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::
 
-Let's look at why each of these statements is a myth or a fact, starting with the basics.
+Let us examine why each of these statements is a myth or a fact, starting with the basics.
 
 ## Starting point: what is open source software (OSS)?
 
@@ -112,7 +112,7 @@ Two things to keep in mind:
 
 This lesson explains general concepts to help you make informed decisions. It is not legal advice. For specific situations, such as employer or university IP policies, funder requirements, or commercial products, consult your institution's legal or technology transfer office.
 
-At the University of California, software created using university resources is typically owned by The Regents of the University of California.
+At the University of California (UC), software created using university resources is typically owned by The Regents of the University of California.
 Code created in connection with your research project or your staff position is typically owned by The Regents of the University of California.
 Grants may stipulate that the funder owns the results of the research, including code, or require a specific license.
 
@@ -238,11 +238,13 @@ In general, *without* a license:
 | Contributors | Can't be sure their contributions can be legally included and shared |
 | You, the author | Your work is less likely to be reused, cited, or improved |
 
+Table: Effects of sharing code without a license
+
 ::::::::::::::::::::::::::::::::::::: instructor
 
 ### Notes for the think-pair-share challenge
 
-- Collect the "Think" answers with a quick show of hands or poll before pairing, so you can see the spread of misconceptions.
+- Collect the "Think" answers with a quick show of hands or poll before pairing, so you can identify common misconceptions.
 - Expect some learners to pick **D**. 
     Use it to show that attribution and permission are different things.
 - Connect back to the accidental trap example:
@@ -298,7 +300,7 @@ What is the legal situation?
 
 - Open an issue (or email the author) asking them to add a license, ideally suggesting a specific one.
 - Ask the author for explicit written permission for your intended use.
-- Look for an alternative tool that does have a license.
+- Find an alternative tool that has a license.
 - Write your own implementation from scratch, without copying the original code.
 
 :::::::::::::::::::::::::
@@ -312,8 +314,8 @@ Now that you know why a license matters, the next questions are:
 
 - What are the most common open source licenses, and what do they allow?
 - Which license should I choose? Licenses differ in how much freedom they give and what they require in return. Some are **permissive** (few conditions) and others are **copyleft** (conditions that keep derivative work open).
-- How do I choose and apply a license to my own project, and justify the choice?
 - What happens when the licenses of the libraries your project depends on don't fit together?
+- How do I choose and apply a license to my own project, and justify the choice?
 
 We'll tackle these in the next episodes.
 
