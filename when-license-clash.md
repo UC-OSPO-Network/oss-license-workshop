@@ -18,21 +18,30 @@ exercises: 10
 
 <!-- wbcheck AI204: The episode has no explanatory text. It does not define a dependency, does not explain permissive versus copyleft licenses, and does not show a worked example before learners are asked to judge com... -->
 
+<!-- narrative anchor: Valentina (researcher, partial release). Her situation for this episode goes here: the project she wants to share in part, and the package whose license might clash. TODO (group), pending the persona decision in issue #12. -->
+
+## A word of caution: dependencies
+
+Your toolchain, IDE, or Python package manager may add packages and libraries to your application or code.
+
+Make sure the licenses of those packages are compatible with each other, and that they let you accomplish what you want to accomplish.
+
 <!-- EPISODE CONTENT HERE -->
 
 ::::::: challenge
 <!-- wbcheck AI202: The instructions contain typos ('Place and X is there is'). The grid also gives no guidance for nuanced cases such as LGPL linking, Apache-2.0 into GPLv2, or proprietary terms, where the answer is... -->
 
-Check the box if there is no conflict.  Place and X is there is a conflict.
+Mark an X in each cell where there is a conflict. Leave the cell empty if there is no conflict.
 
 <!-- wbcheck AI208: The table is tab-separated plain text, not a Markdown pipe table, so it will render as a jumbled paragraph. The header also splits 'Dependency License' across lines, and the 'Commercial' row is tru... -->
 
-Dependency 
-License	My Project License
-	BSD	MIT	Apache 	LGPL	GPL	Commercial
-BSD						
-GPL						
-Commercial			
+| Dependency license | BSD | MIT | Apache | LGPL | GPL | Commercial |
+|---|---|---|---|---|---|---|
+| **BSD** | | | | | | |
+| **GPL** | | | | | | |
+| **Commercial** | | | | | | |
+
+Read each row as the license of the dependency and each column as the license of **My project**.
 
 ::::::
 

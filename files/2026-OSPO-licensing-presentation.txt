@@ -1,0 +1,152 @@
+Why Licensing Matters?
+Software is intellectual property and its creation and use are governed by Intellectual Property Laws and enshrined in the Article 1, Section 8, Clause 8 of the Constitution.
+Purpose of Intellectual Property laws are to “promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries”.  
+Basically, the founding members of the United States understood that innovation rests on promoting the creators of Intellectual Property.
+
+
+Licensing
+
+When talking about Software typically we are concerned with Copyright and Patents. 
+There are other  intellectual property rights (like trademarks, moral right) that may be apply, but they are not as prominent in the protection of the code itself.  
+Copyright and Patents
+
+Copyright
+•         Applies to: Original works of authorship. Expression of an idea, but not the idea itself.
+•         Romeo and Juliet and Westside story are protected by copyright.  The basic plot/idea is the same but each story is its own expression of that idea.
+•         Applies Automatically
+•         Does NOT require  a © notice
+•         Copyright owner has the exclusive right to copy, distribute, modify, perform, display their work.  Perform and display typically apply to plays, songs, music.
+
+So what is Copyright?
+
+ Applies to: Inventions. 
+Inventions must meet the following criteria:  (1) patentable subject matter (process, machine, manufacture, or composition of matter); (2) utility; (3) novelty; (4) non-obviousness; and (5) enablement
+•         Not automatic.  Inventor must apply for patent.
+ It is expensive.  
+•         Rights: use, make, sell, offer for sale, import
+
+Patents
+
+As the copyright/patent owner has exclusive rights, this means you need their permission to use, copy, distribute, make, sell the works or inventions of the IP owner.  
+
+This is done by getting a license. 
+○The owner can set restrictions or obligations on use of the work in their license.
+○An IP owner can limit the field of use (eg allow only non-commercial use), place conditions on distribution (eg attribution requirements, copyleft licensing, permit use in specific territory)
+
+
+
+
+License 
+
+When researchers publish code without a license, some people assume it is "public or free to use" It is not. Copyright law applies automatically. Without a license, others cannot legally reuse, modify, or redistribute the code.
+
+○If you don’t comply or don’t have a license, you could be liable for monetary damages or you can find your use enjoined or required to comply with licenses.
+You could suffer reputational damage.
+License Compliance
+
+Clear licensing communicates permission and expectations, reducing friction and supporting open, reproducible research. 
+
+ But before choosing a license or making the decision to open source your software, it is important to determine who owns the code.  That can be trickier than you would expect.
+
+Licenses
+
+At the University of California, software created using university resources is typically owned by The Regents of the University of California.
+Code created in connection to your research project or your staff position is typically owned by The Regents of the University of California.  
+Grants may stipulate that the funder owns the results of the research (including code) or require a specific license.  
+You can learn more about the University of California’s copyright policy at https://copyright.universityofcalifornia.edu/.  It’s important to understand how the policy applies to your case.  There is more nuance than can be provided in slides.
+
+Ownership of Code
+
+Before releasing code under an open-source license, you must check with your campus Tech Transfer office (sometimes called the Office of Intellectual Property or Technology Commercialization). 
+They will:
+Verify ownership and funding requirements.
+Ensure no third-party restrictions apply (e.g., from proprietary libraries).
+Help you select the most appropriate license from the UC-recommended list.
+
+Work with your TTO
+
+●Open Source Licenses
+○Royalty-free meaning endes users don’t pay any money.
+○Permits the Licensee (end user) to use, copy, modify, distribute the software
+○Source code is made available to end users to enable the exercise of those rights.
+
+Open Source Licenses
+
+Understanding license categories
+Open-source licenses fall into a spectrum with permissive licenses on one side and strong copyleft the other side. 
+
+Open Source Licenses
+
+Examples: BSD, MIT, Apache 2.0
+Permissive licenses have few requirements and are relatively easy to comply with.  Typically, you are required to provide attribution.  These licenses are common in research because they're simple and maximize flexibility.[KP1]   One note, these licenses allow users to distribute your software commercially if they choose to do so. 
+At the University of California, the BSD and MIT are favored over the Apache license. The Apache license requires licensors to grant a patent license to all licensees.  This could have the unintended effect of reaching into UC’s patent portfolio and the work of other researchers.  With patents, different people/groups can come up with the idea independently.
+
+
+
+Permissive Licenses
+
+At the other end of the spectrum are copyleft licenses.  These licenses are sometimes called viral licenses because these licenses require that “derivative works/modifications” must be licensed under the same terms of the copyleft license. This protects the openness across the lifecycle of a project.
+Copyleft licenses may define what is considered a derivative work and what might trigger the copyleft provision.  Thus, there can be weak and strong copyleft licenses.
+A weak copyleft licenses typically limits either scope of what is considered a derivative work or the trigger.  For example, the LGPL may allow you to dynamically link to an LGPL library without triggering the copyleft provision and allowing your code linking to the library to remain under the license of your choice.
+
+Copyleft Licenses
+
+GPL 2.0 is a strong copyleft license and would require your code to be placed under the terms of the GPL.
+
+The UC system does not recommend GPL 3.0 for university-owned software due to patent provisions that may conflict with UC policies. If you need copyleft protection, consult your campus Tech Transfer office about GPL 2.0 or alternatives.
+
+
+GPL 2.0 and 3.0
+
+•Word of caution – Toolchain, IDE, python packet manager, etc may add packages/libraries to your application/code.
+•Important to ensure that the licenses of the packages are compatible and accomplish what you would like to accomplish.  
+
+
+
+One word of caution - Dependencies
+
+Selection of a license will depend on your goals, and the policies of the University of California. The Open Source Software chart and its companion can help you to navigate the UC policies and help guide your discussion with your TTO.
+
+Always consult your campus Tech Transfer office before releasing UC-owned software.
+
+
+How to choose a license
+
+UC OSS Resources – Resources and guides for open source activities at UC.
+UC OSS Chart and Companion Guide – The definitive list of UC-recommended "low-risk" licenses.
+UC OSPO License Guide – Guidance on institutional requirements and templates.
+ChooseALicense.com – A helpful tool for comparing license features.  This tool does not supersede UC policies.
+
+UC Resources
+
+Following  TTO approval, we will add the BSD 3-Clause license to your demo repository:
+Navigate to your repository on GitHub.
+Click Add file → Create new file.
+Name it LICENSE (or LICENSE.txt).
+Click Choose a license template and select BSD 3-Clause License.
+CRITICAL: Update the copyright holder to: The Regents of the University of California.
+Update the year to 2026.
+Commit the file to your main branch.
+Verify: Does your repository now display the "BSD-3-Clause" license badge in the sidebar?
+
+Challenge: Add a BSD License to Your Repository
+
+
+GitHub automatically detects the LICENSE file and displays it in the sidebar. Your file should look like this:
+BSD 3-Clause License
+ 
+Copyright (c) 2026, The Regents of the University of California
+All rights reserved.
+If the badge doesn't appear, ensure the file is in the root directory and named exactly LICENSE or LICENSE.txt.
+Solution
+
+Communicating your license
+After adding a LICENSE file, reference it in your README so users immediately understand usage terms.
+Add this section near the top of your README:
+## License
+ 
+This project is licensed under the BSD 3-Clause License - see the [LICENSE](LICENSE) file for details.
+Why this matters: Users reading your README on platforms other than GitHub (Zenodo, email, exported PDFs) will see your license terms even without GitHub's automatic detection.
+
+
+Communication your License

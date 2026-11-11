@@ -3,6 +3,8 @@ site: sandpaper::sandpaper_site
 ---
 This lesson helps learners understand open source software (OSS) licensing. It is for people who write or share code and are unsure which license to choose, and for anyone who is curious about how open source licenses work.
 
+The [learner profiles](profiles.html) describe five people this lesson was written for.
+
 ## Learning Objectives
 
 After completing this lesson, learners will be able to:
