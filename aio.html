@@ -991,7 +991,7 @@ name(s) and appropriate references.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>No. Clause 1 (especially) violates the permission to modify the
 software and to distribute copies of your modified version to others.
@@ -1041,7 +1041,7 @@ four freedoms, and the discussion questions are left out.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Output </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1075,7 +1075,7 @@ four freedoms, and the discussion questions are left out.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -1277,7 +1277,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-choosing-licenses"><p>Content from <a href="choosing-licenses.html">Choosing a License</a></p>
 <hr>
-<p>Last updated on 2026-11-11 |
+<p>Last updated on 2026-11-12 |
 
         <a href="https://github.com/UC-OSPO-Network/oss-license-workshop/edit/main/episodes/choosing-licenses.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1290,11 +1290,11 @@ any links that you are not going to use.
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<!-- wbcheck AI202: The exercises are only described as plans and are placed in `questions` blocks. There are no actual scenarios, answer options or solutions, so nothing can be used for formative assessment. -->
 <ul>
-<li>Multiple choice: Answers will be the different license types
-e.g. MIT, Apache 2.0, GPL etc. Questions: Project based scenarios…choose
-the best answer. Discuss answers.</li>
+<li>Who owns my code, and who decides how it is released?</li>
+<li>How do I choose a license that fits my goals and my institution’s
+policies?</li>
+<li>How do I add a license to my project and tell people about it?</li>
 </ul>
 </div>
 </div>
@@ -1303,14 +1303,15 @@ the best answer. Discuss answers.</li>
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<!-- wbcheck AI202: None of the three planned exercises asks learners to decide whether a commercial open source model fits a project, so this objective is unassessed. -->
-<!-- wbcheck AI206: 'COSS' is an uncommon acronym and is never expanded. Check whether the lesson's external glossary defines it. -->
+<!-- Parked until issue #26 settles what COSS means and an exercise assesses it: "Identify when a COSS is appropriate for an OSS project." -->
 <ul>
-<li>Compare key licensing factors for the type of OSS application
-(science/scholarship/non-commercialization) and list the options.</li>
-<li>Choose an appropriate OSS license and explain the decision thinking
-when contributing to different projects.</li>
-<li>Identify when a COSS is appropriate for OSS project.</li>
+<li>Determine who owns a piece of software and who must approve its
+release.</li>
+<li>Compare licenses against project goals and UC policy.</li>
+<li>Choose a license and explain which goals and constraints shaped the
+choice.</li>
+<li>Add a license file and a README license section to a
+repository.</li>
 </ul>
 </div>
 </div>
@@ -1354,9 +1355,18 @@ list.</li>
 </h2>
 <hr class="half-width">
 <p>The license you select will depend on your goals and on the policies
-of the University of California. The Open Source Software chart and its
-companion guide can help you navigate UC policies and guide your
-discussion with your TTO.</p>
+of the University of California. Consider:</p>
+<ul>
+<li>who owns the code, and any funder requirements.</li>
+<li>how much reuse you want. Episode 2 compares permissive and copyleft
+licenses.</li>
+<li>the UC risk ratings for each license. Episode 3 summarizes the
+chart.</li>
+<li>the licenses of your dependencies. Episode 3 explains how they can
+clash.</li>
+</ul>
+<p>The Open Source Software chart and its companion guide can help you
+navigate UC policies and guide your discussion with your TTO.</p>
 <p>Always consult your campus TTO before releasing UC-owned
 software.</p>
 </section><section><h2 class="section-heading" id="uc-resources">UC resources<a class="anchor" aria-label="anchor" href="#uc-resources"></a>
@@ -1379,31 +1389,32 @@ templates.</li>
 <a href="https://choosealicense.com" class="external-link">ChooseALicense.com</a>: a tool
 for comparing license features. It does not supersede UC policies.</li>
 </ul>
-<div id="challenge-add-a-bsd-license-to-your-repository" class="callout challenge">
+<div id="challenge-choose-a-license-for-santiagos-tool" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="challenge-add-a-bsd-license-to-your-repository" class="callout-inner">
-<h3 class="callout-title">Challenge: add a BSD license to your
-repository</h3>
+<div id="challenge-choose-a-license-for-santiagos-tool" class="callout-inner">
+<h3 class="callout-title">Challenge: choose a license for Santiago’s
+tool</h3>
 <div class="callout-content">
-<p>After TTO approval, add the BSD 3-Clause license to your demo
-repository:</p>
+<p>Santiago works as research staff at a UC campus. He wrote a
+data-cleaning tool for his campus group as part of his job. A
+collaborator at another institution wants to use it. He assumes the
+choice of license is his to make.</p>
+<p><strong>Think (2 minutes):</strong> On your own, answer these
+questions.</p>
 <ol style="list-style-type: decimal">
-<li>Navigate to your repository on GitHub.</li>
-<li>Click <strong>Add file</strong> → <strong>Create new
-file</strong>.</li>
-<li>Name it <code>LICENSE</code> (or <code>LICENSE.txt</code>).</li>
-<li>Click <strong>Choose a license template</strong> and select
-<strong>BSD 3-Clause License</strong>.</li>
-<li>Update the copyright holder to: The Regents of the University of
-California. This step is critical.</li>
-<li>Update the year to 2026.</li>
-<li>Commit the file to your main branch.</li>
-<li>Verify: does your repository now display the “BSD-3-Clause” license
-badge in the sidebar?</li>
+<li>Who probably owns the code? Who must approve its release?</li>
+<li>Use the chart summary in Episode 3. Which licenses are low risk for
+distributing outside UC?</li>
+<li>Pick one license and give two reasons. Think about your goals, UC
+policy, and the license of any dependency.</li>
 </ol>
+<p><strong>Pair (2 minutes):</strong> Compare answers with a partner.
+Where you chose differently, explain your reasons.</p>
+<p><strong>Share (2 minutes):</strong> Be ready to report one reason
+from your pair to the group.</p>
 </div>
 </div>
 </div>
@@ -1414,9 +1425,117 @@ badge in the sidebar?</li>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>At UC, code written for a staff position is typically owned by The
+Regents of the University of California. Santiago needs approval from
+his campus TTO before release.</li>
+<li>In the 2018 chart, BSD and MIT are low risk in every situation.
+Apache 2.0 and MPL 2.0 can be moderate risk when you distribute modified
+code outside UC.</li>
+<li>Answers vary. A good answer names a goal (for example, wide reuse),
+a UC constraint (for example, low risk in the chart), and a check of the
+licenses of any dependency.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="challenge-pick-the-best-answer" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-pick-the-best-answer" class="callout-inner">
+<h3 class="callout-title">Challenge: pick the best answer</h3>
+<div class="callout-content">
+<p>Read each scenario. Choose the best answer, then compare with your
+neighbor.</p>
+<p><strong>1. Camila</strong> is a postdoctoral researcher at a UC
+campus. Her TTO has approved a release. She wants labs and companies to
+reuse her analysis scripts with as few conditions as possible. Which
+license fits best?</p>
+<ul>
+<li>A. BSD 3-Clause</li>
+<li>B. GPL 3.0</li>
+<li>C. PolyForm Noncommercial</li>
+<li>D. No license</li>
+</ul>
+<p><strong>2. Valentina</strong> leads a research software project at a
+UC campus. She wants a copyleft license, so that changes to her code
+stay open. She will share the code with collaborators outside UC. Under
+UC guidance, which license fits best?</p>
+<ul>
+<li>A. GPL 2.0</li>
+<li>B. GPL 3.0</li>
+<li>C. MIT</li>
+<li>D. BSD 3-Clause</li>
+</ul>
+<p><strong>3. Santiago</strong> wrote a tool as part of his staff job at
+a UC campus. A collaborator wants to use it. What should he do
+first?</p>
+<ul>
+<li>A. Add a BSD license and publish the code</li>
+<li>B. Ask the collaborator which license they prefer</li>
+<li>C. Check ownership and approval with his campus TTO</li>
+<li>D. Wait until the code has no known bugs</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<!-- Draft answers for the group to check. An expert should confirm the policy statements. -->
+<ol style="list-style-type: decimal">
+<li>
+<strong>A.</strong> BSD is permissive and low risk in the UC chart,
+and it lets companies and labs reuse the code. GPL 3.0 is high risk for
+distribution outside UC. PolyForm Noncommercial is not an open source
+license, and it blocks companies. With no license, nobody has permission
+to reuse the code.</li>
+<li>
+<strong>A.</strong> GPL 2.0 is a copyleft license, and the UC chart
+rates GPL 2.x low risk. UC does not recommend GPL 3.0, because its
+patent provisions may conflict with UC policies. MIT and BSD are
+permissive, so they do not keep changes open. Valentina still checks
+with her TTO.</li>
+<li>
+<strong>C.</strong> The university probably owns the code, so
+Santiago does not decide alone. A license choice comes after approval.
+The collaborator’s preference does not change who owns the code.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="add-the-license-to-a-repository">Add the license to a repository<a class="anchor" aria-label="anchor" href="#add-the-license-to-a-repository"></a>
+</h2>
+<hr class="half-width">
+<p>After TTO approval, your instructor adds the BSD 3-Clause license to
+a demo repository. The steps are:</p>
+<ol style="list-style-type: decimal">
+<li>Navigate to the repository on GitHub.</li>
+<li>Click <strong>Add file</strong> and then <strong>Create new
+file</strong>.</li>
+<li>Name the file <code>LICENSE</code> (or
+<code>LICENSE.txt</code>).</li>
+<li>Click <strong>Choose a license template</strong> and select
+<strong>BSD 3-Clause License</strong>.</li>
+<li>Update the copyright holder to: The Regents of the University of
+California. In this scenario, the university owns the code, so this step
+matters.</li>
+<li>Update the year to 2026.</li>
+<li>Commit the file to the main branch.</li>
+<li>Check that the repository now shows the “BSD-3-Clause” license badge
+in the sidebar.</li>
+</ol>
 <p>GitHub automatically detects the <code>LICENSE</code> file and
-displays it in the sidebar. The beginning of your complete license file
-should look like this. Keep all terms from the template:</p>
+displays it in the sidebar. The beginning of the complete license file
+looks like this. The file keeps all terms from the template:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1428,10 +1547,6 @@ All rights reserved.</code></pre>
 <p>If the badge does not appear, make sure the file is in the root
 directory and named exactly <code>LICENSE</code> or
 <code>LICENSE.txt</code>.</p>
-</div>
-</div>
-</div>
-</div>
 </section><section><h2 class="section-heading" id="communicate-your-license">Communicate your license<a class="anchor" aria-label="anchor" href="#communicate-your-license"></a>
 </h2>
 <hr class="half-width">
@@ -1455,9 +1570,15 @@ the <code>LICENSE</code> file when you share the project.</p>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
+<!-- Draft from the episode text for the group to edit (issue #9). -->
 <ul>
-<li>Draft: the key points for this episode are still to be written by
-the lesson authors.</li>
+<li>Find out who owns the code before you choose a license.</li>
+<li>At UC, check with your TTO before you release code under an open
+source license.</li>
+<li>Match the license to your goals, UC policy, and the licenses of your
+dependencies.</li>
+<li>Add a <code>LICENSE</code> file to the root of your repository and
+name the license in your README.</li>
 </ul>
 </div>
 </div>
@@ -1516,8 +1637,8 @@ any links that you are not going to use.
   "url": "https://UC-OSPO-Network.github.io/oss-license-workshop/aio.html",
   "identifier": "https://UC-OSPO-Network.github.io/oss-license-workshop/aio.html",
   "dateCreated": "2026-08-28",
-  "dateModified": "2026-11-11",
-  "datePublished": "2026-11-11"
+  "dateModified": "2026-11-12",
+  "datePublished": "2026-11-12"
 }
 
   </script><script>
