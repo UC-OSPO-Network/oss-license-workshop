@@ -14,11 +14,10 @@ exercises: 15 # exercise time in minutes: think-pair-share 6, multiple choice 5,
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-<!-- Parked until issue #26 settles what COSS means and an exercise assesses it: "Identify when a COSS is appropriate for an OSS project." -->
-
 - Determine who owns a piece of software and who must approve its release.
 - Compare licenses against project goals and UC policy.
 - Choose a license and explain which goals and constraints shaped the choice.
+- Describe when commercial open source software (COSS) fits a project.
 - Add a license file and a README license section to a repository.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -88,12 +87,28 @@ Always consult your campus TTO before releasing UC-owned software.
 
 When you create a new repository, the UC OSPO standard recommendation is the BSD 3-Clause license. Your TTO still makes the final call.
 
+## When is commercial open source an option?
+
+<!-- Draft from the UC Open 2026 panel for Karla and the expert to check. -->
+
+Some projects aim to become a business. Commercial open source software (COSS) is software that a company releases under an open source license while it earns money from something it does not give away, such as enterprise features, a hosted service, or support. Open source is the company's strategy. It is not the business model.
+
+Ask these questions before you plan a COSS project:
+
+- What are your goals? Many research teams do not want to start a company, and a standard open license is enough.
+- What would customers pay for that you do not give away?
+- Could a market support a business around this software?
+- Have you talked to your TTO? Do it early, because ownership and funding terms can limit your options.
+
+Some licenses limit commercial use. As Episode 2 explains, they are source available licenses, not open source licenses.
+
 ## UC resources
 
 - [UC OSS Resources](https://security.ucop.edu/resources/open-source-software-licensing.html): resources and guides for open source activities at UC.
 - [UC OSS Chart](https://security.ucop.edu/files/documents/resources/oss-chart.pdf) and [Companion Guide](https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf): UC guidance on license risks.
 - [UC OSPO License Guide](https://ucospo.net/oss-resources/template-guides/license-guide/): guidance on institutional requirements and templates.
 - [ChooseALicense.com](https://choosealicense.com): a tool for comparing license features. It does not supersede UC policies.
+- [Making a COSS Play](https://www.youtube.com/watch?v=V4XjaDWG-cs) (UC Open 2026 panel, video): researchers, investors, and tech transfer officers discuss commercial open source.
 
 :::::::::::::::::::::::::::::::::::::: challenge
 
@@ -125,7 +140,7 @@ Santiago works as research staff at a UC campus. He wrote a data-cleaning tool f
 
 ## Challenge: pick the best answer
 
-Read each scenario. Choose the best answer, then compare with your neighbor.
+Read each question. Choose the best answer, then compare with your neighbor.
 
 **1. Camila** is a postdoctoral researcher at a UC campus. Her TTO has approved a release. She wants labs and companies to reuse her analysis scripts with as few conditions as possible. Which license fits best?
 
@@ -148,6 +163,13 @@ Read each scenario. Choose the best answer, then compare with your neighbor.
 - C. Check ownership and approval with his campus TTO
 - D. Wait until the code has no known bugs
 
+**4. Commercial open source.** Which statement best describes commercial open source software (COSS)?
+
+- A. Open source software that you pay to download
+- B. Software that a company releases openly while it earns money from a related product or service it does not give away
+- C. Software with no license
+- D. Open source software whose source code is hidden
+
 ::::::::::::::::::::::::::::::: solution
 
 <!-- Draft answers for the group to check. An expert should confirm the policy statements. -->
@@ -155,6 +177,7 @@ Read each scenario. Choose the best answer, then compare with your neighbor.
 1. **A.** BSD is permissive and low risk in the UC chart, and it lets companies and labs reuse the code. GPL 3.0 is high risk for distribution outside UC. PolyForm Noncommercial is not an open source license, and it blocks companies. With no license, nobody has permission to reuse the code.
 2. **A.** GPL 2.0 is a copyleft license, and the UC chart rates GPL 2.x low risk. UC does not recommend GPL 3.0, because its patent provisions may conflict with UC policies. MIT and BSD are permissive, so they do not keep changes open. Valentina still checks with her TTO.
 3. **C.** The university probably owns the code, so Santiago does not decide alone. A license choice comes after approval. The collaborator's preference does not change who owns the code.
+4. **B.** COSS is a business strategy. The company shares some or all of the software under an open source license and sells something else, such as enterprise features, hosting, or support. Open source code is not hidden, and it does not have to cost money.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

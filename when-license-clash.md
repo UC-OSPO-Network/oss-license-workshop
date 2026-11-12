@@ -81,6 +81,10 @@ Copyleft terms usually apply when you distribute the combined program, for examp
 
 Before you share a project, list its dependencies and record the license of each one.
 
+Dependencies are not only code. Data can have a license too, and the license shown on a data record may not match the limits on the data behind it. In one example from a UC technology transfer office, datasets on Zenodo carried Creative Commons licenses, but the patient data they were built on had no commercial rights. Check where your data came from and what its source allows.
+
+<!-- Draft from the UC Open 2026 COSS panel for the expert to check. -->
+
 <!-- TODO (group): where to find a license (package page, `LICENSE` file, package metadata) and how to record it (a simple table: package, license, type). Link the CURIOSS disclosure form pattern if the group agrees. -->
 
 :::::::::::::::::::::::::::::::::::::: challenge

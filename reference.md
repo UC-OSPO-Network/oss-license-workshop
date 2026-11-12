@@ -76,7 +76,7 @@ OSI-approved
 : A license that the Open Source Initiative (OSI) has assessed and judged to qualify as "open source". The primary mission of the OSI is to assess licenses and maintain a list of those that qualify.
 
 COSS
-: TBD
+: Commercial open source software. Software that a business releases under an open source license while it earns money from something it does not give away, such as enterprise features, a hosted service, or support. Open source is the business's strategy, not its business model.
 
 Package manager
 : TBD
@@ -109,6 +109,8 @@ OSPO
 : TBD
 
 ## Sources
+
+The definition of COSS follows the discussion in the UC Open 2026 panel [Making a COSS Play](https://www.youtube.com/watch?v=V4XjaDWG-cs) (chaired by Karla Padilla), reworded by the lesson authors. Karla is asked to confirm the wording.
 
 The definitions of permissive license, copyleft license, hereditary, patent-granting license, delegated authority, and dual licensing are adapted from the University of California Office of the President's guidance on open source software:
 
