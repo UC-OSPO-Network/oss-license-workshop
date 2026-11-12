@@ -6,8 +6,6 @@ exercises: 15
 
 :::::::::::::::::::::::::::::::::::::: questions
 
-<!-- wbcheck AI201: This question, and the matching keypoint about patents and contributors' names, is not addressed in the body or in any objective. -->
-
 - What must every open source license allow, no matter which one you pick?
 - What does a permissive license ask of people who use your code, and what does a copyleft license ask instead?
 - If two licenses are in the same family, does it matter which one you choose?
@@ -20,18 +18,6 @@ exercises: 15
 - State what a permissive license allows and requires, and give an example of a permissive license.
 - State what a copyleft license allows and requires, and give an example of a copyleft license.
 - State what a weak copyleft license allows and requires, and give an example of a weak copyleft license.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Introduction
-
-::::::::::::::::::::::::::::::::::::: callout
-
-## "I want researchers to use this, but not companies"
-
-This is one of the most common things researchers ask for, but it actually isn't compatible with the premise of open source. The [Open Source Definition](https://opensource.org/osd#:~:text=6.%20No%20Discrimination%20Against%20Fields%20of%20Endeavor) says a license "may not restrict the program from being used in a business."
-
-If excluding commercial use really is a requirement, a license like [PolyForm Noncommercial](https://polyformproject.org/licenses/noncommercial/1.0.0) will do it. Researchers at academic institutions would still be able to use your code, but they couldn't build it into their own open source projects. Researchers at companies, startups, and industry labs couldn't use it at all.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -54,9 +40,46 @@ An open source license:
 - permits the licensee (the end user) to use, copy, modify, and distribute the software.
 - comes with source code made available to end users, so they can exercise those rights.
 
+::::::::::::::::::::::::::::::::::::: callout
+
+## "I want researchers to use this, but not companies"
+
+This is one of the most common things researchers ask for, but it actually isn't compatible with the premise of open source. The [Open Source Definition](https://opensource.org/osd#:~:text=6.%20No%20Discrimination%20Against%20Fields%20of%20Endeavor) says a license "may not restrict the program from being used in a business."
+
+If excluding commercial use really is a requirement, a license like [PolyForm Noncommercial](https://polyformproject.org/licenses/noncommercial/1.0.0) will do it. Researchers at academic institutions would still be able to use your code, but they couldn't build it into their own open source projects. Researchers at companies, startups, and industry labs couldn't use it at all.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## License categories
 
 Open source licenses fall into a spectrum. Permissive licenses sit on one side and strong copyleft licenses on the other.
+
+```mermaid
+%%{init: {"theme": "base", "themeVariables": {"fontSize": "16px", "lineColor": "#6b7280"}}}%%
+flowchart LR
+    accTitle: The spectrum of open source licenses
+    accDescr {
+        Three license categories in a row, from fewest conditions to most conditions.
+        Permissive licenses (BSD, MIT, Apache 2.0) come first.
+        Weak copyleft licenses (LGPL, MPL) are in the middle.
+        Strong copyleft licenses (GPL) come last.
+    }
+    A["<b>Permissive</b><br/>BSD, MIT, Apache 2.0<br/>Fewest conditions"] --> B["<b>Weak copyleft</b><br/>LGPL, MPL<br/>Some conditions"] --> C["<b>Strong copyleft</b><br/>GPL<br/>Most conditions"]
+    classDef permissive fill:none,stroke:#7c6fd6,stroke-width:3px
+    classDef weak fill:none,stroke:#c27c0e,stroke-width:3px
+    classDef strong fill:none,stroke:#3b82f6,stroke-width:3px
+    class A permissive
+    class B weak
+    class C strong
+```
+
+| Category | What it allows | What it requires | Examples |
+|---|---|---|---|
+| Permissive | Any use, including in closed-source products | Usually attribution: keep the copyright and license notice | BSD, MIT, Apache 2.0 |
+| Weak copyleft | Any use. Can be combined with code under other licenses | Changes to the licensed code itself stay under the same license | LGPL, MPL |
+| Strong copyleft | Any use | Derivative works and modifications that you distribute use the same license | GPL |
+
+Table: How the three license categories differ
 
 ## Permissive licenses
 
@@ -82,6 +105,16 @@ GPL 2.0 is a strong copyleft license. It would require your code to be placed un
 
 The UC system does not recommend GPL 3.0 for university-owned software, because its patent provisions may conflict with UC policies. If you need copyleft protection, consult your campus technology transfer office (Episode 4 explains its role) about GPL 2.0 or alternatives.
 
+
+## Licenses in the same family
+
+<!-- Draft for the expert to check. -->
+
+Two licenses can sit in the same category and still differ on specific points. Check the actual clauses before you choose.
+
+- BSD 2-Clause and BSD 3-Clause are both permissive. The 3-Clause version adds a condition: you may not use the names of the project or its contributors to endorse or promote products built from the code without permission.
+- MIT and BSD are both short permissive licenses. Both ask users to keep the copyright and license notice.
+- Apache 2.0 is also permissive. It adds an explicit patent license from contributors, which is why UC treats it differently from BSD and MIT.
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
@@ -124,55 +157,57 @@ Some open source licenses include such clauses.
 This exercise is adapted from the "What is Open Source?" episode of [Software Licensing](https://intersect-training.org/software-licensing/) (INTERSECT) by David E. Bernholdt, Lauren E. Milechin, Dave Rumph, Michael A. Heroux, and James Willenbring, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 Changes: the introduction and the solution are reworded, the solution refers to the permissions listed earlier in this episode instead of the four freedoms, and the discussion questions are left out.
 
-::::::::::::::::::::::::::::::::::::: challenge 
+:::::::::::::::::::::::::::::::::::::: challenge
 
-## Challenge 1: Can you do it?
+## Challenge: sort the licenses
 
-What is the output of this command?
+Put each license in one category: permissive, weak copyleft, or strong copyleft.
 
-<!-- wbcheck WB111: body still contains scaffold example text: "paste("this", "new", "lesson", "looks", "good")" -->
+MIT, GPL 2.0, LGPL, BSD 3-Clause, MPL, GPL 3.0
 
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
+::::::::::::::::::::::::::::::: solution
 
-:::::::::::::::::::::::: solution 
+- Permissive: MIT and BSD 3-Clause.
+- Weak copyleft: LGPL and MPL.
+- Strong copyleft: GPL 2.0 and GPL 3.0.
 
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
-
-:::::::::::::::::::::::::::::::::
-
-
-<!-- wbcheck AI202: Both challenges are template placeholders about R and Workbench syntax. No exercise asks learners to state what OSS, permissive, copyleft, or weak copyleft licenses allow or require, so none of the... -->
-
-## Challenge 2: how do you nest solutions within challenge blocks?
-
-:::::::::::::::::::::::: solution 
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::: challenge
+
+## Challenge: can the company use it?
+
+A company asks to include Camila's analysis scripts in a closed-source product that it sells. Which licenses would let the company do this without sharing its own source code? Choose all that apply.
+
+- A. MIT
+- B. BSD 3-Clause
+- C. GPL 2.0
+- D. GPL 3.0
+
+::::::::::::::::::::::::::::::: solution
+
+<!-- Draft answer for the group to check. An expert should confirm the wording. -->
+
+**A and B.** MIT and BSD 3-Clause are permissive. The company keeps the copyright and license notice, and it can distribute the product commercially. GPL 2.0 and GPL 3.0 are strong copyleft. If the company distributes a product built on GPL code, it must share the source under the same license.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 ## If you're teaching in a university context
 
-<!-- wbcheck AI208: There is no Exercise 1 about licenses in the episode, so instructors cannot follow this note. The claim about UC policy also has no source. -->
-
 Different universities default to different licenses, and learners may arrive having been told "use this one" without being told why. The UC often prefers BSD-3-Clause, and the license comparison earlier in this episode explains why.
-
-<!-- wbcheck AI206: The acronym OSPO is not expanded. Learners outside institutions that have one may not know the term. -->
 
 Whatever the local default, the answer always ends the same way: **check with your technology transfer office.** Say that explicitly. An open source program office (OSPO) can explain the tradeoffs; the institution makes the call.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: keypoints
-
-<!-- wbcheck AI204: The keypoints summarize permissive, copyleft, and weak copyleft licenses, but the episode body never explains any of them. Learners reach the summary without any explanatory content or worked examp... -->
 
 - An open source license must let anyone use, study, change, and share the software, for any purpose, including commercial use.
 - Permissive licenses (MIT, BSD, Apache) let others reuse the code almost any way they like, including in closed-source products, as long as they keep the copyright and license notice.
@@ -183,4 +218,3 @@ Whatever the local default, the answer always ends the same way: **check with yo
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-[r-markdown]: https://rmarkdown.rstudio.com/
