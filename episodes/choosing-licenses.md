@@ -1,42 +1,25 @@
 ---
 title: "Choosing a License"
 teaching: 10 # teaching time in minutes
-exercises: 2 # exercise time in minutes
+exercises: 15 # exercise time in minutes: think-pair-share 6, multiple choice 5, repository demonstration 4. Needs a pilot.
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
-<!-- wbcheck AI202: Instructors get no example projects, no criteria and no expected reasoning. They cannot judge whether the discussion has met its objective. -->
-
-- Think, Pair, share: Think of an OSS project and roles ( contributor, researcher, commercial oss dev.), Discuss which license you would choose for that project and why.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::: questions 
-
-<!-- wbcheck AI204: The episode has no explanatory text or worked example of choosing a license. Learners would be asked to match and justify licenses they have not been taught. -->
-
-- Matching exercise: list various license types and projects, match licenses to OSS projects and discuss the pairings.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::: questions 
-
-<!-- wbcheck AI202: The exercises are only described as plans and are placed in `questions` blocks. There are no actual scenarios, answer options or solutions, so nothing can be used for formative assessment. -->
-
-- Multiple choice: Answers will be the different license types e.g. MIT, Apache 2.0, GPL etc.  Questions:  Project based scenarios...choose the best answer. Discuss answers. 
+- Who owns my code, and who decides how it is released?
+- How do I choose a license that fits my goals and my institution's policies?
+- How do I add a license to my project and tell people about it?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-<!-- wbcheck AI202: None of the three planned exercises asks learners to decide whether a commercial open source model fits a project, so this objective is unassessed. -->
+<!-- Parked until issue #26 settles what COSS means and an exercise assesses it: "Identify when a COSS is appropriate for an OSS project." -->
 
-<!-- wbcheck AI206: 'COSS' is an uncommon acronym and is never expanded. Check whether the lesson's external glossary defines it. -->
-
-- Compare key licensing factors for the type of OSS application (science/scholarship/non-commercialization) and list the options.
-- Choose an appropriate OSS license and explain the decision thinking when contributing to different projects.
-- Identify when a COSS is appropriate for OSS project.
+- Determine who owns a piece of software and who must approve its release.
+- Compare licenses against project goals and UC policy.
+- Choose a license and explain which goals and constraints shaped the choice.
+- Add a license file and a README license section to a repository.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -48,6 +31,20 @@ exercises: 2 # exercise time in minutes
 - His question: who owns the code, and who approves a release?
 - He checks with the technology transfer office.
 - He picks a license from the UC-recommended list, then adds it to his repository and README.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: instructor
+
+### Notes for the exercises
+
+The exercises take about 15 minutes in total.
+
+- Think, pair, share (6 minutes): learners work through Santiago's case. Two minutes to think, two to pair, two to share. Listen for the ownership question first and the license choice second.
+- Multiple choice (5 minutes): three short scenarios, one per persona. Poll each, then ask one learner to explain the reason.
+- Repository demonstration (4 minutes): show the steps on a demo repository. Learners with a GitHub account can follow along. Nothing here requires one.
+- The scenarios and answers are drafts for the group to check. An expert should confirm the policy statements in the solutions.
+- The slide deck also planned a matching exercise (license types matched to example projects). It is not built yet. It needs a list of projects and the criteria for a good match (issue #9).
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -75,7 +72,14 @@ The TTO will:
 
 ## How to choose a license
 
-The license you select will depend on your goals and on the policies of the University of California. The Open Source Software chart and its companion guide can help you navigate UC policies and guide your discussion with your TTO.
+The license you select will depend on your goals and on the policies of the University of California. Consider:
+
+- who owns the code, and any funder requirements.
+- how much reuse you want. Episode 2 compares permissive and copyleft licenses.
+- the UC risk ratings for each license. Episode 3 summarizes the chart.
+- the licenses of your dependencies. Episode 3 explains how they can clash.
+
+The Open Source Software chart and its companion guide can help you navigate UC policies and guide your discussion with your TTO.
 
 Always consult your campus TTO before releasing UC-owned software.
 
@@ -88,22 +92,83 @@ Always consult your campus TTO before releasing UC-owned software.
 
 :::::::::::::::::::::::::::::::::::::: challenge
 
-## Challenge: add a BSD license to your repository
+## Challenge: choose a license for Santiago's tool
 
-After TTO approval, add the BSD 3-Clause license to your demo repository:
+Santiago works as research staff at a UC campus. He wrote a data-cleaning tool for his campus group as part of his job. A collaborator at another institution wants to use it. He assumes the choice of license is his to make.
 
-1. Navigate to your repository on GitHub.
-2. Click **Add file** → **Create new file**.
-3. Name it `LICENSE` (or `LICENSE.txt`).
-4. Click **Choose a license template** and select **BSD 3-Clause License**.
-5. Update the copyright holder to: The Regents of the University of California. This step is critical.
-6. Update the year to 2026.
-7. Commit the file to your main branch.
-8. Verify: does your repository now display the "BSD-3-Clause" license badge in the sidebar?
+**Think (2 minutes):** On your own, answer these questions.
+
+1. Who probably owns the code? Who must approve its release?
+2. Use the chart summary in Episode 3. Which licenses are low risk for distributing outside UC?
+3. Pick one license and give two reasons. Think about your goals, UC policy, and the license of any dependency.
+
+**Pair (2 minutes):** Compare answers with a partner. Where you chose differently, explain your reasons.
+
+**Share (2 minutes):** Be ready to report one reason from your pair to the group.
 
 ::::::::::::::::::::::::::::::: solution
 
-GitHub automatically detects the `LICENSE` file and displays it in the sidebar. The beginning of your complete license file should look like this. Keep all terms from the template:
+1. At UC, code written for a staff position is typically owned by The Regents of the University of California. Santiago needs approval from his campus TTO before release.
+2. In the 2018 chart, BSD and MIT are low risk in every situation. Apache 2.0 and MPL 2.0 can be moderate risk when you distribute modified code outside UC.
+3. Answers vary. A good answer names a goal (for example, wide reuse), a UC constraint (for example, low risk in the chart), and a check of the licenses of any dependency.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::: challenge
+
+## Challenge: pick the best answer
+
+Read each scenario. Choose the best answer, then compare with your neighbor.
+
+**1. Camila** is a postdoctoral researcher at a UC campus. Her TTO has approved a release. She wants labs and companies to reuse her analysis scripts with as few conditions as possible. Which license fits best?
+
+- A. BSD 3-Clause
+- B. GPL 3.0
+- C. PolyForm Noncommercial
+- D. No license
+
+**2. Valentina** leads a research software project at a UC campus. She wants a copyleft license, so that changes to her code stay open. She will share the code with collaborators outside UC. Under UC guidance, which license fits best?
+
+- A. GPL 2.0
+- B. GPL 3.0
+- C. MIT
+- D. BSD 3-Clause
+
+**3. Santiago** wrote a tool as part of his staff job at a UC campus. A collaborator wants to use it. What should he do first?
+
+- A. Add a BSD license and publish the code
+- B. Ask the collaborator which license they prefer
+- C. Check ownership and approval with his campus TTO
+- D. Wait until the code has no known bugs
+
+::::::::::::::::::::::::::::::: solution
+
+<!-- Draft answers for the group to check. An expert should confirm the policy statements. -->
+
+1. **A.** BSD is permissive and low risk in the UC chart, and it lets companies and labs reuse the code. GPL 3.0 is high risk for distribution outside UC. PolyForm Noncommercial is not an open source license, and it blocks companies. With no license, nobody has permission to reuse the code.
+2. **A.** GPL 2.0 is a copyleft license, and the UC chart rates GPL 2.x low risk. UC does not recommend GPL 3.0, because its patent provisions may conflict with UC policies. MIT and BSD are permissive, so they do not keep changes open. Valentina still checks with her TTO.
+3. **C.** The university probably owns the code, so Santiago does not decide alone. A license choice comes after approval. The collaborator's preference does not change who owns the code.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Add the license to a repository
+
+After TTO approval, your instructor adds the BSD 3-Clause license to a demo repository. The steps are:
+
+1. Navigate to the repository on GitHub.
+2. Click **Add file** and then **Create new file**.
+3. Name the file `LICENSE` (or `LICENSE.txt`).
+4. Click **Choose a license template** and select **BSD 3-Clause License**.
+5. Update the copyright holder to: The Regents of the University of California. In this scenario, the university owns the code, so this step matters.
+6. Update the year to 2026.
+7. Commit the file to the main branch.
+8. Check that the repository now shows the "BSD-3-Clause" license badge in the sidebar.
+
+GitHub automatically detects the `LICENSE` file and displays it in the sidebar. The beginning of the complete license file looks like this. The file keeps all terms from the template:
 
 ```output
 BSD 3-Clause License
@@ -113,10 +178,6 @@ All rights reserved.
 ```
 
 If the badge does not appear, make sure the file is in the root directory and named exactly `LICENSE` or `LICENSE.txt`.
-
-:::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Communicate your license
 
@@ -130,8 +191,13 @@ This project uses the BSD 3-Clause License. The [LICENSE](LICENSE) file contains
 
 This names the license for people who encounter your README outside GitHub, for example on Zenodo, in email, or in exported PDFs. Include the `LICENSE` file when you share the project.
 
-::::::::::::::::::::::::::::::::::::: keypoints 
+::::::::::::::::::::::::::::::::::::: keypoints
 
-- Draft: the key points for this episode are still to be written by the lesson authors.
+<!-- Draft from the episode text for the group to edit (issue #9). -->
+
+- Find out who owns the code before you choose a license.
+- At UC, check with your TTO before you release code under an open source license.
+- Match the license to your goals, UC policy, and the licenses of your dependencies.
+- Add a `LICENSE` file to the root of your repository and name the license in your README.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
