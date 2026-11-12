@@ -329,7 +329,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Why License?</h1>
-        <p>Last updated on 2026-11-11 |
+        <p>Last updated on 2026-11-12 |
 
         <a href="https://github.com/UC-OSPO-Network/oss-license-workshop/edit/main/episodes/why-license.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -410,7 +410,7 @@ code.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Myth. Default copyright/IP law applies; public does not mean
 permission.</li>
@@ -550,7 +550,7 @@ import.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> What makes an invention patentable? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>An invention must meet these criteria:</p>
 <ol style="list-style-type: decimal"><li>Patentable subject matter (a process, machine, manufacture, or
@@ -584,7 +584,7 @@ You could also suffer reputational damage.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
   <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Example scenario: the accidental trap </h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
 <p>A researcher writes an efficient data-parsing script and uploads it
 to GitHub with a README but no license file.</p>
@@ -619,7 +619,39 @@ institutions) won’t</td>
 shared</td>
 </tr><tr><td>You, the author</td>
 <td>Your work is less likely to be reused, cited, or improved</td>
-</tr></tbody></table><div id="you-found-code-with-no-license-think-pair-share" class="callout challenge">
+</tr></tbody></table><div id="a-real-case-the-time-zone-database" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="a-real-case-the-time-zone-database" class="callout-inner">
+<h3 class="callout-title">A real case: the time zone database</h3>
+<div class="callout-content">
+<!-- Draft for the expert to check. Sources: Tim's iASSIST 2026 handout, the tz repository LICENSE file, and the Wikipedia article on the tz database. The lawsuit details come from a summary of Wikipedia, so verify dates and wording against a primary source before release. -->
+<p>Almost every computer clock relies on the tz database, which records
+the time zones of the world and their history. A UCLA researcher, Paul
+Eggert, has maintained it since 2005. The project chose to place its
+code and data in the public domain, so anyone may use them for any
+purpose.</p>
+<p>In 2011 a company sued the two maintainers. The company claimed
+copyright in some of the historical time zone data. The mailing list and
+download site went offline for a time, and the Internet Corporation for
+Assigned Names and Numbers (ICANN) took over stewardship of the
+database. The company dropped the case in 2012 without a court
+ruling.</p>
+<p>The case shows that a project can spread to billions of devices and
+still face a question about who owns one of its pieces. Knowing where
+your code and data come from, and what permission you have to share
+them, matters before you release.</p>
+<p>Read more: the <a href="https://www.iana.org/time-zones" class="external-link">tz
+database</a> at the Internet Assigned Numbers Authority (IANA), and the
+<a href="https://en.wikipedia.org/wiki/Tz_database" class="external-link">Wikipedia article on
+the tz database</a>.</p>
+</div>
+</div>
+</div>
+
+<div id="you-found-code-with-no-license-think-pair-share" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -662,7 +694,7 @@ conclusions to the group.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p><strong>Best answer: C.</strong></p>
 <ul><li>
@@ -796,7 +828,7 @@ any links that you are not going to use.
   "url": "https://UC-OSPO-Network.github.io/oss-license-workshop/why-license.html",
   "identifier": "https://UC-OSPO-Network.github.io/oss-license-workshop/why-license.html",
   "dateCreated": "2026-08-28",
-  "dateModified": "2026-11-11",
+  "dateModified": "2026-11-12",
   "datePublished": "2026-11-12"
 }
 

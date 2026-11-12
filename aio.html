@@ -364,7 +364,7 @@
         
 <section id="aio-why-license"><p>Content from <a href="why-license.html">Why License?</a></p>
 <hr>
-<p>Last updated on 2026-11-11 |
+<p>Last updated on 2026-11-12 |
 
         <a href="https://github.com/UC-OSPO-Network/oss-license-workshop/edit/main/episodes/why-license.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -444,7 +444,7 @@ code.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Myth. Default copyright/IP law applies; public does not mean
@@ -600,7 +600,7 @@ import.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> What makes an invention patentable? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>An invention must meet these criteria:</p>
 <ol style="list-style-type: decimal">
@@ -638,7 +638,7 @@ You could also suffer reputational damage.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
   <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Example scenario: the accidental trap </h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
 <p>A researcher writes an efficient data-parsing script and uploads it
 to GitHub with a README but no license file.</p>
@@ -691,6 +691,38 @@ shared</td>
 </tr>
 </tbody>
 </table>
+<div id="a-real-case-the-time-zone-database" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="a-real-case-the-time-zone-database" class="callout-inner">
+<h3 class="callout-title">A real case: the time zone database</h3>
+<div class="callout-content">
+<!-- Draft for the expert to check. Sources: Tim's iASSIST 2026 handout, the tz repository LICENSE file, and the Wikipedia article on the tz database. The lawsuit details come from a summary of Wikipedia, so verify dates and wording against a primary source before release. -->
+<p>Almost every computer clock relies on the tz database, which records
+the time zones of the world and their history. A UCLA researcher, Paul
+Eggert, has maintained it since 2005. The project chose to place its
+code and data in the public domain, so anyone may use them for any
+purpose.</p>
+<p>In 2011 a company sued the two maintainers. The company claimed
+copyright in some of the historical time zone data. The mailing list and
+download site went offline for a time, and the Internet Corporation for
+Assigned Names and Numbers (ICANN) took over stewardship of the
+database. The company dropped the case in 2012 without a court
+ruling.</p>
+<p>The case shows that a project can spread to billions of devices and
+still face a question about who owns one of its pieces. Knowing where
+your code and data come from, and what permission you have to share
+them, matters before you release.</p>
+<p>Read more: the <a href="https://www.iana.org/time-zones" class="external-link">tz
+database</a> at the Internet Assigned Numbers Authority (IANA), and the
+<a href="https://en.wikipedia.org/wiki/Tz_database" class="external-link">Wikipedia article on
+the tz database</a>.</p>
+</div>
+</div>
+</div>
+
 <div id="you-found-code-with-no-license-think-pair-share" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -738,7 +770,7 @@ conclusions to the group.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p><strong>Best answer: C.</strong></p>
 <ul>
@@ -997,6 +1029,10 @@ and the group released it under a very permissive license that took the
 name BSD. A professor who taught at UCSF and Berkeley described the same
 choice in a 2025 panel. His UCSF team had built software, wanted to give
 it to anyone who asked, and put a BSD license on it.</p>
+<p>Berkeley researchers also built the INGRES database in the 1970s and
+released its code freely. The PostgreSQL database grew out of that line
+of work. Its license, the PostgreSQL License, is a short permissive
+license similar to BSD and MIT.</p>
 <p><a href="https://www.youtube.com/watch?v=yVmVT-G92kM&amp;t=525s" class="external-link">Watch the
 panel “From Idea to Impact”</a> from about 8:45 to hear the story.</p>
 </div>
@@ -1148,6 +1184,81 @@ strong copyleft.</p>
 </div>
 </div>
 </div>
+<div id="challenge-real-uc-projects" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-real-uc-projects" class="callout-inner">
+<h3 class="callout-title">Challenge: real UC projects</h3>
+<div class="callout-content">
+<!-- Draft. Licenses checked on 2026-11-12 from each project's repository or website, mostly from the repository sidebar or README. Re-check each license against its LICENSE file before release, and check again before each workshop because licenses can change. The project list comes from Tim's iASSIST 2026 handout. -->
+<p>Each of these projects began at a University of California campus.
+Put each one in a category: permissive, weak copyleft, strong copyleft,
+or not open source.</p>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Project</th>
+<th>License</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Jupyter Notebook (UC Berkeley)</td>
+<td>BSD 3-Clause</td>
+</tr>
+<tr>
+<td>Apache Spark (UC Berkeley)</td>
+<td>Apache 2.0</td>
+</tr>
+<tr>
+<td>Ceph (UC Santa Cruz)</td>
+<td>LGPL, for most of the code</td>
+</tr>
+<tr>
+<td>EEGLAB (UC San Diego)</td>
+<td>GPL</td>
+</tr>
+<tr>
+<td>ChimeraX (UCSF)</td>
+<td>Free for non-commercial use only. Companies need a separate
+license.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+<ul>
+<li>Jupyter Notebook: permissive. BSD 3-Clause is on the UC list of
+favored licenses.</li>
+<li>Apache Spark: permissive. Apache 2.0 also grants a patent license,
+which is why UC treats it differently from BSD.</li>
+<li>Ceph: weak copyleft. Most of its code is under the LGPL, and some
+parts use other licenses. Check the repository for the details.</li>
+<li>EEGLAB: strong copyleft. The GPL requires that a product built on
+EEGLAB and distributed to others be released under the same
+license.</li>
+<li>ChimeraX: not open source. A license that bars commercial use is
+source available at best, as the earlier challenge showed.</li>
+</ul>
+<p>Why does the license matter to a company that wants to build on each
+of these projects? Discuss: which ones could it use in a closed product,
+and which ones could it not?</p>
+</div>
+</div>
+</div>
+</div>
 <div id="challenge-can-the-company-use-it" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1169,12 +1280,12 @@ apply.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <!-- Draft answer for the group to check. An expert should confirm the wording. -->
 <p><strong>A and B.</strong> MIT and BSD 3-Clause are permissive. The
@@ -1377,7 +1488,7 @@ copyleft, or strong copyleft.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <!-- TODO (group): answer key for the table above. -->
 </div>
@@ -1410,7 +1521,7 @@ What does that mean for her code?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <!-- Draft answers from the Episode 2 text. An expert should confirm. -->
 <ol style="list-style-type: decimal">
@@ -1521,7 +1632,7 @@ project licenses.</caption>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <!-- TODO (group, expert): answer key for the grid. -->
 </div>
@@ -1672,6 +1783,17 @@ company, and a standard open license is enough.</li>
 <li>Have you talked to your TTO? Do it early, because ownership and
 funding terms can limit your options.</li>
 </ul>
+<p>Two UC projects show different paths:</p>
+<ul>
+<li>Apache Spark began in the Berkeley AMPLab. The team gave it to the
+Apache Software Foundation, where it uses the Apache 2.0 license, and
+its creators later founded the company Databricks.</li>
+<li>Ceph began as a PhD dissertation at UC Santa Cruz and uses mostly
+LGPL licenses. Its commercialization helped fund the Center for Research
+in Open Source Software (CROSS) at Santa Cruz, the first UC open source
+program office (OSPO).</li>
+</ul>
+<!-- Draft. Facts from Tim's iASSIST 2026 handout; the licenses were checked on 2026-11-12. Verify the Spark donation and the Ceph funding statements against primary sources before release. --><p>Most research tools never follow either path, and that is fine.</p>
 <p>Some licenses limit commercial use. As Episode 2 explains, they are
 source available licenses, not open source licenses.</p>
 </section><section><h2 class="section-heading" id="uc-resources">UC resources<a class="anchor" aria-label="anchor" href="#uc-resources"></a>
@@ -1732,7 +1854,7 @@ from your pair to the group.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>At UC, code written for a staff position is typically owned by The
@@ -1805,7 +1927,7 @@ a related product or service it does not give away</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <!-- Draft answers for the group to check. An expert should confirm the policy statements. -->
 <ol style="list-style-type: decimal">

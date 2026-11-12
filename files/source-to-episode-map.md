@@ -119,3 +119,16 @@ Public domain, source available, open core, dual licensing (exists), delegated a
 2. **"Low risk" labels.** The chart summary in Episode 3 matches the speaker's colors, but he also says red licenses can be used with consent. Add that nuance.
 3. **BSD 3-Clause versus 3-Clause Clear.** A UCLA officer said a switch is under discussion. Date: April 2026 panel.
 4. **UC academic license.** The panels call it a non-commercial license that is not open source. Confirm the lesson wording.
+
+## iASSIST 2026 handout (Tim Dennis)
+
+"UC Open Source as Institutional Infrastructure", a one-page handout of prominent UC projects. It is a history and impact timeline and gives no licenses. It has no stated reuse license. The lesson paraphrases it with credit in comments. Used on 2026-11-12:
+
+| Handout item | Episode | Use |
+|---|---|---|
+| tz database, 2011 lawsuit, public domain choice | Ep1 | Callout "A real case: the time zone database". Lawsuit details need a primary source. |
+| BSD Unix, INGRES and PostgreSQL | Ep2 | One added paragraph in the BSD callout. |
+| Jupyter, Spark, Ceph, EEGLAB, ChimeraX | Ep2 | Challenge "real UC projects". Licenses checked 2026-11-12, mostly from repository sidebars. |
+| Spark and Ceph paths | Ep4 | Two examples in the COSS section. Verify the Spark donation and Ceph funding statements. |
+
+Open issues in the handout: BSD Unix (1977) sits above INGRES (1973) in the timeline, and the footer cites a different Ruff video ID (eBriL3CDNeo) than the keynote scanned here (1VtGcD4fQLY).
