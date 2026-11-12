@@ -50,6 +50,10 @@ If excluding commercial use really is a requirement, a license like [PolyForm No
 
 A license that limits commercial use is sometimes called a source available license. It is not an open source license, even when it lets people read and share the code.
 
+Some AI models follow the same pattern. The Llama models are an example. Their license limits how you may use them, so people call them "open weights" and not open source.
+
+<!-- Draft from the UC Open 2026 keynote by Nithya Ruff. Expert to check the wording. -->
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## License categories
@@ -92,6 +96,18 @@ The idea behind a permissive license: "take it and use it, and we do not mind wh
 These licenses allow users to distribute your software commercially if they choose to.
 
 At the University of California, BSD and MIT are favored over the Apache license. The Apache license requires licensors (the people or organizations that grant the license) to grant a patent license to all licensees. This could have the unintended effect of reaching into UC's patent portfolio and the work of other researchers. With patents, different people or groups can come up with the same idea independently.
+
+::::::::::::::::::::::::::::::::::::: callout
+
+## Where the BSD license came from
+
+<!-- Draft from the UC Open 2025 panel "From Idea to Impact" (about 8:45 to 10:30). The panelist is not named here because the transcript does not label speakers. Check and add the name and project if the panelist agrees. -->
+
+The BSD license began at the University of California. A research grant paid Berkeley's computer systems research group to build BSD Unix, and the group released it under a very permissive license that took the name BSD. A professor who taught at UCSF and Berkeley described the same choice in a 2025 panel. His UCSF team had built software, wanted to give it to anyone who asked, and put a BSD license on it.
+
+[Watch the panel "From Idea to Impact"](https://www.youtube.com/watch?v=yVmVT-G92kM&t=525s) from about 8:45 to hear the story.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Copyleft licenses
 

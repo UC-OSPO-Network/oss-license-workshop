@@ -13,11 +13,24 @@ All speaker statements are practitioner views, not legal advice. An expert check
 | UC Open 2025: Fireside chat on commercial open source (Meeker, Davis) | all | https://www.youtube.com/watch?v=Hsq0B5DH47s |
 | UC Open 2026: Panel "Making a COSS Play" (Padilla chairing) | all (pasted by Tim) | https://www.youtube.com/watch?v=V4XjaDWG-cs |
 | UC Love Data Week 2026 deck (CC BY 4.0) | pp. 1 to 46 | https://zenodo.org/records/18615247 |
+| UC Open 2026: Breakout 1 "Open Practices for Education and Training" (includes the UC OSPO education talk) | keyword scan plus the AI and licenses exchange (about 1:04:00 and 1:16:42); the rest is about documentation tools such as MyST and Jupyter Book | https://www.youtube.com/watch?v=jqAcaQQR-Bs |
 | UC Open 2025: Directed discussion "How can we help? Academic OSPOs" | keyword scan only; almost no licensing content | https://www.youtube.com/watch?v=5wUFC3mIz_g |
 | UC Open 2025: "Open S#####? What is meant by open" | keyword scan only; about open science, almost no licensing | https://www.youtube.com/watch?v=q509nMUKan0 |
 | UC Open 2025: Panel on supply chain security | keyword scan only; security focus, 19 mentions of dependencies | https://www.youtube.com/watch?v=LmTYcJD9s6o |
 
 Not read: the 2026 keynotes and breakouts, the lightning talks, the agrifood, AI and vLLM sessions, and about 55 older videos on the channel (OSRE, workshops and others).
+
+### Keyword scan of the other UC Open talks (2026-11-12)
+
+| Talk | Licensing hits | Useful for the lesson |
+|---|---|---|
+| 2026 keynote, Nithya Ruff | 5 | Two points. Choosing community-governed projects lowers the risk that a license changes later. Models such as Llama and DeepSeek are "open weights", not open source, because their licenses carry restrictions. This could be an example in Episode 2 of a license that limits use. https://www.youtube.com/watch?v=1VtGcD4fQLY |
+| 2026 keynote, David Charron | 1 | Nothing. Mostly commercialization history. https://www.youtube.com/watch?v=s1FHdA4ntPI |
+| 2025 panel on open source in industry | 1 | Nothing. https://www.youtube.com/watch?v=_JepJmGtmf0 |
+| 2025 panel "From Idea to Impact" | 4 | A first-hand story of how the BSD license began at UC Berkeley, and a UCSF project released under BSD. A possible narrative hook for Episode 2. https://www.youtube.com/watch?v=yVmVT-G92kM |
+
+Still unscanned: the 2025 keynote on the impact of open source, the XZ security keynote, the ecosystems and innovation talk, the 2026 breakout 2 (1 hour 46 minutes), the 2026 opening and both sets of lightning talks, and the AI security, agrifood, and vLLM sessions, plus about 55 older videos. Titles suggest little licensing content.
+
 
 ## Karla's other records
 
@@ -80,6 +93,10 @@ Not read: the 2026 keynotes and breakouts, the lightning talks, the agrifood, AI
 | README template, citation file, Zenodo | Love Data Week deck | Used. | |
 | Use the UC OSPO as the first contact; know a name in your TTO | COSS panel 23:49 | Add "find your TTO contact" as an action in the challenge. | High. Actionable. |
 | The chart and guide are about 8 years old and may be refreshed | Tech transfer panel 37:47 | Keep the date caveat. | |
+
+### Emerging topic: AI-generated code and licenses
+
+In the 2026 education breakout, a speaker said non-permissive licenses may matter less if an AI agent can regenerate a package instead of reusing it. An audience member asked whether that is an accepted practice, and the speaker said he did not know. The fireside chat (36:06) also touched on AI models and license terms. This is contested and not settled law. Treat it as a note for the Episode 5 candidate or an instructor aside, not as lesson text. An expert should decide whether and how to teach it.
 
 ### Later episode (candidate)
 
