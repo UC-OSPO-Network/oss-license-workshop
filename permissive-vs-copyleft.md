@@ -48,6 +48,8 @@ This is one of the most common things researchers ask for, but it actually isn't
 
 If excluding commercial use really is a requirement, a license like [PolyForm Noncommercial](https://polyformproject.org/licenses/noncommercial/1.0.0) will do it. Researchers at academic institutions would still be able to use your code, but they couldn't build it into their own open source projects. Researchers at companies, startups, and industry labs couldn't use it at all.
 
+A license that limits commercial use is sometimes called a source available license. It is not an open source license, even when it lets people read and share the code.
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## License categories
@@ -85,7 +87,7 @@ Table: How the three license categories differ
 
 Examples: Berkeley Software Distribution (BSD), Massachusetts Institute of Technology (MIT), and Apache 2.0.
 
-Permissive licenses have few requirements and are relatively easy to comply with. Typically, you are required to provide attribution. These licenses are common in research because they are simple and maximize flexibility. <!-- [KP1] comment marker from the source slide: a reviewer note, author unknown. -->
+The idea behind a permissive license: "take it and use it, and we do not mind what you do next." Permissive licenses have few requirements and are relatively easy to comply with. Typically, you are required to provide attribution. These licenses are common in research because they are simple and maximize flexibility. <!-- [KP1] comment marker from the source slide: a reviewer note, author unknown. -->
 
 These licenses allow users to distribute your software commercially if they choose to.
 
@@ -93,7 +95,7 @@ At the University of California, BSD and MIT are favored over the Apache license
 
 ## Copyleft licenses
 
-At the other end of the spectrum are copyleft licenses. They are sometimes called viral licenses, because they require that derivative works (new works built on the original code) and modifications be licensed under the same terms as the copyleft license. This protects the openness of a project across its lifecycle.
+At the other end of the spectrum are copyleft licenses. The idea: "we give you this freedom, and you make sure the next person has it too." They are sometimes called viral licenses, because they require that derivative works (new works built on the original code) and modifications be licensed under the same terms as the copyleft license. This protects the openness of a project across its lifecycle.
 
 Copyleft licenses may define what counts as a derivative work and what triggers the copyleft provision. So there are weak and strong copyleft licenses.
 
@@ -112,6 +114,7 @@ The UC system does not recommend GPL 3.0 for university-owned software, because 
 
 Two licenses can sit in the same category and still differ on specific points. Check the actual clauses before you choose.
 
+- BSD is a family of licenses, with 0-clause, 2-clause, 3-clause, and 4-clause forms. A note that says only "BSD" is ambiguous. Episode 4 shows how to name the exact license.
 - BSD 2-Clause and BSD 3-Clause are both permissive. The 3-Clause version adds a condition: you may not use the names of the project or its contributors to endorse or promote products built from the code without permission.
 - MIT and BSD are both short permissive licenses. Both ask users to keep the copyright and license notice.
 - Apache 2.0 is also permissive. It adds an explicit patent license from contributors, which is why UC treats it differently from BSD and MIT.
@@ -156,6 +159,8 @@ Some open source licenses include such clauses.
 
 This exercise is adapted from the "What is Open Source?" episode of [Software Licensing](https://intersect-training.org/software-licensing/) (INTERSECT) by David E. Bernholdt, Lauren E. Milechin, Dave Rumph, Michael A. Heroux, and James Willenbring, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 Changes: the introduction and the solution are reworded, the solution refers to the permissions listed earlier in this episode instead of the four freedoms, and the discussion questions are left out.
+
+The two "idea" sentences in the permissive and copyleft sections are adapted from [Making Research Software Citable & Discoverable](https://zenodo.org/records/18615247) by Tim Dennis, Reid Otsuji, Leigh Phan, Karla Padilla, and Laura Langdon (UC Love Data Week, 2026), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Changes: lightly reworded.
 
 :::::::::::::::::::::::::::::::::::::: challenge
 

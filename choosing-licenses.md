@@ -78,10 +78,15 @@ The license you select will depend on your goals and on the policies of the Univ
 - how much reuse you want. Episode 2 compares permissive and copyleft licenses.
 - the UC risk ratings for each license. Episode 3 summarizes the chart.
 - the licenses of your dependencies. Episode 3 explains how they can clash.
+- how familiar the license is. A well-known license is easier for other people, and their legal teams, to recognize and accept.
 
 The Open Source Software chart and its companion guide can help you navigate UC policies and guide your discussion with your TTO.
 
 Always consult your campus TTO before releasing UC-owned software.
+
+<!-- Draft for the expert to check. The UC Love Data Week 2026 deck states this recommendation. A panelist at UC Open 2026 said UCLA may move to BSD 3-Clause Clear because of a debate about patent grants. -->
+
+When you create a new repository, the UC OSPO standard recommendation is the BSD 3-Clause license. Your TTO still makes the final call.
 
 ## UC resources
 
@@ -179,6 +184,18 @@ All rights reserved.
 
 If the badge does not appear, make sure the file is in the root directory and named exactly `LICENSE` or `LICENSE.txt`.
 
+## Name the exact license
+
+<!-- Draft for the expert to check. -->
+
+Many license names cover several versions. BSD, for example, has 0-clause, 2-clause, 3-clause, and 4-clause forms. The Software Package Data Exchange (SPDX) project publishes a short identifier for each license, such as `BSD-3-Clause`. Use the identifier in your README and in a comment at the top of each source file:
+
+```python
+# SPDX-License-Identifier: BSD-3-Clause
+```
+
+The identifier is unique, easy for people to read, and easy for tools to scan. If you also publish a `CITATION.cff` file or archive your release on Zenodo, state the same license there.
+
 ## Communicate your license
 
 After you add a `LICENSE` file, reference it in your README so users understand the usage terms right away. Add this section near the top of your README:
@@ -189,7 +206,7 @@ After you add a `LICENSE` file, reference it in your README so users understand 
 This project uses the BSD 3-Clause License. The [LICENSE](LICENSE) file contains the terms.
 ```
 
-This names the license for people who encounter your README outside GitHub, for example on Zenodo, in email, or in exported PDFs. Include the `LICENSE` file when you share the project.
+The [UC OSPO README template](https://github.com/UC-OSPO-Network/templates/blob/main/README.md) has a section for this. The license section names the license for people who encounter your README outside GitHub, for example on Zenodo, in email, or in exported PDFs. Include the `LICENSE` file when you share the project.
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
