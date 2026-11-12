@@ -240,6 +240,22 @@ In general, *without* a license:
 
 Table: Effects of sharing code without a license
 
+::::::::::::::::::::::::::::::::::::: callout
+
+## A real case: the time zone database
+
+<!-- Draft for the expert to check. Sources: Tim's iASSIST 2026 handout, the tz repository LICENSE file, and the Wikipedia article on the tz database. The lawsuit details come from a summary of Wikipedia, so verify dates and wording against a primary source before release. -->
+
+Almost every computer clock relies on the tz database, which records the time zones of the world and their history. A UCLA researcher, Paul Eggert, has maintained it since 2005. The project chose to place its code and data in the public domain, so anyone may use them for any purpose.
+
+In 2011 a company sued the two maintainers. The company claimed copyright in some of the historical time zone data. The mailing list and download site went offline for a time, and the Internet Corporation for Assigned Names and Numbers (ICANN) took over stewardship of the database. The company dropped the case in 2012 without a court ruling.
+
+The case shows that a project can spread to billions of devices and still face a question about who owns one of its pieces. Knowing where your code and data come from, and what permission you have to share them, matters before you release.
+
+Read more: the [tz database](https://www.iana.org/time-zones) at the Internet Assigned Numbers Authority (IANA), and the [Wikipedia article on the tz database](https://en.wikipedia.org/wiki/Tz_database).
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 ::::::::::::::::::::::::::::::::::::: instructor
 
 ### Notes for the think-pair-share challenge

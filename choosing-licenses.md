@@ -100,6 +100,15 @@ Ask these questions before you plan a COSS project:
 - Could a market support a business around this software?
 - Have you talked to your TTO? Do it early, because ownership and funding terms can limit your options.
 
+Two UC projects show different paths:
+
+- Apache Spark began in the Berkeley AMPLab. The team gave it to the Apache Software Foundation, where it uses the Apache 2.0 license, and its creators later founded the company Databricks.
+- Ceph began as a PhD dissertation at UC Santa Cruz and uses mostly LGPL licenses. Its commercialization helped fund the Center for Research in Open Source Software (CROSS) at Santa Cruz, the first UC open source program office (OSPO).
+
+<!-- Draft. Facts from Tim's iASSIST 2026 handout; the licenses were checked on 2026-11-12. Verify the Spark donation and the Ceph funding statements against primary sources before release. -->
+
+Most research tools never follow either path, and that is fine.
+
 Some licenses limit commercial use. As Episode 2 explains, they are source available licenses, not open source licenses.
 
 ## UC resources
