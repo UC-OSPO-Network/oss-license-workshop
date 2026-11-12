@@ -938,7 +938,7 @@ example of a weak copyleft license.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Narrative outline: Camila (draft for the group to edit) </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <ul>
 <li>Camila has decided to share all of her code.</li>
@@ -980,6 +980,9 @@ Noncommercial</a> will do it. Researchers at academic institutions would
 still be able to use your code, but they couldn’t build it into their
 own open source projects. Researchers at companies, startups, and
 industry labs couldn’t use it at all.</p>
+<p>A license that limits commercial use is sometimes called a source
+available license. It is not an open source license, even when it lets
+people read and share the code.</p>
 </div>
 </div>
 </div>
@@ -1044,10 +1047,11 @@ license</td>
 <hr class="half-width">
 <p>Examples: Berkeley Software Distribution (BSD), Massachusetts
 Institute of Technology (MIT), and Apache 2.0.</p>
-<p>Permissive licenses have few requirements and are relatively easy to
-comply with. Typically, you are required to provide attribution. These
-licenses are common in research because they are simple and maximize
-flexibility.
+<p>The idea behind a permissive license: “take it and use it, and we do
+not mind what you do next.” Permissive licenses have few requirements
+and are relatively easy to comply with. Typically, you are required to
+provide attribution. These licenses are common in research because they
+are simple and maximize flexibility.
 <!-- [KP1] comment marker from the source slide: a reviewer note, author unknown. --></p>
 <p>These licenses allow users to distribute your software commercially
 if they choose to.</p>
@@ -1061,11 +1065,12 @@ independently.</p>
 </section><section><h2 class="section-heading" id="copyleft-licenses">Copyleft licenses<a class="anchor" aria-label="anchor" href="#copyleft-licenses"></a>
 </h2>
 <hr class="half-width">
-<p>At the other end of the spectrum are copyleft licenses. They are
-sometimes called viral licenses, because they require that derivative
-works (new works built on the original code) and modifications be
-licensed under the same terms as the copyleft license. This protects the
-openness of a project across its lifecycle.</p>
+<p>At the other end of the spectrum are copyleft licenses. The idea: “we
+give you this freedom, and you make sure the next person has it too.”
+They are sometimes called viral licenses, because they require that
+derivative works (new works built on the original code) and
+modifications be licensed under the same terms as the copyleft license.
+This protects the openness of a project across its lifecycle.</p>
 <p>Copyleft licenses may define what counts as a derivative work and
 what triggers the copyleft provision. So there are weak and strong
 copyleft licenses.</p>
@@ -1090,6 +1095,9 @@ office (Episode 4 explains its role) about GPL 2.0 or alternatives.</p>
 <!-- Draft for the expert to check. --><p>Two licenses can sit in the same category and still differ on
 specific points. Check the actual clauses before you choose.</p>
 <ul>
+<li>BSD is a family of licenses, with 0-clause, 2-clause, 3-clause, and
+4-clause forms. A note that says only “BSD” is ambiguous. Episode 4
+shows how to name the exact license.</li>
 <li>BSD 2-Clause and BSD 3-Clause are both permissive. The 3-Clause
 version adds a condition: you may not use the names of the project or
 its contributors to endorse or promote products built from the code
@@ -1138,7 +1146,7 @@ name(s) and appropriate references.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>No. Clause 1 (especially) violates the permission to modify the
 software and to distribute copies of your modified version to others.
@@ -1164,6 +1172,12 @@ Dave Rumph, Michael A. Heroux, and James Willenbring, licensed under <a href="ht
 Changes: the introduction and the solution are reworded, the solution
 refers to the permissions listed earlier in this episode instead of the
 four freedoms, and the discussion questions are left out.</p>
+<p>The two “idea” sentences in the permissive and copyleft sections are
+adapted from <a href="https://zenodo.org/records/18615247" class="external-link">Making
+Research Software Citable &amp; Discoverable</a> by Tim Dennis, Reid
+Otsuji, Leigh Phan, Karla Padilla, and Laura Langdon (UC Love Data Week,
+2026), licensed under <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">CC BY 4.0</a>.
+Changes: lightly reworded.</p>
 <div id="challenge-sort-the-licenses" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1183,7 +1197,7 @@ strong copyleft.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
 <li>Permissive: MIT and BSD 3-Clause.</li>
@@ -1220,7 +1234,7 @@ apply.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <!-- Draft answer for the group to check. An expert should confirm the wording. -->
 <p><strong>A and B.</strong> MIT and BSD 3-Clause are permissive. The
@@ -1237,7 +1251,7 @@ source under the same license.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> If you’re teaching in a university context </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>Different universities default to different licenses, and learners
 may arrive having been told “use this one” without being told why. The
@@ -1285,7 +1299,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-when-license-clash"><p>Content from <a href="when-license-clash.html">When Licenses Clash</a></p>
 <hr>
-<p>Last updated on 2026-11-11 |
+<p>Last updated on 2026-11-12 |
 
         <a href="https://github.com/UC-OSPO-Network/oss-license-workshop/edit/main/episodes/when-license-clash.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
@@ -1300,9 +1314,10 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What are dependencies?</li>
-<li>What happens if my dependency has a license different from my
-project license?</li>
+<li>What is a dependency?</li>
+<li>How do I find the licenses of my dependencies?</li>
+<li>What happens if a dependency has a license that does not fit my
+project?</li>
 </ul>
 </div>
 </div>
@@ -1311,10 +1326,12 @@ project license?</li>
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<!-- wbcheck AI202: No exercise asks learners to identify dependencies. The only challenge gives them the dependency licenses directly, so this objective is never assessed. -->
 <ul>
-<li>Identify dependencies.</li>
-<li>Determine if the licenses in my project are compatible.</li>
+<li>Identify the dependencies of a project.</li>
+<li>Find the license of each dependency.</li>
+<li>Decide whether a dependency’s license fits what you want to do with
+your project.</li>
+<li>Describe an example of a license clash.</li>
 </ul>
 </div>
 </div>
@@ -1324,10 +1341,7 @@ project license?</li>
 <div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
-  Narrative outline: Valentina (draft for the group to edit)
-  </h3>
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Narrative outline: Valentina (draft for the group to edit) </h3>
 </button>
 <div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
@@ -1345,15 +1359,196 @@ rules.</li>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="a-word-of-caution-dependencies">A word of caution: dependencies<a class="anchor" aria-label="anchor" href="#a-word-of-caution-dependencies"></a>
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Notes for this episode (draft) </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="accordion-body">
+<p>This episode is a skeleton. Sections marked <code>TODO (group)</code>
+in the source need text from the cohort or a licensing expert. The
+slides give two bullets on dependencies and nothing on clashes.</p>
+<ul>
+<li>Timing plan: about 20 minutes of teaching and 10 of exercises. The
+exercises below are drafts, and no one has timed them.</li>
+<li>Optional demonstration: show how to find a package license on the
+command line. In Python, run <code>pip show &lt;package&gt;</code>. In
+R, run <code>packageDescription("&lt;package&gt;")$License</code>.
+Output varies by package and version, so try the commands before
+class.</li>
+<li>Several points in this episode follow the discussion in <a href="https://www.youtube.com/watch?v=MWA5fdV6wg8" class="external-link">ABCs of Open Source
+Licensing</a> (UC Open 2025). The lesson authors’ notes are in
+<code>instructors/files/ucopen-2025-abcs-licensing-notes.md</code>. An
+expert should check each point.</li>
+<li>The CURIOSS “open source software disclosure form” pattern asks
+researchers for a list of third-party software and its licenses. It is a
+good model for the “list your dependencies” activity (CC BY 4.0, credit
+the CURIOSS organizers and contributors).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="what-is-a-dependency">What is a dependency?<a class="anchor" aria-label="anchor" href="#what-is-a-dependency"></a>
 </h2>
 <hr class="half-width">
-<p>Your toolchain, integrated development environment (IDE), or Python
-package manager may add packages and libraries to your application or
-code.</p>
-<p>Make sure the licenses of those packages are compatible with each
-other, and that they let you accomplish what you want to accomplish.</p>
-</section><section><h2 class="section-heading" id="how-uc-rates-the-licenses-of-open-source-code-you-use">How UC rates the licenses of open source code you use<a class="anchor" aria-label="anchor" href="#how-uc-rates-the-licenses-of-open-source-code-you-use"></a>
+<p>A dependency is a piece of software that your project needs in order
+to run or build. Examples are a package you install with
+<code>pip</code> or <code>install.packages()</code>, or a library your
+code calls.</p>
+<p>Your toolchain, integrated development environment (IDE), or package
+manager may add dependencies for you. Those packages can bring their own
+dependencies. A compiler or toolchain can also insert code into your
+final program, so you may distribute code you never chose on purpose.
+Valentina installed a handful of packages, and each one has a license
+she has never read.</p>
+<p>For example, a Python project can name only a few packages, such as
+<code>python</code>, <code>numpy</code>, and <code>pandas</code>. A lock
+file records the exact version of each one and every package they need
+in turn. In one UC workshop example, a project that names just
+<code>python</code> and <code>numpy</code> has a lock file with 47 more
+dependencies. You may need to check the license of each one.</p>
+<p>This example is adapted from <a href="https://zenodo.org/records/18615247" class="external-link">Making Research Software
+Citable &amp; Discoverable</a> by Tim Dennis, Reid Otsuji, Leigh Phan,
+Karla Padilla, and Laura Langdon (UC Love Data Week, 2026), licensed
+under <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">CC BY
+4.0</a>. Changes: shortened and reworded.</p>
+<!-- TODO (group): add direct versus transitive dependencies if the group wants the terms. -->
+</section><section><h2 class="section-heading" id="why-can-licenses-clash">Why can licenses clash?<a class="anchor" aria-label="anchor" href="#why-can-licenses-clash"></a>
+</h2>
+<hr class="half-width">
+<p>When you use someone else’s code, their license applies to what you
+do with it. Your project must follow the terms of every dependency
+license, and those terms can limit which license you may choose for your
+own code.</p>
+<!-- Draft for the expert to check. Assumes the dependency is combined with your code into one program that you distribute. -->
+<p>The table shows what usually happens when you combine your code with
+a dependency.</p>
+<table class="table">
+<caption>What happens when you combine your code with a
+dependency</caption>
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Dependency license</th>
+<th>What happens to the combined program</th>
+<th>Example</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Permissive</td>
+<td>You can release the combined program under other terms, including
+closed terms. Keep the required notices.</td>
+<td>BSD, MIT</td>
+</tr>
+<tr>
+<td>Weak copyleft</td>
+<td>The library keeps its own license. Your code can stay separate under
+its own license, for example when you link the library dynamically.</td>
+<td>LGPL</td>
+</tr>
+<tr>
+<td>Strong copyleft</td>
+<td>The combined program must be released under the same license.</td>
+<td>GPL</td>
+</tr>
+</tbody>
+</table>
+<p>Copyleft terms usually apply when you distribute the combined
+program, for example by giving it to someone outside your organization.
+A license can define distribution broadly. The GNU Affero General Public
+License (AGPL) also covers running the code on a network server, so some
+organizations restrict its use.</p>
+<!-- TODO (group, expert): worked clash example. Suggested story: Valentina's project is under a permissive license and she wants to keep one part closed. One dependency is under the GPL. What does the GPL ask of her? State the version, the linking, and the distribution. Also decide what counts as distribution inside a university. -->
+</section><section><h2 class="section-heading" id="find-the-licenses-of-your-dependencies">Find the licenses of your dependencies<a class="anchor" aria-label="anchor" href="#find-the-licenses-of-your-dependencies"></a>
+</h2>
+<hr class="half-width">
+<p>Before you share a project, list its dependencies and record the
+license of each one.</p>
+<!-- TODO (group): where to find a license (package page, `LICENSE` file, package metadata) and how to record it (a simple table: package, license, type). Link the CURIOSS disclosure form pattern if the group agrees. -->
+<div id="challenge-list-valentinas-dependencies" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-list-valentinas-dependencies" class="callout-inner">
+<h3 class="callout-title">Challenge: list Valentina’s dependencies</h3>
+<div class="callout-content">
+<!-- TODO (group): supply four or five real packages with their real licenses, including one weak copyleft and one strong copyleft package. -->
+<p>Valentina’s project uses the packages in the table below. For each
+package, say which category its license belongs to: permissive, weak
+copyleft, or strong copyleft.</p>
+<table class="table">
+<caption>Valentina’s packages and their licenses</caption>
+<thead><tr>
+<th>Package</th>
+<th>License</th>
+</tr></thead>
+<tbody><tr>
+<td>TODO</td>
+<td>TODO</td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<!-- TODO (group): answer key for the table above. -->
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="does-the-license-fit">Does the license fit?<a class="anchor" aria-label="anchor" href="#does-the-license-fit"></a>
+</h2>
+<hr class="half-width">
+<!-- TODO (group, expert): compatibility rules of thumb. Cover at least: permissive code in a project under any license, an LGPL library linked dynamically, GPL 2.0 and GPL 3.0 code in a larger project, and Apache 2.0 with GPL 2.0. State the version and the situation (modifying, linking, distributing) for each rule. --><div id="challenge-lgpl-or-gpl" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-lgpl-or-gpl" class="callout-inner">
+<h3 class="callout-title">Challenge: LGPL or GPL?</h3>
+<div class="callout-content">
+<p>Valentina wants to keep part of her project closed.</p>
+<ol style="list-style-type: decimal">
+<li>A package under the LGPL is linked dynamically to her closed code.
+Must her own code also be under the LGPL?</li>
+<li>A package under GPL 2.0 becomes part of the code she wants to share.
+What does that mean for her code?</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<!-- Draft answers from the Episode 2 text. An expert should confirm. -->
+<ol style="list-style-type: decimal">
+<li>Not necessarily. A weak copyleft license such as the LGPL may allow
+dynamic linking without triggering the copyleft provision. Her code can
+stay under the license of her choice.</li>
+<li>GPL 2.0 is strong copyleft, so her code would need to be placed
+under the terms of the GPL.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="how-uc-rates-the-licenses-of-code-you-use">How UC rates the licenses of code you use<a class="anchor" aria-label="anchor" href="#how-uc-rates-the-licenses-of-code-you-use"></a>
 </h2>
 <hr class="half-width">
 <p>The University of California publishes a chart that rates open source
@@ -1387,21 +1582,19 @@ Internal Use Notice (the Companion Guide describes it).</li>
 California Office of the President <a href="https://security.ucop.edu/files/documents/resources/oss-chart.pdf" class="external-link">OSS
 Chart</a> (17 April, 2018 version) and <a href="https://security.ucop.edu/files/documents/resources/oss-chart-companion.pdf" class="external-link">OSS
 Chart Companion</a> (26 March, 2018).</p>
-<!-- EPISODE CONTENT HERE -->
-<div id="challenge1" class="callout challenge">
+<div id="challenge-mark-the-conflicts" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="challenge-mark-the-conflicts" class="callout-inner">
+<h3 class="callout-title">Challenge: mark the conflicts</h3>
 <div class="callout-content">
-<!-- wbcheck AI202: The instructions contain typos ('Place and X is there is'). The grid also gives no guidance for nuanced cases such as LGPL linking, Apache-2.0 into GPLv2, or proprietary terms, where the answer is... -->
+<!-- TODO (group, expert): fix the assumptions. State the license versions, what "Commercial" means (proprietary terms), and whether the scenario involves modifying, linking, or distributing. Add an answer key and a way to say "it depends". -->
 <p>Each row gives the license of the dependency. Each column gives the
 license of <strong>My project</strong>.</p>
 <p>Mark an X in each cell where there is a conflict. Leave the cell
 empty if there is no conflict.</p>
-<!-- wbcheck AI208: The table is tab-separated plain text, not a Markdown pipe table, so it will render as a jumbled paragraph. The header also splits 'Dependency License' across lines, and the 'Commercial' row is tru... -->
 <table class="table">
 <caption>Compatibility grid. Rows are dependency licenses. Columns are
 project licenses.</caption>
@@ -1447,6 +1640,18 @@ project licenses.</caption>
 </div>
 </div>
 </div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+<!-- TODO (group, expert): answer key for the grid. -->
+</div>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -1454,10 +1659,18 @@ project licenses.</caption>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<!-- wbcheck WB112: `keypoints` still has placeholder bullet text: "keypoint 1" -->
+<!-- Draft from the episode text for the group to edit. -->
 <ul>
-<li>keypoint 1</li>
-<li>keypoint 2</li>
+<li>A dependency is software that your project needs in order to run or
+build.</li>
+<li>Check the license of every dependency before you share your
+project.</li>
+<li>A dependency’s license can limit the license you may choose for your
+own code.</li>
+<li>Copyleft terms usually apply when you distribute the combined
+program. The AGPL also covers network use.</li>
+<li>At UC, the risk chart and your campus technology transfer office
+guide what is allowed.</li>
 </ul>
 </div>
 </div>
@@ -1515,7 +1728,7 @@ repository.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Narrative outline: Santiago (draft for the group to edit) </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <ul>
 <li>Santiago wrote a tool for a campus group as part of his job. A
@@ -1534,7 +1747,7 @@ repository and README.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Notes for the exercises </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>The exercises take about 15 minutes in total.</p>
 <ul>
@@ -1602,11 +1815,16 @@ licenses.</li>
 chart.</li>
 <li>the licenses of your dependencies. Episode 3 explains how they can
 clash.</li>
+<li>how familiar the license is. A well-known license is easier for
+other people, and their legal teams, to recognize and accept.</li>
 </ul>
 <p>The Open Source Software chart and its companion guide can help you
 navigate UC policies and guide your discussion with your TTO.</p>
 <p>Always consult your campus TTO before releasing UC-owned
 software.</p>
+<!-- Draft for the expert to check. The UC Love Data Week 2026 deck states this recommendation. A panelist at UC Open 2026 said UCLA may move to BSD 3-Clause Clear because of a debate about patent grants. -->
+<p>When you create a new repository, the UC OSPO standard recommendation
+is the BSD 3-Clause license. Your TTO still makes the final call.</p>
 </section><section><h2 class="section-heading" id="uc-resources">UC resources<a class="anchor" aria-label="anchor" href="#uc-resources"></a>
 </h2>
 <hr class="half-width">
@@ -1661,7 +1879,7 @@ from your pair to the group.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>At UC, code written for a staff position is typically owned by The
@@ -1725,7 +1943,7 @@ first?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <!-- Draft answers for the group to check. An expert should confirm the policy statements. -->
 <ol style="list-style-type: decimal">
@@ -1785,22 +2003,40 @@ All rights reserved.</code></pre>
 <p>If the badge does not appear, make sure the file is in the root
 directory and named exactly <code>LICENSE</code> or
 <code>LICENSE.txt</code>.</p>
+</section><section><h2 class="section-heading" id="name-the-exact-license">Name the exact license<a class="anchor" aria-label="anchor" href="#name-the-exact-license"></a>
+</h2>
+<hr class="half-width">
+<!-- Draft for the expert to check. --><p>Many license names cover several versions. BSD, for example, has
+0-clause, 2-clause, 3-clause, and 4-clause forms. The Software Package
+Data Exchange (SPDX) project publishes a short identifier for each
+license, such as <code>BSD-3-Clause</code>. Use the identifier in your
+README and in a comment at the top of each source file:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="co"># </span><span class="an">SPDX-License-Identifier:</span><span class="co"> BSD-3-Clause</span></span></code></pre>
+</div>
+<p>The identifier is unique, easy for people to read, and easy for tools
+to scan. If you also publish a <code>CITATION.cff</code> file or archive
+your release on Zenodo, state the same license there.</p>
 </section><section><h2 class="section-heading" id="communicate-your-license">Communicate your license<a class="anchor" aria-label="anchor" href="#communicate-your-license"></a>
 </h2>
 <hr class="half-width">
 <p>After you add a <code>LICENSE</code> file, reference it in your
 README so users understand the usage terms right away. Add this section
 near the top of your README:</p>
-<div class="codewrapper sourceCode" id="cb2">
+<div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="fu">## License</span></span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a></span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a>This project uses the BSD 3-Clause License. The <span class="co">[</span><span class="ot">LICENSE</span><span class="co">](LICENSE)</span> file contains the terms.</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="fu">## License</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1" aria-label="code-block-3-3"></a>This project uses the BSD 3-Clause License. The <span class="co">[</span><span class="ot">LICENSE</span><span class="co">](LICENSE)</span> file contains the terms.</span></code></pre>
 </div>
-<p>This names the license for people who encounter your README outside
-GitHub, for example on Zenodo, in email, or in exported PDFs. Include
-the <code>LICENSE</code> file when you share the project.</p>
+<p>The <a href="https://github.com/UC-OSPO-Network/templates/blob/main/README.md" class="external-link">UC
+OSPO README template</a> has a section for this. The license section
+names the license for people who encounter your README outside GitHub,
+for example on Zenodo, in email, or in exported PDFs. Include the
+<code>LICENSE</code> file when you share the project.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>

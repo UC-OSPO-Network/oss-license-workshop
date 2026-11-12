@@ -250,6 +250,7 @@
 <li><a href="#how-to-choose-a-license">How to choose a license</a></li>
 <li><a href="#uc-resources">UC resources</a></li>
 <li><a href="#add-the-license-to-a-repository">Add the license to a repository</a></li>
+<li><a href="#name-the-exact-license">Name the exact license</a></li>
 <li><a href="#communicate-your-license">Communicate your license</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
@@ -379,7 +380,7 @@ repository.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Narrative outline: Santiago (draft for the group to edit) </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <ul><li>Santiago wrote a tool for a campus group as part of his job. A
 collaborator at another institution wants to use it.</li>
@@ -396,7 +397,7 @@ repository and README.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Notes for the exercises </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>The exercises take about 15 minutes in total.</p>
 <ul><li>Think, pair, share (6 minutes): learners work through Santiago’s
@@ -452,10 +453,15 @@ licenses.</li>
 chart.</li>
 <li>the licenses of your dependencies. Episode 3 explains how they can
 clash.</li>
+<li>how familiar the license is. A well-known license is easier for
+other people, and their legal teams, to recognize and accept.</li>
 </ul><p>The Open Source Software chart and its companion guide can help you
 navigate UC policies and guide your discussion with your TTO.</p>
 <p>Always consult your campus TTO before releasing UC-owned
 software.</p>
+<!-- Draft for the expert to check. The UC Love Data Week 2026 deck states this recommendation. A panelist at UC Open 2026 said UCLA may move to BSD 3-Clause Clear because of a debate about patent grants. -->
+<p>When you create a new repository, the UC OSPO standard recommendation
+is the BSD 3-Clause license. Your TTO still makes the final call.</p>
 </section><section><h2 class="section-heading" id="uc-resources">UC resources<a class="anchor" aria-label="anchor" href="#uc-resources"></a></h2>
 <hr class="half-width"><ul><li>
 <a href="https://security.ucop.edu/resources/open-source-software-licensing.html" class="external-link">UC
@@ -504,7 +510,7 @@ from your pair to the group.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>At UC, code written for a staff position is typically owned by The
 Regents of the University of California. Santiago needs approval from
@@ -560,7 +566,7 @@ first?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <!-- Draft answers for the group to check. An expert should confirm the policy statements. -->
 <ol style="list-style-type: decimal"><li>
@@ -614,20 +620,36 @@ All rights reserved.</code></pre>
 <p>If the badge does not appear, make sure the file is in the root
 directory and named exactly <code>LICENSE</code> or
 <code>LICENSE.txt</code>.</p>
+</section><section><h2 class="section-heading" id="name-the-exact-license">Name the exact license<a class="anchor" aria-label="anchor" href="#name-the-exact-license"></a></h2>
+<hr class="half-width"><!-- Draft for the expert to check. --><p>Many license names cover several versions. BSD, for example, has
+0-clause, 2-clause, 3-clause, and 4-clause forms. The Software Package
+Data Exchange (SPDX) project publishes a short identifier for each
+license, such as <code>BSD-3-Clause</code>. Use the identifier in your
+README and in a comment at the top of each source file:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="co"># </span><span class="an">SPDX-License-Identifier:</span><span class="co"> BSD-3-Clause</span></span></code></pre>
+</div>
+<p>The identifier is unique, easy for people to read, and easy for tools
+to scan. If you also publish a <code>CITATION.cff</code> file or archive
+your release on Zenodo, state the same license there.</p>
 </section><section><h2 class="section-heading" id="communicate-your-license">Communicate your license<a class="anchor" aria-label="anchor" href="#communicate-your-license"></a></h2>
 <hr class="half-width"><p>After you add a <code>LICENSE</code> file, reference it in your
 README so users understand the usage terms right away. Add this section
 near the top of your README:</p>
-<div class="codewrapper sourceCode" id="cb2">
+<div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="fu">## License</span></span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a></span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a>This project uses the BSD 3-Clause License. The <span class="co">[</span><span class="ot">LICENSE</span><span class="co">](LICENSE)</span> file contains the terms.</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="fu">## License</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1" aria-label="code-block-3-3"></a>This project uses the BSD 3-Clause License. The <span class="co">[</span><span class="ot">LICENSE</span><span class="co">](LICENSE)</span> file contains the terms.</span></code></pre>
 </div>
-<p>This names the license for people who encounter your README outside
-GitHub, for example on Zenodo, in email, or in exported PDFs. Include
-the <code>LICENSE</code> file when you share the project.</p>
+<p>The <a href="https://github.com/UC-OSPO-Network/templates/blob/main/README.md" class="external-link">UC
+OSPO README template</a> has a section for this. The license section
+names the license for people who encounter your README outside GitHub,
+for example on Zenodo, in email, or in exported PDFs. Include the
+<code>LICENSE</code> file when you share the project.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>

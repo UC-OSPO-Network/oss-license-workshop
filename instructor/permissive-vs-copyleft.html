@@ -380,7 +380,7 @@ example of a weak copyleft license.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Narrative outline: Camila (draft for the group to edit) </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <ul><li>Camila has decided to share all of her code.</li>
 <li>Her question: permissive or copyleft?</li>
@@ -416,6 +416,9 @@ Noncommercial</a> will do it. Researchers at academic institutions would
 still be able to use your code, but they couldn’t build it into their
 own open source projects. Researchers at companies, startups, and
 industry labs couldn’t use it at all.</p>
+<p>A license that limits commercial use is sometimes called a source
+available license. It is not an open source license, even when it lets
+people read and share the code.</p>
 </div>
 </div>
 </div>
@@ -459,10 +462,11 @@ license</td>
 </tr></tbody></table></section><section><h2 class="section-heading" id="permissive-licenses">Permissive licenses<a class="anchor" aria-label="anchor" href="#permissive-licenses"></a></h2>
 <hr class="half-width"><p>Examples: Berkeley Software Distribution (BSD), Massachusetts
 Institute of Technology (MIT), and Apache 2.0.</p>
-<p>Permissive licenses have few requirements and are relatively easy to
-comply with. Typically, you are required to provide attribution. These
-licenses are common in research because they are simple and maximize
-flexibility.
+<p>The idea behind a permissive license: “take it and use it, and we do
+not mind what you do next.” Permissive licenses have few requirements
+and are relatively easy to comply with. Typically, you are required to
+provide attribution. These licenses are common in research because they
+are simple and maximize flexibility.
 <!-- [KP1] comment marker from the source slide: a reviewer note, author unknown. --></p>
 <p>These licenses allow users to distribute your software commercially
 if they choose to.</p>
@@ -474,11 +478,12 @@ patent portfolio and the work of other researchers. With patents,
 different people or groups can come up with the same idea
 independently.</p>
 </section><section><h2 class="section-heading" id="copyleft-licenses">Copyleft licenses<a class="anchor" aria-label="anchor" href="#copyleft-licenses"></a></h2>
-<hr class="half-width"><p>At the other end of the spectrum are copyleft licenses. They are
-sometimes called viral licenses, because they require that derivative
-works (new works built on the original code) and modifications be
-licensed under the same terms as the copyleft license. This protects the
-openness of a project across its lifecycle.</p>
+<hr class="half-width"><p>At the other end of the spectrum are copyleft licenses. The idea: “we
+give you this freedom, and you make sure the next person has it too.”
+They are sometimes called viral licenses, because they require that
+derivative works (new works built on the original code) and
+modifications be licensed under the same terms as the copyleft license.
+This protects the openness of a project across its lifecycle.</p>
 <p>Copyleft licenses may define what counts as a derivative work and
 what triggers the copyleft provision. So there are weak and strong
 copyleft licenses.</p>
@@ -498,7 +503,10 @@ office (Episode 4 explains its role) about GPL 2.0 or alternatives.</p>
 </section><section><h2 class="section-heading" id="licenses-in-the-same-family">Licenses in the same family<a class="anchor" aria-label="anchor" href="#licenses-in-the-same-family"></a></h2>
 <hr class="half-width"><!-- Draft for the expert to check. --><p>Two licenses can sit in the same category and still differ on
 specific points. Check the actual clauses before you choose.</p>
-<ul><li>BSD 2-Clause and BSD 3-Clause are both permissive. The 3-Clause
+<ul><li>BSD is a family of licenses, with 0-clause, 2-clause, 3-clause, and
+4-clause forms. A note that says only “BSD” is ambiguous. Episode 4
+shows how to name the exact license.</li>
+<li>BSD 2-Clause and BSD 3-Clause are both permissive. The 3-Clause
 version adds a condition: you may not use the names of the project or
 its contributors to endorse or promote products built from the code
 without permission.</li>
@@ -543,7 +551,7 @@ name(s) and appropriate references.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>No. Clause 1 (especially) violates the permission to modify the
 software and to distribute copies of your modified version to others.
@@ -569,6 +577,12 @@ Dave Rumph, Michael A. Heroux, and James Willenbring, licensed under <a href="ht
 Changes: the introduction and the solution are reworded, the solution
 refers to the permissions listed earlier in this episode instead of the
 four freedoms, and the discussion questions are left out.</p>
+<p>The two “idea” sentences in the permissive and copyleft sections are
+adapted from <a href="https://zenodo.org/records/18615247" class="external-link">Making
+Research Software Citable &amp; Discoverable</a> by Tim Dennis, Reid
+Otsuji, Leigh Phan, Karla Padilla, and Laura Langdon (UC Love Data Week,
+2026), licensed under <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">CC BY 4.0</a>.
+Changes: lightly reworded.</p>
 <div id="challenge-sort-the-licenses" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -588,7 +602,7 @@ strong copyleft.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul><li>Permissive: MIT and BSD 3-Clause.</li>
 <li>Weak copyleft: LGPL and MPL.</li>
@@ -621,7 +635,7 @@ apply.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <!-- Draft answer for the group to check. An expert should confirm the wording. -->
 <p><strong>A and B.</strong> MIT and BSD 3-Clause are permissive. The
@@ -638,7 +652,7 @@ source under the same license.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> If you’re teaching in a university context </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>Different universities default to different licenses, and learners
 may arrive having been told “use this one” without being told why. The
