@@ -105,6 +105,8 @@ At the University of California, BSD and MIT are favored over the Apache license
 
 The BSD license began at the University of California. A research grant paid Berkeley's computer systems research group to build BSD Unix, and the group released it under a very permissive license that took the name BSD. A professor who taught at UCSF and Berkeley described the same choice in a 2025 panel. His UCSF team had built software, wanted to give it to anyone who asked, and put a BSD license on it.
 
+Berkeley researchers also built the INGRES database in the 1970s and released its code freely. The PostgreSQL database grew out of that line of work. Its license, the PostgreSQL License, is a short permissive license similar to BSD and MIT.
+
 [Watch the panel "From Idea to Impact"](https://www.youtube.com/watch?v=yVmVT-G92kM&t=525s) from about 8:45 to hear the story.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -191,6 +193,36 @@ MIT, GPL 2.0, LGPL, BSD 3-Clause, MPL, GPL 3.0
 - Permissive: MIT and BSD 3-Clause.
 - Weak copyleft: LGPL and MPL.
 - Strong copyleft: GPL 2.0 and GPL 3.0.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::: challenge
+
+## Challenge: real UC projects
+
+<!-- Draft. Licenses checked on 2026-11-12 from each project's repository or website, mostly from the repository sidebar or README. Re-check each license against its LICENSE file before release, and check again before each workshop because licenses can change. The project list comes from Tim's iASSIST 2026 handout. -->
+
+Each of these projects began at a University of California campus. Put each one in a category: permissive, weak copyleft, strong copyleft, or not open source.
+
+| Project | License |
+|---|---|
+| Jupyter Notebook (UC Berkeley) | BSD 3-Clause |
+| Apache Spark (UC Berkeley) | Apache 2.0 |
+| Ceph (UC Santa Cruz) | LGPL, for most of the code |
+| EEGLAB (UC San Diego) | GPL |
+| ChimeraX (UCSF) | Free for non-commercial use only. Companies need a separate license. |
+
+::::::::::::::::::::::::::::::: solution
+
+- Jupyter Notebook: permissive. BSD 3-Clause is on the UC list of favored licenses.
+- Apache Spark: permissive. Apache 2.0 also grants a patent license, which is why UC treats it differently from BSD.
+- Ceph: weak copyleft. Most of its code is under the LGPL, and some parts use other licenses. Check the repository for the details.
+- EEGLAB: strong copyleft. The GPL requires that a product built on EEGLAB and distributed to others be released under the same license.
+- ChimeraX: not open source. A license that bars commercial use is source available at best, as the earlier challenge showed.
+
+Why does the license matter to a company that wants to build on each of these projects? Discuss: which ones could it use in a closed product, and which ones could it not?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

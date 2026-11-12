@@ -24,6 +24,9 @@ Delegated authority
 Dual licensing
 : Releasing the same software under two different licenses. It needs the agreement of all authors and, where campus rules require it, the delegated authority.
 
+Public domain
+: Work that no one holds exclusive rights to, so anyone may use it for any purpose. It is not a license. A creator can choose to dedicate a work to the public domain, as the tz database project did. The rules differ between countries, so ask your campus office before you use a public domain dedication.
+
 Copyright
 : Applies to original works of authorship. It protects the expression of an idea, but not the idea itself. It applies automatically and does not require a © notice. The copyright owner has the exclusive right to copy, distribute, modify, perform, and display the work.
 
